@@ -1,0 +1,50 @@
+.custom-container {
+    width: 100%; /* Full width by default */
+    max-width: 100%; /* Reset for smaller screens */
+    margin: 0 auto; /* Center align */
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  @media (min-width: 576px) {
+    .custom-container {
+      max-width: 540px; /* Matches Bootstrap sm */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .custom-container {
+      max-width: 720px; /* Matches Bootstrap md */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .custom-container {
+      max-width: 960px; /* Matches Bootstrap lg */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .custom-container {
+      max-width: 1140px; /* Matches Bootstrap xl */
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .custom-container {
+      max-width: 1320px; /* Matches Bootstrap xxl */
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .custom-container {
+      max-width: 1576px; /* Larger custom size for extra-large screens */
+    }
+  }
+
+  /* @media (min-width: 1800px) {
+    .custom-container {
+      max-width: 1680px;
+    }
+  } */
+  
