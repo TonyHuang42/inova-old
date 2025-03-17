@@ -20,7 +20,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/logo/favicon/favicon-16X16.png') }}">
     <link rel="manifest" href="{{ asset('img/logo/favicon/site.webmanifest') }}">
-    <script src="{{ asset('js/app.js') }}" defer></script>
     @stack('styles')
     <style>
         .navbar {
@@ -65,7 +64,7 @@
 
             <div class="nav-links">
                 <a href="index.php" class="first-nav underline-link">HOME</a>
-                <a href="northlight.php" class="first-nav underline-link">PHONE</a>
+                <a href="northlight" class="first-nav underline-link">PHONE</a>
                 <a href="accessories.php" class="first-nav underline-link">ACCESSORIES</a>
                 <a href="support.php" class="first-nav underline-link">SUPPORT</a>
                 <a href="about.php" class="first-nav underline-link">ABOUT</a>
@@ -89,7 +88,7 @@
                             <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="northlight.php">PHONE</a>
+                            <a class="nav-link" href="northlight">PHONE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="accessories.php">ACCESSORIES</a>

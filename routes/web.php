@@ -10,7 +10,7 @@ use App\Http\Controllers\ContactController;
 Route::get('/', function () {return view('home');});
 Route::get('/about-us', function () {return view('about');});
 Route::get('/academics', function () {return view('academics');});
-Route::get('/franchise', function () {return view('franchise');});
+Route::get('/northlight', function () {return view('northlight');});
 Route::get('/contact', function () {return view('contact');});
 Route::get('/locations', function () {return view('locations');});
 
