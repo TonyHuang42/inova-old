@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @push('styles')
+    <link rel="stylesheet" href="{{ asset( 'css/custom-container.css' ) }}">
     <style>
         #phone-nav-container {
             background-color: #232323;
@@ -37,17 +38,17 @@
 @endpush
 
 @section('content')
-    @include('inc.phone-nav')   
+    @include('inc.phone-nav')
 
     <div class="video-container">
-        <!-- <video class="video" width="100%" autoplay muted>
-                <source src="img/phone/Aurora_Magic_remix.mp4" type="video/mp4">
-        </video> -->
-        <img class="poster-image banner" src="img/phone/banner_bg.jpg" alt="Banner">
+        {{-- <!-- <video class="video" width="100%" autoplay muted>
+                <source src="{{ asset('img/phone/Aurora_Magic_remix.mp4') }}" type="video/mp4">
+        </video> --> --}}
+        <img class="poster-image banner" src="{{ asset('img/phone/banner_bg.jpg') }}" alt="Banner">
     </div>
 
     <div class="mobile-banner-container">
-        <img class="img-fluid banner" src="img/phone/banner_bg_mobile.jpg" alt="Banner">
+        <img class="img-fluid banner" src="{{ asset('img/phone/banner_bg_mobile.jpg') }}" alt="Banner">
     </div>
 
     <!-- highlights -->
@@ -61,48 +62,48 @@
         <!-- Desktop Highlights -->
         <div class="row d-none d-xl-flex">
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="display" href="northlight.php#engineering-drawing-section">
-                    <img src="img/phone/icons/icons_size.svg" alt="display" class="highlight-icon">
+                <a class="highlight-wrap" data-target="display" href="/northlight#engineering-drawing-section">
+                    <img src="{{ asset('img/phone/icons/icons_size.svg') }}" alt="display" class="highlight-icon">
                     <div class="highlight-text">5.45" LCD</div>
                     <div class="highlight-text link">480 x 960</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="camera" href="northlight.php#engineering-drawing-section">
-                    <img src="img/phone/icons/icons_camera.svg" alt="camera" class="highlight-icon">
+                <a class="highlight-wrap" data-target="camera" href="/northlight#engineering-drawing-section">
+                    <img src="{{ asset('img/phone/icons/icons_camera.svg') }}" alt="camera" class="highlight-icon">
                     <div class="highlight-text">5MP Back</div>
                     <div class="highlight-text link">2MP Front</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="chip" href="northlight.php#engineering-drawing-section">
-                    <img src="img/phone/icons/icons_memory.svg" alt="chip" class="highlight-icon">
+                <a class="highlight-wrap" data-target="chip" href="/northlight#engineering-drawing-section">
+                    <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="chip" class="highlight-icon">
                     <div class="highlight-text">Mediatek</div>
                     <div class="highlight-text link">Helio A22</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="sim-card" href="northlight.php#engineering-drawing-section">
-                    <img src="img/phone/icons/icons_dualsim.svg" alt="dual-sim" class="highlight-icon">
+                <a class="highlight-wrap" data-target="sim-card" href="/northlight#engineering-drawing-section">
+                    <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="dual-sim" class="highlight-icon">
                     <div class="highlight-text">Micro SIM</div>
                     <div class="highlight-text link">& Nano SIM</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="microSD" href="northlight.php#engineering-drawing-section">
-                    <img src="img/phone/icons/icons_sd_card.svg" alt="microSD Card" class="highlight-icon">
+                <a class="highlight-wrap" data-target="microSD" href="/northlight#engineering-drawing-section">
+                    <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="microSD Card" class="highlight-icon">
                     <div class="highlight-text">microSD</div>
                     <div class="highlight-text link">Up to 512GB</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="battery" href="northlight.php#engineering-drawing-section">
-                    <img src="img/phone/icons/icons_battery_swap.svg" alt="battery" class="highlight-icon">
+                <a class="highlight-wrap" data-target="battery" href="/northlight#engineering-drawing-section">
+                    <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="battery" class="highlight-icon">
                     <div class="highlight-text">Replaceable</div>
                     <div class="highlight-text link">Battery</div>
                 </a>
@@ -112,48 +113,48 @@
         <!-- Mobile Highlights -->
         <div class="row d-xl-none">
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="display-mobile" href="northlight.php#engineering-drawing-section-mobile">
-                    <img src="img/phone/icons/icons_size.svg" alt="display" class="highlight-icon">
+                <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
+                    <img src="{{ asset('img/phone/icons/icons_size.svg') }}" alt="display" class="highlight-icon">
                     <div class="highlight-text">5.45" LCD</div>
                     <div class="highlight-text link">480 x 960</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="camera-mobile" href="northlight.php#engineering-drawing-section-mobile">
-                    <img src="img/phone/icons/icons_camera.svg" alt="camera" class="highlight-icon">
+                <a class="highlight-wrap" data-target="camera-mobile" href="/northlight#engineering-drawing-section-mobile">
+                    <img src="{{ asset('img/phone/icons/icons_camera.svg') }}" alt="camera" class="highlight-icon">
                     <div class="highlight-text">5MP Back</div>
                     <div class="highlight-text link">2MP Front</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="chip-mobile" href="northlight.php#engineering-drawing-section-mobile">
-                    <img src="img/phone/icons/icons_memory.svg" alt="chip" class="highlight-icon">
+                <a class="highlight-wrap" data-target="chip-mobile" href="/northlight#engineering-drawing-section-mobile">
+                    <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="chip" class="highlight-icon">
                     <div class="highlight-text">Mediatek</div>
                     <div class="highlight-text link">Helio A22</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="sim-card-mobile" href="northlight.php#engineering-drawing-section-mobile">
-                    <img src="img/phone/icons/icons_dualsim.svg" alt="dual-sim" class="highlight-icon">
+                <a class="highlight-wrap" data-target="sim-card-mobile" href="/northlight#engineering-drawing-section-mobile">
+                    <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="dual-sim" class="highlight-icon">
                     <div class="highlight-text">Micro SIM</div>
                     <div class="highlight-text link">& Nano SIM</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="microSD-mobile" href="northlight.php#engineering-drawing-section-mobile">
-                    <img src="img/phone/icons/icons_sd_card.svg" alt="microSD Card" class="highlight-icon">
+                <a class="highlight-wrap" data-target="microSD-mobile" href="/northlight#engineering-drawing-section-mobile">
+                    <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="microSD Card" class="highlight-icon">
                     <div class="highlight-text">microSD</div>
                     <div class="highlight-text link">Up to 512GB</div>
                 </a>
             </div>
 
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="battery-mobile" href="northlight.php#engineering-drawing-section-mobile">
-                    <img src="img/phone/icons/icons_battery_swap.svg" alt="battery" class="highlight-icon">
+                <a class="highlight-wrap" data-target="battery-mobile" href="/northlight#engineering-drawing-section-mobile">
+                    <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="battery" class="highlight-icon">
                     <div class="highlight-text">Replaceable</div>
                     <div class="highlight-text link">Battery</div>
                 </a>
@@ -162,7 +163,7 @@
 
         <div class="row top-padding bottom-padding-sm gx-lg-5 gy-lg-0 gy-4">
             <div class="col-lg-6 d-flex align-items-center">
-                <img src="img/phone/phone_photo_1.png" alt="" class="rounded-img">
+                <img src="{{ asset('img/phone/phone_photo_1.png') }}" alt="" class="rounded-img">
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <div class="about-title pb-3">Designed to Connect, Not Compete</div>
@@ -178,7 +179,7 @@
                 <p>Because at INOVA, we don’t engineer phones. We craft tools that let you focus on what truly matters: the people on the other side of the screen.</p>
             </div>
             <div class="col-lg-6 d-flex align-items-center order-0 order-lg-1">
-                <img src="img/phone/phone_photo_2.png" alt="" class="rounded-img">
+                <img src="{{ asset('img/phone/phone_photo_2.png') }}" alt="" class="rounded-img">
             </div>
         </div>
     </div>
@@ -189,7 +190,7 @@
             <div class="heading text-white" style="padding-top: 50px;">Let's Break it Down.</div>
             <div class="features-container-desktop" id="engineering-drawing-section">
                 <div class="image-wrapper engineering-drawing-position engineering-drawing-lg">
-                    <img src="img/phone/Northlight-explosive-sketch.png" alt="engineering drawing" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/Northlight-explosive-sketch.png') }}" alt="engineering drawing" class="engineering-drawing">
                     <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                         <circle class="circle" cx="36" cy="38.2">
                             <animate attributeName="r" from="1" to="2" dur="2s" repeatCount="indefinite" />
@@ -249,7 +250,7 @@
 
                 <!-- Small Desktop Engineering Drawing -->
                 <div class="image-wrapper engineering-drawing-position engineering-drawing-md">
-                    <img src="img/phone/Northlight-explosive-sketch-mobile.png" alt="engineering drawing" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/Northlight-explosive-sketch-mobile.png') }}" alt="engineering drawing" class="engineering-drawing">
                     <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.64 100">
                         <circle class="circle" cx="14.2" cy="35.8">
                             <animate attributeName="r" from="1.1" to="2.2" dur="2s" repeatCount="indefinite" />
@@ -309,7 +310,7 @@
 
                 <!-- Case -->
                 <div class="image-wrapper content" id="case">
-                    <img src="img/phone/phone_case.png" alt="case" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/phone_case.png') }}" alt="case" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">Phone Case</div>
                         <div class="toggle-container">
@@ -334,7 +335,7 @@
 
                 <!-- Battery -->
                 <div class="image-wrapper content" id="battery">
-                    <img src="img/phone/battery.png" alt="Detachable Battery" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/battery.png') }}" alt="Detachable Battery" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">Detachable Battery</div>
                         <div class="toggle-container">
@@ -359,7 +360,7 @@
 
                 <!-- microSD Card -->
                 <div class="image-wrapper content" id="microSD">
-                    <img src="img/phone/microSD_card.png" alt="microSD Card" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/microSD_card.png') }}" alt="microSD Card" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">microSD Card</div>
                         <div class="toggle-container">
@@ -384,7 +385,7 @@
 
                 <!-- Dual SIM Card -->
                 <div class="image-wrapper content" id="sim-card">
-                    <img src="img/phone/dualSIM_card.png" alt="Dual SIM card" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/dualSIM_card.png') }}" alt="Dual SIM card" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">Dual Sim Card</div>
                         <div class="toggle-container">
@@ -409,7 +410,7 @@
 
                 <!-- Camera -->
                 <div class="image-wrapper content" id="camera">
-                    <img src="img/phone/camera.png" alt="camera" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/camera.png') }}" alt="camera" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">Camera</div>
                         <div class="toggle-container">
@@ -434,7 +435,7 @@
 
                 <!-- Chip -->
                 <div class="image-wrapper content" id="chip">
-                    <img src="img/phone/chip.png" alt="Chip" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/chip.png') }}" alt="Chip" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">Chip</div>
                         <div class="toggle-container">
@@ -459,7 +460,7 @@
 
                 <!-- 3.5mm -->
                 <div class="image-wrapper content" id="3.5mm">
-                    <img src="img/phone/headphone_jack.png" alt="3.5mm Headphone Jack" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/headphone_jack.png') }}" alt="3.5mm Headphone Jack" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">3.5mm Headphone Jack</div>
                         <div class="toggle-container">
@@ -484,7 +485,7 @@
 
                 <!-- USB-C -->
                 <div class="image-wrapper content" id="usb-c">
-                    <img src="img/phone/usb_c.png" alt="USB-C" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/usb_c.png') }}" alt="USB-C" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">USB-C</div>
                         <div class="toggle-container">
@@ -509,7 +510,7 @@
 
                 <!-- Display -->
                 <div class="image-wrapper content" id="display">
-                    <img src="img/phone/display.png" alt="display" class="engineering-drawing">
+                    <img src="{{ asset('img/phone/display.png') }}" alt="display" class="engineering-drawing">
                     <div class="text-overlay">
                         <div class="feature-title">Display</div>
                         <div class="toggle-container">
@@ -541,7 +542,7 @@
         <div class="container mobile-container-padding" id="engineering-drawing-section-mobile">
             <div class="features-container-mobile">
                 <div class="image-wrapper-mobile">
-                    <img src="img/phone/Northlight-explosive-sketch-mobile.png" alt="engineering drawing" class="engineering-drawing-mobile">
+                    <img src="{{ asset('img/phone/Northlight-explosive-sketch-mobile.png') }}" alt="engineering drawing" class="engineering-drawing-mobile">
                     <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.64 100">
                         <circle class="circle" cx="14.8" cy="34.5">
                             <animate attributeName="r" from="1.5" to="3" dur="2s" repeatCount="indefinite" />
@@ -602,7 +603,7 @@
                 <!-- Case -->
                 <div class="feature-wrapper-mobile" id="case-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/phone_case.png" alt="Case" class="feature-background-mobile">
+                    <img src="{{ asset('img/phone/phone_case.png') }}" alt="Case" class="feature-background-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">Phone Case</div>
                         <div class="toggle-container">
@@ -628,7 +629,7 @@
                 <!-- Battery -->
                 <div class="feature-wrapper-mobile" id="battery-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/battery.png" alt="Detachable Battery" class="feature-background-mobile">
+                    <img src="{{ asset('img/phone/battery.png') }}" alt="Detachable Battery" class="feature-background-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">Detachable Battery</div>
                         <div class="toggle-container">
@@ -654,7 +655,7 @@
                 <!-- microSD Card -->
                 <div class="feature-wrapper-mobile" id="microSD-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/microSD_card.png" alt="microSD Card" class="engineering-drawing-mobile">
+                    <img src="{{ asset('img/phone/microSD_card.png') }}" alt="microSD Card" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">microSD Card</div>
                         <div class="toggle-container">
@@ -680,7 +681,7 @@
                 <!-- Dual SIM Card -->
                 <div class="feature-wrapper-mobile" id="sim-card-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/dualSIM_card.png" alt="SIM card" class="engineering-drawing-mobile">
+                    <img src="{{ asset('img/phone/dualSIM_card.png') }}" alt="SIM card" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">Dual Sim Card</div>
                         <div class="toggle-container">
@@ -706,7 +707,7 @@
                 <!-- Camera -->
                 <div class="feature-wrapper-mobile" id="camera-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/camera.png" alt="Camera" class="engineering-drawing-mobile">
+                    <img src="{{ asset('img/phone/camera.png') }}" alt="Camera" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">Camera</div>
                         <div class="toggle-container">
@@ -732,7 +733,7 @@
                 <!-- Chip -->
                 <div class="feature-wrapper-mobile" id="chip-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/chip.png" alt="Chip" class="engineering-drawing-mobile">
+                    <img src="{{ asset('img/phone/chip.png') }}" alt="Chip" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">Chip</div>
                         <div class="toggle-container">
@@ -758,7 +759,7 @@
                 <!-- 3.5mm -->
                 <div class="feature-wrapper-mobile" id="3.5mm-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/headphone_jack.png" alt="3.5mm Headphone Jack" class="engineering-drawing-mobile">
+                    <img src="{{ asset('img/phone/headphone_jack.png') }}" alt="3.5mm Headphone Jack" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">3.5mm Headphone Jack</div>
                         <div class="toggle-container">
@@ -784,7 +785,7 @@
                 <!-- USB-C -->
                 <div class="feature-wrapper-mobile" id="usb-c-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/usb_c.png" alt="USB-C" class="engineering-drawing-mobile">
+                    <img src="{{ asset('img/phone/usb_c.png') }}" alt="USB-C" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">USB-C</div>
                         <div class="toggle-container">
@@ -810,7 +811,7 @@
                 <!-- Display -->
                 <div class="feature-wrapper-mobile" id="display-mobile">
                     <i class="fa-solid fa-xmark xmark"></i>
-                    <img src="img/phone/display.png" alt="display" class="engineering-drawing-mobile">
+                    <img src="{{ asset('img/phone/display.png') }}" alt="display" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
                         <div class="feature-title">Display</div>
                         <div class="toggle-container">
@@ -842,9 +843,9 @@
         <div class="row bottom-padding-sm gx-lg-5">
             <div class="col-lg-6">
                 <div class="slider">
-                    <img src="img/phone/phone_photo_3.png" alt="young users" class="rounded-img">
-                    <img src="img/phone/phone_photo_4.png" alt="business users" class="rounded-img">
-                    <img src="img/phone/phone_photo_5.png" alt="senior users" class="rounded-img">
+                    <img src="{{ asset('img/phone/phone_photo_3.png') }}" alt="young users" class="rounded-img">
+                    <img src="{{ asset('img/phone/phone_photo_4.png') }}" alt="business users" class="rounded-img">
+                    <img src="{{ asset('img/phone/phone_photo_5.png') }}" alt="senior users" class="rounded-img">
                 </div>
             </div>
             <div class="col-lg-6 mt-0 d-flex align-items-start">

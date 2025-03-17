@@ -45,7 +45,7 @@
 
     <div class="philosophy">
         <div class="container">
-            <a href="about.php#purpose" class="text-white">
+            <a href="/about#purpose" class="text-white">
                 <div class="row pb-5 text-center gx-md-5">
                     <div class="col-12 col-md-4">
                         <img src="{{ asset('img/about/icon_accessible.svg') }}" alt="accessibility" class="values-icon">
@@ -66,7 +66,7 @@
             </a>
             <div class="row bottom-padding">
                 <div class="col-12 text-center">
-                    <a class="learn-more-button" href="about.php">Learn More</a>
+                    <a class="learn-more-button" href="/about">Learn More</a>
                 </div>
             </div>
         </div>
@@ -79,43 +79,45 @@
                     <div class="title fw-bold">All in Our Products</div>
                 </div>
                 <div class="col-12 col-md-4 d-flex align-items-end justify-content-end">
-                    <a href="northlight.php" class="underline-link">Experience it now ></a>
+                    <a href="/northlight" class="underline-link">
+                        Experience it now <i class="fa-solid fa-angle-right"></i>
+                    </a>
                 </div>
             </div>
 
-            <a href="northlight.php">
+            <a href="/northlight">
                 <img src="{{ asset('img/phone/banner_bg.jpg') }}" alt="Banner" class="rounded-img">
             </a>
 
             <div class="title accessories-title-padding">Accessories</div>
 
             <div class="slider home-slider-padding">
-                <a href="accessories.php">
+                <a href="/accessories">
                     <img src="{{ asset('img/accessories/battery.jpg') }}" alt="battery" class="rounded-img">
                     <div class="card-title">Battery</div>
                 </a>
 
-                <a href="accessories.php">
+                <a href="/accessories">
                     <img src="{{ asset('img/accessories/battery_charger.jpg') }}" alt="battery_charger" class="rounded-img">
                     <div class="card-title">Battery Charger</div>
                 </a>
 
-                <a href="accessories.php">
+                <a href="/accessories">
                     <img src="{{ asset('img/accessories/phone_case.jpg') }}" alt="phone_case" class="rounded-img">
                     <div class="card-title">Phone Case</div>
                 </a>
 
-                <a href="accessories.php">
+                <a href="/accessories">
                     <img src="{{ asset('img/accessories/microSD_card.jpg') }}" alt="microSD_card" class="rounded-img">
                     <div class="card-title">microSD Card</div>
                 </a>
 
-                <a href="accessories.php">
+                <a href="/accessories">
                     <img src="{{ asset('img/accessories/power_adapter.jpg') }}" alt="power_adapter" class="rounded-img">
                     <div class="card-title">Power Adapter</div>
                 </a>
 
-                <a href="accessories.php">
+                <a href="/accessories">
                     <img src="{{ asset('img/accessories/USB-C_cable.jpg') }}" alt="usb_cable" class="rounded-img">
                     <div class="card-title">USB-C Cable</div>
                 </a>

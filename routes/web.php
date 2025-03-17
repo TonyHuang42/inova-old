@@ -8,11 +8,11 @@ use App\Http\Controllers\ContactController;
 //Route::resource('news', NewsController::class);
 
 Route::get('/', function () {return view('home');});
-Route::get('/about-us', function () {return view('about');});
-Route::get('/academics', function () {return view('academics');});
 Route::get('/northlight', function () {return view('northlight');});
-Route::get('/contact', function () {return view('contact');});
-Route::get('/locations', function () {return view('locations');});
+Route::get('/spec', function () {return view('inc.spec');});
+Route::get('/accessories', function () {return view('accessories');});
+Route::get('/support', function () {return view('support');});
+Route::get('/about-us', function () {return view('about');});
 
 Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');
 

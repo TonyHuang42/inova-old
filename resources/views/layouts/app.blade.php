@@ -31,7 +31,7 @@
             width: 100%;
         }
 
-        #scrollToTopBtn {
+        /* #scrollToTopBtn {
             position: fixed;
             bottom: 20px;
             right: 20px;
@@ -43,31 +43,31 @@
             border-radius: 5px;
             font-size: 18px;
             cursor: pointer;
-            z-index: 1000;
+            z-: 1000;
         }
 
         #scrollToTopBtn:hover {
             color: white;
             background-color: #232323;
             border: 1px solid white;
-        }
+        } */
     </style>
 </head>
 
 <body>
     <div class="container desktop-nav d-md-block d-none">
         <nav class="nav">
-            <a class="logo-container" href="index.php">
-                <img src="img/logo/inova_logo_black.svg" alt="logo" class="logo">
-                <img src="img/logo/iNova_workmark.svg" alt="logo" class="inova">
+            <a class="logo-container" href="/">
+                <img src="{{ asset('img/logo/inova_logo_black.svg') }}" alt="logo" class="logo">
+                <img src="{{ asset('img/logo/iNova_workmark.svg') }}" alt="logo" class="inova">
             </a>
 
             <div class="nav-links">
-                <a href="index.php" class="first-nav underline-link">HOME</a>
-                <a href="northlight" class="first-nav underline-link">PHONE</a>
-                <a href="accessories.php" class="first-nav underline-link">ACCESSORIES</a>
-                <a href="support.php" class="first-nav underline-link">SUPPORT</a>
-                <a href="about.php" class="first-nav underline-link">ABOUT</a>
+                <a href="/" class="first-nav underline-link">HOME</a>
+                <a href="/northlight" class="first-nav underline-link">PHONE</a>
+                <a href="/accessories" class="first-nav underline-link">ACCESSORIES</a>
+                <a href="/support" class="first-nav underline-link">SUPPORT</a>
+                <a href="/about-us" class="first-nav underline-link">ABOUT</a>
             </div>
         </nav>
     </div>
@@ -75,9 +75,9 @@
     <div class="mobile-nav d-md-none d-block">
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
-                <a class="logo-container" href="index.php">
-                    <img src="img/logo/inova_logo_black.svg" alt="logo" class="logo">
-                    <img src="img/logo/iNova_workmark.svg" alt="logo" class="inova">
+                <a class="logo-container" href="/">
+                    <img src="{{ asset('img/logo/inova_logo_black.svg') }}" alt="logo" class="logo">
+                    <img src="{{ asset('img/logo/iNova_workmark.svg') }}" alt="logo" class="inova">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -85,19 +85,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="/">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="northlight">PHONE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="accessories.php">ACCESSORIES</a>
+                            <a class="nav-link" href="/accessories">ACCESSORIES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="support.php">SUPPORT</a>
+                            <a class="nav-link" href="/support">SUPPORT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.php">ABOUT</a>
+                            <a class="nav-link" href="/about">ABOUT</a>
                         </li>
                     </ul>
                 </div>
@@ -111,23 +111,23 @@
     <div style="background-color: #232323;">
         <div class="container">
             <nav class="nav" style="height: 80px;">
-                <a class="logo-container" href="index.php">
-                    <img src="img/logo/inova_logo_silver.svg" alt="logo" class="logo">
+                <a class="logo-container" href="/">
+                    <img src="{{ asset('img/logo/inova_logo_silver.svg') }}" alt="logo" class="logo">
                 </a>
                 <div class="nav-links nav-links-white">
-                    <a href="index.php" class="first-nav underline-link">HOME</a>
-                    <a href="northlight.php" class="first-nav underline-link">PHONE</a>
-                    <!-- <a href="accessories.php" class="first-nav underline-link">ACCESSORIES</a> -->
-                    <a href="support.php" class="first-nav underline-link">SUPPORT</a>
-                    <a href="about.php" class="first-nav underline-link">ABOUT</a>
+                    <a href="/" class="first-nav underline-link">HOME</a>
+                    <a href="/northlight" class="first-nav underline-link">PHONE</a>
+                    <!-- <a href="/accessories" class="first-nav underline-link">ACCESSORIES</a> -->
+                    <a href="/support" class="first-nav underline-link">SUPPORT</a>
+                    <a href="/about" class="first-nav underline-link">ABOUT</a>
                 </div>
             </nav>
             <div class="horizontal-line"></div>
             <div class="copyright">
                 <p class="m-0">Copyright © <strong>INOVA DIGITAL SOLUTIONS INC.</strong> All Rights Reserved</p>
                 <div class="terms">
-                    <a href="terms.php">Terms of Use</a>
-                    <a href="privacy.php">Privacy Policy</a>
+                    <a href="/terms">Terms of Use</a>
+                    <a href="/privacy">Privacy Policy</a>
                 </div>
             </div>
         </div>
