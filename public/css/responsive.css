@@ -1,0 +1,159 @@
+/* xxl */
+@media only screen and (max-width: 1399px) {
+
+}
+
+/* xl */
+@media only screen and (max-width: 1199px) {
+    .welcome-text {
+        width: 400px;
+    }
+
+    .experience-franchise-img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+/* lg */
+@media only screen and (max-width: 991px) {
+    .row {
+        --bs-gutter-y: 1.5rem;
+    }
+
+    .section-padding {
+        padding: 100px 0;
+    }
+    
+    .section-padding-sm {
+        padding: 50px 0;
+    }
+
+    .top-padding {
+        padding-top: 100px;
+    }
+    
+    .bottom-padding {
+        padding-bottom: 100px;
+    }
+    
+    .bottom-padding-sm {
+        padding-bottom: 50px;
+    }
+
+    .welcome-text {
+        width: auto;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    .experience-franchise-bg .row::after {
+        display: none;
+    }
+
+    .experience-franchise-img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .find-a-center {
+        margin: 8px 0;
+    }
+
+    .scroll-move-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pt-lg-40 {
+        padding-top: 0;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .home-banner {
+        height: 400px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+}
+
+/* md */
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .section-padding-sm {
+        padding: 25px 0;
+    }
+    
+    .top-padding {
+        padding-top: 50px;
+    }
+    
+    .bottom-padding {
+        padding-bottom: 50px;
+    }
+    
+    .bottom-padding-sm {
+        padding-bottom: 25px;
+    }
+
+    .experience-franchise-container {
+        height: calc(100% - 50px);
+    }
+
+    .custom-bottom-padding {
+        padding-bottom: 150px;
+    }
+
+    .experience-franchise-container {
+        top: -100px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    /* .home-banner {
+        height: 350px;
+    }
+
+    .banner {
+        height: 250px;
+    } */
+}
+
+/* sm */
+@media only screen and (max-width: 575px) {
+    .logo {
+        height: 50px;
+    }
+
+    .custom-bottom-padding {
+        padding-bottom: 200px;
+    }
+
+    .experience-franchise-container {
+        top: -100px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .text-nowrap-sm {
+        text-wrap: nowrap;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .gy-md-0{
+        --bs-gutter-y: 0;
+    }
+}
