@@ -45,7 +45,7 @@
 
     <div class="philosophy">
         <div class="container">
-            <a href="/about#purpose" class="text-white">
+            <a href="/about-us#purpose" class="text-white">
                 <div class="row pb-5 text-center gx-md-5">
                     <div class="col-12 col-md-4">
                         <img src="{{ asset('img/about/icon_accessible.svg') }}" alt="accessibility" class="values-icon">
@@ -66,7 +66,7 @@
             </a>
             <div class="row bottom-padding">
                 <div class="col-12 text-center">
-                    <a class="learn-more-button" href="/about">Learn More</a>
+                    <a class="learn-more-button" href="/about-us">Learn More</a>
                 </div>
             </div>
         </div>

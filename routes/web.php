@@ -13,6 +13,9 @@ Route::get('/spec', function () {return view('inc.spec');});
 Route::get('/accessories', function () {return view('accessories');});
 Route::get('/support', function () {return view('support');});
 Route::get('/about-us', function () {return view('about');});
+Route::get('/terms-of-use', function () {return view('terms');});
+Route::get('/privacy-policy', function () {return view('privacy');});
+
 
 Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');
 

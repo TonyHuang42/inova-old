@@ -97,7 +97,7 @@
                             <a class="nav-link" href="/support">SUPPORT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">ABOUT</a>
+                            <a class="nav-link" href="/about-us">ABOUT</a>
                         </li>
                     </ul>
                 </div>
@@ -119,15 +119,15 @@
                     <a href="/northlight" class="first-nav underline-link">PHONE</a>
                     <!-- <a href="/accessories" class="first-nav underline-link">ACCESSORIES</a> -->
                     <a href="/support" class="first-nav underline-link">SUPPORT</a>
-                    <a href="/about" class="first-nav underline-link">ABOUT</a>
+                    <a href="/about-us" class="first-nav underline-link">ABOUT</a>
                 </div>
             </nav>
             <div class="horizontal-line"></div>
             <div class="copyright">
                 <p class="m-0">Copyright © <strong>INOVA DIGITAL SOLUTIONS INC.</strong> All Rights Reserved</p>
                 <div class="terms">
-                    <a href="/terms">Terms of Use</a>
-                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms-of-use">Terms of Use</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
                 </div>
             </div>
         </div>
