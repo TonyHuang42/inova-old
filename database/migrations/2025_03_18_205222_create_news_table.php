@@ -4,20 +4,28 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateNewsTable extends Migration
 {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
+        // News Table
         Schema::create('news', function (Blueprint $table) {
             $table->id();
+
+            // Foreign keys for categories and devices
+            $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
+            $table->foreignId('device_id')->nullable()->constrained('devices')->onDelete('cascade');
+
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('content');
-            $table->string('image')->nullable(); // Image is optional
-            $table->timestamps();
+            $table->string('images')->nullable();
+            $table->string('videos')->nullable();
+            $table->timestamp('published_at')->useCurrent();
+            $table->boolean('is_visible')->default(true);
         });
     }
 
@@ -28,4 +36,4 @@ return new class extends Migration
     {
         Schema::dropIfExists('news');
     }
-};
+}

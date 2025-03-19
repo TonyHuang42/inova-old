@@ -15,9 +15,8 @@ Route::get('/support', function () {return view('support');});
 Route::get('/about-us', function () {return view('about');});
 Route::get('/terms-of-use', function () {return view('terms');});
 Route::get('/privacy-policy', function () {return view('privacy');});
+Route::get('/admin/create', function () {return view('admin.create');});
 
-
-Route::post('/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');
 
 // Admin Authentication Routes
 Route::get('admin', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
