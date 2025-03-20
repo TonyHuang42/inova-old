@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container section-padding-sm">
         <h1>Admin News Management</h1>
         <button><a href="{{ route('news.create') }}">Create News</a></button>
         <!-- News Table -->
@@ -18,7 +18,7 @@
             <tbody>
                 @foreach ($news as $article)
                     <tr>
-                        <td><a href="{{ route('news.show', $article->slug) }}">{{ $article->title }}</a></td>
+                        <td><a href="{{ route('news.adminShow', $article->slug) }}">{{ $article->title }}</a></td>
                         <td>{{ ucfirst($article->category) }}</td>
                         <td>{{ $article->created_at->format('F j, Y') }}</td>
                         <td>
@@ -30,10 +30,10 @@
                         </td>
                         <td>
                             <a href="{{ route('news.edit', $article->id) }}">Edit</a> |
-                            <form action="{{ route('news.destroy', $article->id) }}" method="POST" style="display:inline;">
+                            <form action="{{ route('news.destroy', $article->id) }}" method="POST" style="display:inline;" onsubmit="return confirmDeletion('{{ $article->title }}')">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" onclick="return confirm('Are you sure you want to delete this news?');">
+                                <button type="submit">
                                     Delete
                                 </button>
                             </form>
@@ -51,3 +51,11 @@
         </form>
     </div>
 @endsection
+
+@push('scripts')
+    <script>
+        function confirmDeletion(articleTitle) {
+            return confirm('Are you sure you want to delete the article titled "' + articleTitle + '"?');
+        }
+    </script>
+@endpush

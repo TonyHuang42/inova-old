@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container section-padding-sm">
         <h1>Create News</h1>
         <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
             @if ($errors->any())
                 <div>
-                    <ul>
+                    <ul style="color: red;">
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
                         @endforeach
@@ -43,16 +43,16 @@
                 use Carbon\Carbon;
                 $currentDate = Carbon::now('America/Vancouver')->toDateString();
             @endphp
-        
+
             <div>
                 <label for="created_at">Created At</label>
                 <input type="date" name="created_at" id="created_at" value="{{ old('created_at', $currentDate) }}">
             </div>
-        
-            <div>
+
+            {{-- <div>
                 <label for="updated_at">Updated At</label>
                 <input type="date" name="updated_at" id="updated_at" value="{{ old('updated_at', $currentDate) }}">
-            </div>
+            </div> --}}
             <button type="submit">Save</button>
         </form>
     </div>

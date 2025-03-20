@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container section-padding-sm">
         <h1>Edit News</h1>
         <form action="{{ route('news.update', $news->id) }}" method="POST" enctype="multipart/form-data">
-            {{-- @if ($errors->any())
+            @if ($errors->any())
                 <div>
-                    <ul>
+                    <ul style="color: red;">
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
                         @endforeach
                     </ul>
                 </div>
-            @endif --}}
+            @endif
             @csrf
             @method('PUT')
             <div>
@@ -38,7 +38,7 @@
             </div>
             <div>
                 <label for="image">Image</label>
-                @if($news->image)
+                @if ($news->image)
                     <div>
                         <img src="{{ asset('storage/' . $news->image) }}" alt="Current Image" width="150">
                     </div>
@@ -49,11 +49,11 @@
                 <label for="created_at">Created At</label>
                 <input type="date" name="created_at" value="{{ old('created_at', $news->created_at ? $news->created_at->format('Y-m-d') : '') }}">
             </div>
-        
-            <div>
+
+            {{-- <div>
                 <label for="updated_at">Updated At</label>
                 <input type="date" name="updated_at" value="{{ old('updated_at', $news->updated_at ? $news->updated_at->format('Y-m-d') : '') }}">
-            </div>
+            </div> --}}
             <button type="submit">Update</button>
             <a href="{{ route('admin.index') }}">Cancel</a>
         </form>

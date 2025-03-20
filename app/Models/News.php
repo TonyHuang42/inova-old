@@ -10,7 +10,8 @@ class News extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'slug', 'content', 'image', 'category', 'is_published', 'created_at', 'updated_at'];
+    protected $fillable = ['title', 'slug', 'content', 'image', 'category', 'is_published', 'created_at'];
+    const UPDATED_AT = null;
 
     // Automatically generate a slug when creating a news article
     public static function boot()

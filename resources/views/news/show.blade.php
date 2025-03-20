@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
+@section('title', $news->title)
+
 @section('content')
+    @if ($news->is_published == 0)
+        <div class="alert alert-danger text-center" role="alert">
+            This news is not published yet.
+        </div>
+    @endif
+
     <section class="container">
         <div class="row section-padding">
             <div class="col-lg-8 mx-auto">
@@ -10,12 +18,12 @@
                 
                     <div class="d-flex justify-content-center">
                         @if($news->image)
-                            <img src="{{ asset('storage/' . $news->image) }}" alt="{{ $news->title }}" class="img-fluid py-5">
+                            <img src="{{ asset('storage/' . $news->image) }}" alt="{{ $news->title }}" class="img-fluid py-5" style="max-height: 500px;">
                         @endif
                     </div>
                 
                     <div class="news-content">
-                        <p>{!! nl2br(e($news->content)) !!}</p>
+                        {!! $news->content !!}
                     </div>
                 </div>
             </div>
