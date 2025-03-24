@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@push('styles')
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+    <link href="{{ asset('css/quill.css') }}" rel="stylesheet">
+@endpush
+
 @section('content')
     <div class="container section-padding-sm">
         <h1>Edit News</h1>
@@ -19,10 +24,16 @@
                 <label for="title">Title</label>
                 <input type="text" name="title" value="{{ old('title', $news->title) }}" required style="width: 100%;">
             </div>
-            <div>
+            {{-- <div>
                 <label for="content">Content</label>
                 <textarea name="content" required style="width: 100%; min-height: 20em;">{{ old('content', $news->content) }}</textarea>
+            </div> --}}
+            <div>
+                <label for="content">Content</label>
+                <div id="editor" style="min-height: 300px;">{!! old('content', $news->content) !!}</div>
+                <input type="hidden" name="content" id="content">
             </div>
+            
             <div>
                 <label for="category">Category</label>
                 <select name="category" required>
@@ -38,7 +49,7 @@
             </div>
             <div>
                 <label for="image">Image</label>
-                @if ($news->image)
+                @if($news->image)
                     <div>
                         <img src="{{ asset('storage/' . $news->image) }}" alt="Current Image" width="150">
                     </div>
@@ -49,7 +60,7 @@
                 <label for="created_at">Created At</label>
                 <input type="date" name="created_at" value="{{ old('created_at', $news->created_at ? $news->created_at->format('Y-m-d') : '') }}">
             </div>
-
+        
             {{-- <div>
                 <label for="updated_at">Updated At</label>
                 <input type="date" name="updated_at" value="{{ old('updated_at', $news->updated_at ? $news->updated_at->format('Y-m-d') : '') }}">
@@ -59,3 +70,8 @@
         </form>
     </div>
 @endsection
+
+@push('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.min.js"></script>
+    <script src="{{ asset('js/quill-editor.js') }}"></script>
+@endpush

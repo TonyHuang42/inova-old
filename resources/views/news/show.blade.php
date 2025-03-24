@@ -13,7 +13,7 @@
         <div class="row section-padding">
             <div class="col-lg-8 mx-auto">
                 <div class="news-detail">
-                    <h1 class="banner-text">{{ $news->title }}</h1>
+                    <h1 class="heading">{{ $news->title }}</h1>
                     <p><strong>Published on:</strong> {{ $news->created_at->format('F j, Y') }}</p>
                 
                     <div class="d-flex justify-content-center">

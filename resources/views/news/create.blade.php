@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
-@section('content')
+@push('styles')
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+    <link href="{{ asset('css/quill.css') }}" rel="stylesheet">
+@endpush
+
+@section('content')
     <div class="container section-padding-sm">
         <h1>Create News</h1>
         <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
@@ -25,7 +29,7 @@
             </div> --}}
             <div>
                 <label for="content">Content</label>
-                <div id="editor" style="height: 300px;">{!! old('content') !!}</div>
+                <div id="editor" style="min-height: 300px;">{!! old('content') !!}</div>
                 <input type="hidden" name="content" id="content">
             </div>
             <div>
@@ -66,12 +70,5 @@
 
 @push('scripts')
     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.min.js"></script>
-    <script>
-        const quill = new Quill('#editor', {
-            theme: 'snow'
-        });
-        document.querySelector('form').addEventListener('submit', function() {
-            document.getElementById('content').value = quill.root.innerHTML;
-        });
-    </script>
+    <script src="{{ asset('js/quill-editor.js') }}"></script>
 @endpush
