@@ -6,10 +6,11 @@ use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Validator;
 
 class NewsController extends Controller
 {
-    // Display a list of all published news articles, optionally filtered by category
+    // Display  all published news
     public function index(Request $request)
     {
         $category = $request->query('category');
@@ -34,29 +35,48 @@ class NewsController extends Controller
         return view('news.create');
     }
 
+    public function uploadImage(Request $request)
+    {
+        // Validate the uploaded file
+        $request->validate([
+            'file' => 'required|mimes:jpeg,jpg,png,gif,webp|max:5120', // Maximum file size: 5MB
+        ]);
+
+        // Store the image in the 'news/images' folder within the public disk
+        $path = $request->file('file')->store('news/images', 'public');
+
+        // Return a JSON response with the URL
+        return response()->json(['url' => Storage::url($path)]);
+    }
+
     // Store a newly created news article
     public function store(Request $request)
     {
-        $validated = $request->validate([
+        $validator = Validator::make($request->all(), [
             'title' => 'required|string|max:255|unique:news,title',
-            'content' => 'required|string',
+            'content' => [
+                'required',
+                'string',
+                function ($attribute, $value, $fail) {
+                    if (trim(strip_tags($value)) === '') {
+                        $fail('The content field cannot be empty.');
+                    }
+                },
+            ],
             'category' => 'required|in:academic,community,general',
             'is_published' => 'required|boolean',
-            'image' => 'nullable|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'created_at' => 'date',
-            // 'updated_at' => 'date',
         ]);
 
-        $validated['slug'] = Str::slug($validated['title']);
-
-        // Handle image upload if provided
-        if ($request->hasFile('image')) {
-            $validated['image'] = $request->file('image')->store('news_images', 'public');
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        //$validated['is_published'] = $validated['is_published'] ?? true;
+        $validated = $validator->validated();
+        $validated['slug'] = Str::slug($validated['title']);
 
         News::create($validated);
+
         return redirect()->route('admin.index')->with('success', 'News article created successfully.');
     }
 
@@ -94,26 +114,29 @@ class NewsController extends Controller
     // Update the specified news article
     public function update(Request $request, News $news)
     {
-        $validated = $request->validate([
+        $validator = Validator::make($request->all(), [
             'title' => 'required|string|max:255|unique:news,title,' . $news->id,
-            'content' => 'required|string',
+            'content' => [
+                'required',
+                'string',
+                function ($attribute, $value, $fail) {
+                    if (trim(strip_tags($value)) === '') {
+                        $fail('The content field cannot be empty.');
+                    }
+                },
+            ],
             'category' => 'required|in:academic,community,general',
             'is_published' => 'boolean',
             'image' => 'nullable|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'created_at' => 'date',
-            // 'updated_at' => 'date',
         ]);
 
-        $validated['slug'] = Str::slug($validated['title']);
-
-        // Handle image update
-        if ($request->hasFile('image')) {
-            // Delete old image if exists
-            if ($news->image) {
-                Storage::disk('public')->delete($news->image);
-            }
-            $validated['image'] = $request->file('image')->store('news_images', 'public');
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
         }
+
+        $validated = $validator->validated();
+        $validated['slug'] = Str::slug($validated['title']);
 
         $news->update($validated);
 

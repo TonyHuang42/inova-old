@@ -10,8 +10,8 @@
             </div>
         </div>
 
-        <div class="col-lg-8">
-            <p class="pt-lg-40">{{ Str::limit($article->content, 400) }}</p>
+        <div class="col-lg-7 offset-lg-1">
+            <p class="pt-lg-40">{!! Str::limit(strip_tags($article->content), 400) !!}</p>
             <div class="text-end">
                 <a href="{{ route('news.show', $article->slug) }}" class="link">READ MORE</a>
             </div>

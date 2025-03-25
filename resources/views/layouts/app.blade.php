@@ -108,7 +108,7 @@
     <!-- Dynamic content from the page that extends this layout -->
     @yield('content')
 
-    <div style="background-color: #232323;">
+    <div class="mt-auto" style="background-color: #232323;">
         <div class="container">
             <nav class="nav" style="height: 80px;">
                 <a class="logo-container" href="/">

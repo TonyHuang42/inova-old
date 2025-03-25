@@ -3,9 +3,9 @@
 @section('content')
     <section class="banner news-banner">
         <div class="container position-relative h-100">
-            <div class="about-banner-text">
+            <div class="home-banner-text">
                 <h1 class="banner-text-sm">LATEST NEWS</h1>
-                <div class="banner-text">Stay informed about the<br> latest news at Kingsman</div>
+                <div class="banner-text">Stay informed about the<br> latest news at INOVA</div>
             </div>
         </div>
     </section>
@@ -27,26 +27,26 @@
             @include('news.partials.news-list', ['news' => $news])
         </div>
     </section>
+@endsection
 
-    @push('scripts')
-        <script>
-            $(document).ready(function() {
-                $('.news-categories').click(function() {
-                    var $this = $(this);
-                    var category = $this.data('category');
-                    var url = category ? "{{ route('news.index') }}?category=" + category : "{{ route('news.index') }}";
+@push('scripts')
+    <script>
+        $(document).ready(function() {
+            $('.news-categories').click(function() {
+                var $this = $(this);
+                var category = $this.data('category');
+                var url = category ? "{{ route('news.index') }}?category=" + category : "{{ route('news.index') }}";
 
-                    $.ajax({
-                        url: url,
-                        type: 'GET',
-                        success: function(response) {
-                            $('#news-list').html(response);
-                            $('.news-categories').removeClass('active-category');
-                            $this.addClass('active-category');
-                        }
-                    });
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    success: function(response) {
+                        $('#news-list').html(response);
+                        $('.news-categories').removeClass('active-category');
+                        $this.addClass('active-category');
+                    }
                 });
             });
-        </script>
-    @endpush
-@endsection
+        });
+    </script>
+@endpush
