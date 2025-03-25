@@ -127,7 +127,6 @@ class NewsController extends Controller
             ],
             'category' => 'required|in:academic,community,general',
             'is_published' => 'boolean',
-            'image' => 'nullable|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'created_at' => 'date',
         ]);
 

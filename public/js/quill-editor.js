@@ -20,10 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         fileInput.click();
 
                         fileInput.onchange = () => {
-                            if (
-                                fileInput.files != null &&
-                                fileInput.files[0] != null
-                            ) {
+                            if (fileInput.files != null && fileInput.files[0] != null) {
                                 const file = fileInput.files[0];
                                 uploadImage(file);
                             }

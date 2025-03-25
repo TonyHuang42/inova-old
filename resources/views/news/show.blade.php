@@ -29,6 +29,14 @@
             font-size: 1rem;
             line-height: 1;
         }
+
+        img {
+            max-width: 100%;
+            max-height: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 @endpush
 

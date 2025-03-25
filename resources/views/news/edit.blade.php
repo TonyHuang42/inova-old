@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @push('styles')
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
     <link href="{{ asset('css/quill.css') }}" rel="stylesheet">
 @endpush

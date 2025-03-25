@@ -57,7 +57,7 @@
 <body>
     <div class="container desktop-nav d-md-block d-none">
         <nav class="nav">
-            <a class="logo-container" href="/">
+            <a class="logo-container d-flex align-items-center" href="/">
                 <img src="{{ asset('img/logo/inova_logo_black.svg') }}" alt="logo" class="logo">
                 <img src="{{ asset('img/logo/iNova_workmark.svg') }}" alt="logo" class="inova">
             </a>
