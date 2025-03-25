@@ -39,7 +39,7 @@ class NewsController extends Controller
     {
         // Validate the uploaded file
         $request->validate([
-            'file' => 'required|mimes:jpeg,jpg,png,gif,webp|max:5120', // Maximum file size: 5MB
+            'file' => 'required|mimes:jpeg,jpg,png,gif,webp,svg|max:5120', // Maximum file size: 5MB
         ]);
 
         // Store the image in the 'news/images' folder within the public disk
@@ -117,8 +117,18 @@ class NewsController extends Controller
     // Delete a news article
     public function destroy(News $news)
     {
-        if ($news->image) {
-            Storage::disk('public')->delete($news->image);
+        // Extract image URLs from content
+        $imageUrls = [];
+        preg_match_all('/<img[^>]+src="([^">]+)"/i', $news->content, $matches);
+        $imageUrls = $matches[1] ?? [];
+
+        // Convert URLs back to relative paths and delete them
+        foreach ($imageUrls as $url) {
+            // Convert from URL to storage path
+            $path = str_replace('/storage/', '', parse_url($url, PHP_URL_PATH));
+            if (Storage::disk('public')->exists($path)) {
+                Storage::disk('public')->delete($path);
+            }
         }
 
         $news->delete();

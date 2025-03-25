@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
 
-    // Set editor content to hidden input before form submit
+    // Hide empty input
     const form = document.querySelector("form");
     form.onsubmit = function () {
         if (quill.root.innerHTML == "<p><br></p>") {
