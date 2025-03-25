@@ -3,41 +3,7 @@
 @section('title', $news->title)
 
 @push('styles')
-    <style>
-        p {
-            margin-bottom: 0;
-        }
-
-        ol li[data-list="ordered"] {
-            list-style-type: decimal;
-            list-style-position: inside;
-        }
-
-        ol li[data-list="bullet"] {
-            list-style: none;
-            position: relative;
-            padding-left: 1rem;
-        }
-
-        ol li[data-list="bullet"]::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #000;
-            font-size: 1rem;
-            line-height: 1;
-        }
-
-        img {
-            max-width: 100%;
-            max-height: 500px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
+    <link href="{{ asset('css/news.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')

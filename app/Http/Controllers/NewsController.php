@@ -52,31 +52,17 @@ class NewsController extends Controller
     // Store a newly created news article
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $validated = $request->validate([
             'title' => 'required|string|max:255|unique:news,title',
-            'content' => [
-                'required',
-                'string',
-                function ($attribute, $value, $fail) {
-                    if (trim(strip_tags($value)) === '') {
-                        $fail('The content field cannot be empty.');
-                    }
-                },
-            ],
+            'content' => 'required|string',
             'category' => 'required|in:academic,community,general',
             'is_published' => 'required|boolean',
             'created_at' => 'date',
         ]);
 
-        if ($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
-        }
-
-        $validated = $validator->validated();
         $validated['slug'] = Str::slug($validated['title']);
 
         News::create($validated);
-
         return redirect()->route('admin.index')->with('success', 'News article created successfully.');
     }
 
@@ -114,31 +100,17 @@ class NewsController extends Controller
     // Update the specified news article
     public function update(Request $request, News $news)
     {
-        $validator = Validator::make($request->all(), [
+        $validated = $request->validate([
             'title' => 'required|string|max:255|unique:news,title,' . $news->id,
-            'content' => [
-                'required',
-                'string',
-                function ($attribute, $value, $fail) {
-                    if (trim(strip_tags($value)) === '') {
-                        $fail('The content field cannot be empty.');
-                    }
-                },
-            ],
+            'content' => 'required|string',
             'category' => 'required|in:academic,community,general',
             'is_published' => 'boolean',
             'created_at' => 'date',
         ]);
 
-        if ($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
-        }
-
-        $validated = $validator->validated();
         $validated['slug'] = Str::slug($validated['title']);
 
         $news->update($validated);
-
         return redirect()->route('admin.index')->with('success', 'News article updated successfully.');
     }
 

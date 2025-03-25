@@ -31,5 +31,18 @@
     top: 0;
     z-index: 10;
     background: white;
-  }
-  
+}
+
+.ql-editor img {
+    max-width: 100%;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ql-editor iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}

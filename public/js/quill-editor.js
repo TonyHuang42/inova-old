@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 container: [
                     [{ header: [2, 3, 4, 5, 6, false] }],
                     ["bold", "italic"],
+                    [{ 'align': [] }],
                     [{ list: "ordered" }, { list: "bullet" }],
                     ["image", "video"],
                 ],
@@ -64,6 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set editor content to hidden input before form submit
     const form = document.querySelector("form");
     form.onsubmit = function () {
-        document.getElementById("content").value = quill.root.innerHTML;
+        if (quill.root.innerHTML == "<p><br></p>") {
+            document.getElementById("content").value = "";
+        } else {
+            document.getElementById("content").value = quill.root.innerHTML;
+        }
     };
 });
