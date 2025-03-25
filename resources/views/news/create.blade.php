@@ -19,7 +19,7 @@
 
             <div>
                 <label for="created_at">Created At</label>
-                <input type="date" name="created_at" id="created_at" value="{{ old('created_at', $currentDate) }}">
+                <input type="date" name="created_at" id="created_at" value="{{ $currentDate }}">
             </div>
 
             <button type="submit">Save</button>
