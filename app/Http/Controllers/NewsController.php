@@ -6,7 +6,7 @@ use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Validator;
+use Carbon\Carbon;
 
 class NewsController extends Controller
 {
@@ -37,16 +37,19 @@ class NewsController extends Controller
 
     public function uploadImage(Request $request)
     {
-        // Validate the uploaded file
         $request->validate([
-            'file' => 'required|mimes:jpeg,jpg,png,gif,webp,svg|max:5120', // Maximum file size: 5MB
+            'file' => 'required|mimes:jpeg,jpg,png,gif,webp,svg|max:5120',
         ]);
 
-        // Store the image in the 'news/images' folder within the public disk
-        $path = $request->file('file')->store('news/images', 'public');
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $filename = uniqid() . '.' . $file->getClientOriginalExtension();
+            $path = $file->storeAs('news/temp', $filename, 'public');
 
-        // Return a JSON response with the URL
-        return response()->json(['url' => Storage::url($path)]);
+            return response()->json(['url' => asset('storage/' . $path)]);
+        }
+
+        return response()->json(['error' => 'No file found'], 400);
     }
 
     // Store a newly created news article
@@ -60,6 +63,8 @@ class NewsController extends Controller
             'created_at' => 'date',
         ]);
 
+        $content = $this->moveTempImages($request->input('content'));
+        $validated['content'] = $content;
         $validated['slug'] = Str::slug($validated['title']);
 
         News::create($validated);
@@ -91,6 +96,39 @@ class NewsController extends Controller
         return view('news.show', compact('news'));
     }
 
+    function moveTempImages($content)
+    {
+        $updatedContent = $content;
+
+        preg_match_all('/<img[^>]+src="([^">]+)"/i', $content, $imageMatches);
+        $usedTempImages = $imageMatches[1] ?? [];
+
+        $usedFilenames = [];
+        foreach ($usedTempImages as $url) {
+            if (str_contains($url, '/storage/news/temp/')) {
+                $fileName = basename($url);
+                $tempPath = 'news/temp/' . $fileName;
+                $permanentPath = 'news/images/' . $fileName;
+
+                if (Storage::disk('public')->exists($tempPath)) {
+                    Storage::disk('public')->move($tempPath, $permanentPath);
+                    $newUrl = asset('storage/news/images/' . $fileName);
+                    $updatedContent = str_replace($url, $newUrl, $updatedContent);
+                    $usedFilenames[] = $fileName;
+                }
+            }
+        }
+
+        $tempFiles = Storage::disk('public')->files('news/temp');
+        foreach ($tempFiles as $file) {
+            $fileName = basename($file);
+            if (!in_array($fileName, $usedFilenames)) {
+                Storage::disk('public')->delete($file);
+            }
+        }
+        return $updatedContent;
+    }
+
     // Show the form for editing a news article
     public function edit(News $news)
     {
@@ -108,6 +146,8 @@ class NewsController extends Controller
             'created_at' => 'date',
         ]);
 
+        $content = $this->moveTempImages($request->input('content'));
+        $validated['content'] = $content;
         $validated['slug'] = Str::slug($validated['title']);
 
         $news->update($validated);
@@ -117,14 +157,11 @@ class NewsController extends Controller
     // Delete a news article
     public function destroy(News $news)
     {
-        // Extract image URLs from content
         $imageUrls = [];
         preg_match_all('/<img[^>]+src="([^">]+)"/i', $news->content, $matches);
         $imageUrls = $matches[1] ?? [];
 
-        // Convert URLs back to relative paths and delete them
         foreach ($imageUrls as $url) {
-            // Convert from URL to storage path
             $path = str_replace('/storage/', '', parse_url($url, PHP_URL_PATH));
             if (Storage::disk('public')->exists($path)) {
                 Storage::disk('public')->delete($path);
@@ -141,5 +178,22 @@ class NewsController extends Controller
     {
         $latestNews = News::where('is_published', true)->latest()->take(2)->get();
         return view('partials.latest-news', compact('latestNews'));
+    }
+
+    public function deleteEditorImages(Request $request)
+    {
+        $images = $request->input('images', []);
+        $failed = [];
+
+        foreach ($images as $url) {
+            $path = str_replace('/storage/', '', parse_url($url, PHP_URL_PATH));
+            if (Storage::disk('public')->exists($path)) {
+                Storage::disk('public')->delete($path);
+            } else {
+                $failed[] = $url;
+            }
+        }
+
+        return response()->json(['success' => count($failed) === 0, 'failed' => $failed]);
     }
 }

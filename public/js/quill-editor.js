@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const oldImagesElement = document.getElementById("oldImages");
+    const oldImages = oldImagesElement
+        ? JSON.parse(oldImagesElement.value || "[]")
+        : [];
     // Initialize Quill editor
     const quill = new Quill("#editor", {
         theme: "snow",
@@ -7,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 container: [
                     [{ header: [2, 3, 4, 5, 6, false] }],
                     ["bold", "italic"],
-                    [{ 'align': [] }],
+                    [{ align: [] }],
                     [{ list: "ordered" }, { list: "bullet" }],
                     ["image", "video"],
                 ],
@@ -21,7 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         fileInput.click();
 
                         fileInput.onchange = () => {
-                            if (fileInput.files != null && fileInput.files[0] != null) {
+                            if (
+                                fileInput.files != null &&
+                                fileInput.files[0] != null
+                            ) {
                                 const file = fileInput.files[0];
                                 uploadImage(file);
                             }
@@ -64,11 +71,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Hide empty input
     const form = document.querySelector("form");
-    form.onsubmit = function () {
-        if (quill.root.innerHTML == "<p><br></p>") {
-            document.getElementById("content").value = "";
-        } else {
-            document.getElementById("content").value = quill.root.innerHTML;
+    form.addEventListener("submit", function (e) {
+        const contentHtml = quill.root.innerHTML;
+        document.getElementById("content").value = contentHtml;
+
+        // Extract new image URLs from the updated content
+        const newImages = [];
+        const imgRegex = /<img[^>]+src="([^">]+)"/g;
+        let match;
+        while ((match = imgRegex.exec(contentHtml)) !== null) {
+            newImages.push(match[1]);
         }
-    };
+
+        // Compare old and new image arrays
+        const deletedImages = oldImages.filter(
+            (img) => !newImages.includes(img)
+        );
+
+        // Send deleted images to server
+        if (deletedImages.length > 0) {
+            fetch("/delete-editor-images", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRF-TOKEN": document
+                        .querySelector('meta[name="csrf-token"]')
+                        .getAttribute("content"),
+                },
+                body: JSON.stringify({ images: deletedImages }),
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    if (!data.success) {
+                        console.warn(
+                            "Some images failed to delete:",
+                            data.failed || []
+                        );
+                    }
+                })
+                .catch((err) => console.error("Error deleting images:", err));
+        }
+    });
 });

@@ -33,6 +33,7 @@ Route::middleware('admin')->group(function () {
     Route::put('news/{news}', [NewsController::class, 'update'])->name('news.update');
     Route::delete('news/{news}', [NewsController::class, 'destroy'])->name('news.destroy');
     Route::post('/upload-image', [NewsController::class, 'uploadImage'])->name('upload-image');
+    Route::post('/delete-editor-images', [NewsController::class, 'deleteEditorImages']);
 });
 
 // Public (Visitors can read news)

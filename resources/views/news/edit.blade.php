@@ -10,6 +10,13 @@
     <div class="container section-padding-sm">
         <h1>Edit News</h1>
         <form action="{{ route('news.update', $news->id) }}" method="POST" enctype="multipart/form-data">
+            @php
+                preg_match_all('/<img[^>]+src="([^">]+)"/i', old('content', $news->content ?? ''), $matches);
+                $oldImages = $matches[1] ?? [];
+            @endphp
+
+            <input type="hidden" id="oldImages" value='@json($oldImages)'>
+
             @method('PUT')
             @include('news.partials.form', ['news' => $news])
             <div>
