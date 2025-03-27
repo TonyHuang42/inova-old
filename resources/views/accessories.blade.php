@@ -4,6 +4,10 @@
 @section('meta_description', 'INOVA')
 @push('styles')
     <style>
+        :root {
+            --bs-border-width: 0;
+        }
+
         .card {
             margin-bottom: 20px;
         }

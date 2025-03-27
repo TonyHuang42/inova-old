@@ -4,6 +4,10 @@
 @section('meta_description', 'Need help? INOVA Support offers FAQs, warranty info, shipping details, and quick contact options. Reliable assistance for your Northlight device.')
 @push('styles')
     <style>
+        :root {
+            --bs-border-width: 0;
+        }
+
         .card {
             background-color: #f7f7f7;
         }
