@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use App\Models\Category;
+use App\Models\Device;
 
 class NewsController extends Controller
 {
@@ -33,7 +34,8 @@ class NewsController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('news.create', compact('categories'));
+        $devices = Device::all();
+        return view('news.create', compact('categories', 'devices'));
     }
 
     public function uploadImage(Request $request)
@@ -60,6 +62,7 @@ class NewsController extends Controller
             'title' => 'required|string|max:255|unique:news,title',
             'content' => 'required|string',
             'category_id' => 'required|exists:categories,id',
+            'device_id' => 'nullable|exists:devices,id',
             'is_published' => 'required|boolean',
             'created_at' => 'date',
         ]);
@@ -134,7 +137,8 @@ class NewsController extends Controller
     public function edit(News $news)
     {
         $categories = Category::all();
-        return view('news.edit', compact('news', 'categories'));
+        $devices = Device::all();
+        return view('news.edit', compact('news', 'categories', 'devices'));
     }
 
     // Update the specified news article
@@ -144,6 +148,7 @@ class NewsController extends Controller
             'title' => 'required|string|max:255|unique:news,title,' . $news->id,
             'content' => 'required|string',
             'category_id' => 'required|exists:categories,id',
+            'device_id' => 'nullable|exists:devices,id',
             'is_published' => 'boolean',
             'created_at' => 'date',
         ]);

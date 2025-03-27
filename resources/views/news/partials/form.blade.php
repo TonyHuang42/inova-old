@@ -40,6 +40,18 @@
 </div>
 
 <div>
+    <label for="device_id">Device (Optional)</label>
+    <select name="device_id" id="device_id">
+        <option value="">None</option>
+        @foreach ($devices as $device)
+            <option value="{{ $device->id }}" {{ old('device_id', $news->device_id ?? '') == $device->id ? 'selected' : '' }}>
+                {{ $device->name }}
+            </option>
+        @endforeach
+    </select>
+</div>
+
+<div>
     <label for="is_published">Publish?</label>
     <input type="hidden" name="is_published" value="0">
     <input type="checkbox" name="is_published" id="is_published" value="1" {{ old('is_published', $news->is_published ?? true) ? 'checked' : '' }}>

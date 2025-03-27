@@ -14,6 +14,7 @@
                     <tr>
                         <th>Title</th>
                         <th>Category</th>
+                        <th>Device</th>
                         <th>Created At</th>
                         <th>Published</th>
                         <th>Actions</th>
@@ -28,6 +29,7 @@
                                 </a>
                             </td>
                             <td>{{ ucfirst($article->category->name) }}</td>
+                            <td>{{ ucfirst($article->device->name ?? '') }}</td>
                             <td>{{ $article->created_at->format('Y-m-d') }}</td>
                             <td>
                                 <span class="badge {{ $article->is_published ? 'bg-success' : 'bg-danger' }}">
