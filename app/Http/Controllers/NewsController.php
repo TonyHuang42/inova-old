@@ -6,6 +6,7 @@ use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use App\Models\Category;
 
 class NewsController extends Controller
 {
@@ -31,7 +32,8 @@ class NewsController extends Controller
     // Show the form for creating a new news article
     public function create()
     {
-        return view('news.create');
+        $categories = Category::all();
+        return view('news.create', compact('categories'));
     }
 
     public function uploadImage(Request $request)
@@ -57,7 +59,7 @@ class NewsController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255|unique:news,title',
             'content' => 'required|string',
-            'category' => 'required|in:academic,community,general',
+            'category_id' => 'required|exists:categories,id',
             'is_published' => 'required|boolean',
             'created_at' => 'date',
         ]);
@@ -131,7 +133,8 @@ class NewsController extends Controller
     // Show the form for editing a news article
     public function edit(News $news)
     {
-        return view('news.edit', compact('news'));
+        $categories = Category::all();
+        return view('news.edit', compact('news', 'categories'));
     }
 
     // Update the specified news article
@@ -140,7 +143,7 @@ class NewsController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255|unique:news,title,' . $news->id,
             'content' => 'required|string',
-            'category' => 'required|in:academic,community,general',
+            'category_id' => 'required|exists:categories,id',
             'is_published' => 'boolean',
             'created_at' => 'date',
         ]);
@@ -173,11 +176,11 @@ class NewsController extends Controller
     }
 
     // Fetch latest 2 published news articles
-    public function latestNews()
-    {
-        $latestNews = News::where('is_published', true)->latest()->take(2)->get();
-        return view('partials.latest-news', compact('latestNews'));
-    }
+    // public function latestNews()
+    // {
+    //     $latestNews = News::where('is_published', true)->latest()->take(2)->get();
+    //     return view('partials.latest-news', compact('latestNews'));
+    // }
 
     public function deleteEditorImages(Request $request)
     {

@@ -27,8 +27,8 @@
                                     {{ $article->title }}
                                 </a>
                             </td>
-                            <td>{{ ucfirst($article->category) }}</td>
-                            <td>{{ $article->created_at->format('F j, Y') }}</td>
+                            <td>{{ ucfirst($article->category->name) }}</td>
+                            <td>{{ $article->created_at->format('Y-m-d') }}</td>
                             <td>
                                 <span class="badge {{ $article->is_published ? 'bg-success' : 'bg-danger' }}">
                                     {{ $article->is_published ? 'Yes' : 'No' }}
