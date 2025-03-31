@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //show navbar on scroll
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById("phone-nav-container");
-    const posterImages = Array.from(document.getElementsByClassName('banner'));
+    const posterImages = Array.from(document.getElementsByClassName('phone-banner'));
     let imageHeights = [];
 
     // Function to update image heights

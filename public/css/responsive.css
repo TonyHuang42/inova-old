@@ -97,10 +97,10 @@
         padding-bottom: 0;
     }
 
-    .img-1 {
+    /* .img-1 {
         top: -150px;
         right: -280px;
-    }
+    } */
 
     .title {
         font-size: 45px;
@@ -170,7 +170,7 @@
         gap: 30px;
     }
 
-    .img-1-container {
+    /* .img-1-container {
         display: flex;
         justify-content: center;
     }
@@ -178,7 +178,7 @@
     .img-1 {
         position: static;
         width: 550px;
-    }
+    } */
 
     .spec {
         background-size: 40%;

@@ -39,16 +39,12 @@
 
 @section('content')
     @include('inc.phone-nav')
-
-    <div class="video-container">
-        {{-- <!-- <video class="video" width="100%" autoplay muted>
-                <source src="{{ asset('img/phone/Aurora_Magic_remix.mp4') }}" type="video/mp4">
-        </video> --> --}}
-        <img class="poster-image banner" src="{{ asset('img/phone/banner_bg.jpg') }}" alt="Banner">
-    </div>
-
-    <div class="mobile-banner-container">
-        <img class="img-fluid banner" src="{{ asset('img/phone/banner_bg_mobile.jpg') }}" alt="Banner">
+    <div class="northlight-banner-container">
+        <img src="{{ asset('img/phone/banner/BG.jpg') }}" alt="banner" class="phone-banner">
+        <img src="{{ asset('img/phone/banner/phone.png') }}" alt="phone" class="phone-banner-phone">
+        <img src="{{ asset('img/phone/banner/features.png') }}" alt="features" class="phone-banner-features">
+        <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-northlight">
+        <div class="phone-banner-text about-title">Affordable, Reliable, Simplicity at its Finest</div>
     </div>
 
     <!-- highlights -->
