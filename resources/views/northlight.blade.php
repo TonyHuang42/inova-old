@@ -44,7 +44,7 @@
         <img src="{{ asset('img/phone/banner/phone.png') }}" alt="phone" class="phone-banner-phone">
         <img src="{{ asset('img/phone/banner/features.png') }}" alt="features" class="phone-banner-features">
         <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-northlight">
-        <div class="phone-banner-text about-title">Affordable, Reliable, Simplicity at its Finest</div>
+        <img src="{{ asset('img/phone/banner/slogan.png') }}" alt="slogan" class="phone-banner-slogan">
     </div>
 
     <!-- highlights -->

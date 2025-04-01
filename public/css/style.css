@@ -264,7 +264,7 @@ a {
 
 .phone-banner {
     max-width: 100%;
-    min-height: 700px;
+    min-height: 600px;
     object-fit: cover;
 }
 
@@ -273,37 +273,39 @@ a {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 80%;
-    height: auto;
+    max-width: 100%;
+    min-height: 600px;
+    object-fit: cover;
 }
 
 .phone-banner-features {
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     max-width: 100%;
-    height: auto;
+    min-height: 600px;
+    object-fit: cover;
 }
 
 .phone-banner-northlight {
     position: absolute;
-    top: 10%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 90%;
-    height: auto;
+    max-width: 100%;
+    min-height: 450px;
+    object-fit: cover;
 }
 
-.phone-banner-text {
-    color: white;
-    text-align: center;
+.phone-banner-slogan {
     position: absolute;
-    top: 20%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: auto;
+    min-height: 450px;
+    object-fit: cover;
 }
 
 .heading {
