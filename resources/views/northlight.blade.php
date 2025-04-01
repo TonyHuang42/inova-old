@@ -42,9 +42,38 @@
     <div class="northlight-banner-container">
         <img src="{{ asset('img/phone/banner/BG.jpg') }}" alt="banner" class="phone-banner">
         <img src="{{ asset('img/phone/banner/phone.png') }}" alt="phone" class="phone-banner-phone">
-        <img src="{{ asset('img/phone/banner/features.png') }}" alt="features" class="phone-banner-features">
-        <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-northlight">
+        <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-slogan">
         <img src="{{ asset('img/phone/banner/slogan.png') }}" alt="slogan" class="phone-banner-slogan">
+
+        <a class="highlight-wrap" data-target="camera" href="/northlight#engineering-drawing-section">
+            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" 
+            alt="features" class="phone-banner-features" style="top: 45%; left: 25%;">
+        </a>
+
+        <a class="highlight-wrap" data-target="display" href="/northlight#engineering-drawing-section">
+            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" 
+            alt="features" class="phone-banner-features" style="top: 45%; left: 70%;">
+        </a>
+
+        <a class="highlight-wrap" data-target="battery" href="/northlight#engineering-drawing-section">
+            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" 
+            alt="features" class="phone-banner-features" style="top: 65%; left: 20%;">
+        </a>
+
+        <a class="highlight-wrap" data-target="sim-card" href="/northlight#engineering-drawing-section">
+            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" 
+            alt="features" class="phone-banner-features" style="top: 65%; left: 80%;">
+        </a>
+
+        <a class="highlight-wrap" data-target="chip" href="/northlight#engineering-drawing-section">
+            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" 
+            alt="features" class="phone-banner-features" style="top: 85%; left: 25%;">
+        </a>
+
+        <a class="highlight-wrap" data-target="microSD" href="/northlight#engineering-drawing-section">
+            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" 
+            alt="features" class="phone-banner-features" style="top: 85%; left: 75%;">
+        </a>
     </div>
 
     <!-- highlights -->

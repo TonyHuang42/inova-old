@@ -204,7 +204,6 @@ a {
     left: 0;
     width: 100%;
     height: 40%;
-    /* Adjust for fade area */
     background: linear-gradient(to bottom, transparent 0%, black 100%);
     pointer-events: none;
 }
@@ -260,12 +259,20 @@ a {
 .northlight-banner-container {
     position: relative;
     width: 100%;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    min-height: 600px;
 }
 
 .phone-banner {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     min-height: 600px;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .phone-banner-phone {
@@ -280,31 +287,27 @@ a {
 
 .phone-banner-features {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 100%;
-    min-height: 600px;
-    object-fit: cover;
+    transform: translate(-50%, -50%);
+    max-height: 70px;
 }
 
-.phone-banner-northlight {
+/* .phone-banner-northlight {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 100%;
+    max-width: 90%;
     min-height: 450px;
     object-fit: cover;
-}
+} */
 
 .phone-banner-slogan {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
-    min-height: 450px;
+    max-width: 100%;
+    min-height: 350px;
     object-fit: cover;
 }
 
@@ -653,14 +656,14 @@ a {
     height: 500px;
 }
 
-.video-container {
+/* .video-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     min-height: 300px;
-}
+} */
 
 .circle {
     pointer-events: none;
