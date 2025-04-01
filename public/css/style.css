@@ -291,24 +291,24 @@ a {
     max-height: 70px;
 }
 
-/* .phone-banner-northlight {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 90%;
-    min-height: 450px;
-    object-fit: cover;
-} */
-
-.phone-banner-slogan {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 100%;
+.phone-banner-northlight {
+    width: 100%;
+    height: auto;
     min-height: 350px;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.phone-banner-slogan {
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .heading {

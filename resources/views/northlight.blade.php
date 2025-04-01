@@ -42,50 +42,110 @@
     <div class="northlight-banner-container">
         <img src="{{ asset('img/phone/banner/BG.jpg') }}" alt="banner" class="phone-banner">
         <img src="{{ asset('img/phone/banner/phone.png') }}" alt="phone" class="phone-banner-phone">
-        <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-slogan">
+        <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-northlight">
         <img src="{{ asset('img/phone/banner/slogan.png') }}" alt="slogan" class="phone-banner-slogan">
 
-        <a class="highlight-wrap" data-target="camera" href="/northlight#engineering-drawing-section">
-            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" 
-            alt="features" class="phone-banner-features" style="top: 45%; left: 25%;">
-        </a>
+        <div class="d-none d-xl-flex">
+            <a class="highlight-wrap" data-target="camera" href="/northlight#engineering-drawing-section">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 42%; left: 19%;">
+            </a>
 
-        <a class="highlight-wrap" data-target="display" href="/northlight#engineering-drawing-section">
-            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" 
-            alt="features" class="phone-banner-features" style="top: 45%; left: 70%;">
-        </a>
+            <a class="highlight-wrap" data-target="display" href="/northlight#engineering-drawing-section">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 42%; left: 77%;">
+            </a>
 
-        <a class="highlight-wrap" data-target="battery" href="/northlight#engineering-drawing-section">
-            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" 
-            alt="features" class="phone-banner-features" style="top: 65%; left: 20%;">
-        </a>
+            <a class="highlight-wrap" data-target="battery" href="/northlight#engineering-drawing-section">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 64%; left: 15%;">
+            </a>
 
-        <a class="highlight-wrap" data-target="sim-card" href="/northlight#engineering-drawing-section">
-            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" 
-            alt="features" class="phone-banner-features" style="top: 65%; left: 80%;">
-        </a>
+            <a class="highlight-wrap" data-target="sim-card" href="/northlight#engineering-drawing-section">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 64%; left: 85%;">
+            </a>
 
-        <a class="highlight-wrap" data-target="chip" href="/northlight#engineering-drawing-section">
-            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" 
-            alt="features" class="phone-banner-features" style="top: 85%; left: 25%;">
-        </a>
+            <a class="highlight-wrap" data-target="chip" href="/northlight#engineering-drawing-section">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 86%; left: 20%;">
+            </a>
 
-        <a class="highlight-wrap" data-target="microSD" href="/northlight#engineering-drawing-section">
-            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" 
-            alt="features" class="phone-banner-features" style="top: 85%; left: 75%;">
-        </a>
-    </div>
-
-    <!-- highlights -->
-    <div class="container">
-        <div class="row section-padding">
-            <div class="col-12">
-                <div class="heading text-center">Affordable, Reliable, Simplicity at its Finest</div>
-            </div>
+            <a class="highlight-wrap" data-target="microSD" href="/northlight#engineering-drawing-section">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 86%; left: 82%;">
+            </a>
         </div>
 
-        <!-- Desktop Highlights -->
-        <div class="row d-none d-xl-flex">
+        <div class="d-xl-none d-md-flex d-none">
+            <a class="highlight-wrap" data-target="camera-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 42%; left: 19%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 42%; left: 77%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="battery-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 64%; left: 15%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="sim-card-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 64%; left: 85%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="chip-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 86%; left: 20%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="microSD-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 86%; left: 82%;">
+            </a>
+        </div>
+
+        <div class="d-md-none">
+            <a class="highlight-wrap" data-target="camera-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_camera.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 27%; left: 25%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_screen.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 27%; left: 50%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="battery-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_battery.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 27%; left: 75%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="sim-card-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SIMs.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 37%; left: 25%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="chip-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_chip.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 37%; left: 50%;">
+            </a>
+
+            <a class="highlight-wrap" data-target="microSD-mobile" href="/northlight#engineering-drawing-section-mobile">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SDCard.png') }}" 
+                alt="features" class="phone-banner-features" style="top: 37%; left: 75%;">
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="heading text-center top-padding">Innovation that Brings People Together</div>
+
+        {{--<div class="row d-none d-xl-flex">
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
                 <a class="highlight-wrap" data-target="display" href="/northlight#engineering-drawing-section">
                     <img src="{{ asset('img/phone/icons/icons_size.svg') }}" alt="display" class="highlight-icon">
@@ -135,7 +195,6 @@
             </div>
         </div>
 
-        <!-- Mobile Highlights -->
         <div class="row d-xl-none">
             <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
                 <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
@@ -184,7 +243,7 @@
                     <div class="highlight-text link">Battery</div>
                 </a>
             </div>
-        </div>
+        </div> --}}
 
         <div class="row top-padding bottom-padding-sm gx-lg-5 gy-lg-0 gy-4">
             <div class="col-lg-6 d-flex align-items-center">
