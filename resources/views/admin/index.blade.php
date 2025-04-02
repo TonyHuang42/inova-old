@@ -29,7 +29,7 @@
                                 </a>
                             </td>
                             <td>{{ ucfirst($article->category->name) }}</td>
-                            <td>{{ ucfirst($article->device->name ?? '') }}</td>
+                            <td>{{ ucfirst($article->device->name ?? 'N/A') }}</td>
                             <td>{{ $article->created_at->format('Y-m-d') }}</td>
                             <td>
                                 <span class="badge {{ $article->is_published ? 'bg-success' : 'bg-danger' }}">

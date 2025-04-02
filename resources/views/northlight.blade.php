@@ -144,110 +144,9 @@
 
     <div class="container">
         <div class="heading text-center top-padding">Innovation that Brings People Together</div>
-
-        {{--<div class="row d-none d-xl-flex">
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="display" href="/northlight#engineering-drawing-section">
-                    <img src="{{ asset('img/phone/icons/icons_size.svg') }}" alt="display" class="highlight-icon">
-                    <div class="highlight-text">5.45" LCD</div>
-                    <div class="highlight-text link">480 x 960</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="camera" href="/northlight#engineering-drawing-section">
-                    <img src="{{ asset('img/phone/icons/icons_camera.svg') }}" alt="camera" class="highlight-icon">
-                    <div class="highlight-text">5MP Back</div>
-                    <div class="highlight-text link">2MP Front</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="chip" href="/northlight#engineering-drawing-section">
-                    <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="chip" class="highlight-icon">
-                    <div class="highlight-text">Mediatek</div>
-                    <div class="highlight-text link">Helio A22</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="sim-card" href="/northlight#engineering-drawing-section">
-                    <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="dual-sim" class="highlight-icon">
-                    <div class="highlight-text">Micro SIM</div>
-                    <div class="highlight-text link">& Nano SIM</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="microSD" href="/northlight#engineering-drawing-section">
-                    <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="microSD Card" class="highlight-icon">
-                    <div class="highlight-text">microSD</div>
-                    <div class="highlight-text link">Up to 512GB</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="battery" href="/northlight#engineering-drawing-section">
-                    <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="battery" class="highlight-icon">
-                    <div class="highlight-text">Replaceable</div>
-                    <div class="highlight-text link">Battery</div>
-                </a>
-            </div>
-        </div>
-
-        <div class="row d-xl-none">
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
-                    <img src="{{ asset('img/phone/icons/icons_size.svg') }}" alt="display" class="highlight-icon">
-                    <div class="highlight-text">5.45" LCD</div>
-                    <div class="highlight-text link">480 x 960</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="camera-mobile" href="/northlight#engineering-drawing-section-mobile">
-                    <img src="{{ asset('img/phone/icons/icons_camera.svg') }}" alt="camera" class="highlight-icon">
-                    <div class="highlight-text">5MP Back</div>
-                    <div class="highlight-text link">2MP Front</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="chip-mobile" href="/northlight#engineering-drawing-section-mobile">
-                    <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="chip" class="highlight-icon">
-                    <div class="highlight-text">Mediatek</div>
-                    <div class="highlight-text link">Helio A22</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="sim-card-mobile" href="/northlight#engineering-drawing-section-mobile">
-                    <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="dual-sim" class="highlight-icon">
-                    <div class="highlight-text">Micro SIM</div>
-                    <div class="highlight-text link">& Nano SIM</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="microSD-mobile" href="/northlight#engineering-drawing-section-mobile">
-                    <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="microSD Card" class="highlight-icon">
-                    <div class="highlight-text">microSD</div>
-                    <div class="highlight-text link">Up to 512GB</div>
-                </a>
-            </div>
-
-            <div class="col-4 col-md-2 p-0 d-flex justify-content-center">
-                <a class="highlight-wrap" data-target="battery-mobile" href="/northlight#engineering-drawing-section-mobile">
-                    <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="battery" class="highlight-icon">
-                    <div class="highlight-text">Replaceable</div>
-                    <div class="highlight-text link">Battery</div>
-                </a>
-            </div>
-        </div> --}}
-
         <div class="row top-padding bottom-padding-sm gx-lg-5 gy-lg-0 gy-4">
             <div class="col-lg-6 d-flex align-items-center">
-                <img src="{{ asset('img/phone/phone_photo_1.png') }}" alt="" class="rounded-img">
+                <img src="{{ asset('img/phone/phone_photo_1.jpg') }}" alt="" class="rounded-img">
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <div class="about-title pb-3">Designed to Connect, Not Compete</div>
@@ -263,7 +162,7 @@
                 <p>Because at INOVA, we don’t engineer phones. We craft tools that let you focus on what truly matters: the people on the other side of the screen.</p>
             </div>
             <div class="col-lg-6 d-flex align-items-center order-0 order-lg-1">
-                <img src="{{ asset('img/phone/phone_photo_2.png') }}" alt="" class="rounded-img">
+                <img src="{{ asset('img/phone/phone_photo_2.jpg') }}" alt="" class="rounded-img">
             </div>
         </div>
     </div>
@@ -928,7 +827,7 @@
             <div class="col-lg-6">
                 <div class="slider">
                     <img src="{{ asset('img/phone/phone_photo_3.png') }}" alt="young users" class="rounded-img">
-                    <img src="{{ asset('img/phone/phone_photo_4.png') }}" alt="business users" class="rounded-img">
+                    <img src="{{ asset('img/phone/phone_photo_4.jpg') }}" alt="business users" class="rounded-img">
                     <img src="{{ asset('img/phone/phone_photo_5.png') }}" alt="senior users" class="rounded-img">
                 </div>
             </div>
