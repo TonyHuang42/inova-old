@@ -56,9 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
             .then((response) => response.json())
             .then((data) => {
                 if (data.url) {
+                    // Convert absolute URL to relative path
+                    const relativePath = convertToRelativePath(data.url);
                     // Insert uploaded image into the editor at the current cursor position
                     const range = quill.getSelection(true);
-                    quill.insertEmbed(range.index, "image", data.url);
+                    quill.insertEmbed(range.index, "image", relativePath);
                 } else {
                     alert("Image upload failed.");
                 }
@@ -67,6 +69,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error("Error uploading image:", error);
                 alert("Error uploading image.");
             });
+    }
+
+    // Function to convert absolute URL to relative path
+    function convertToRelativePath(url) {
+        try {
+            const urlObj = new URL(url);
+            // Extract the path portion of the URL (everything after the domain)
+            return urlObj.pathname;
+        } catch (e) {
+            // If the URL is already relative, return it as is
+            return url;
+        }
     }
 
     // Hide empty input
@@ -80,7 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const imgRegex = /<img[^>]+src="([^">]+)"/g;
         let match;
         while ((match = imgRegex.exec(contentHtml)) !== null) {
-            newImages.push(match[1]);
+            const imagePath = match[1];
+            // Convert absolute URLs to relative paths if needed
+            const relativePath = convertToRelativePath(imagePath);
+            newImages.push(relativePath);
         }
 
         // Compare old and new image arrays

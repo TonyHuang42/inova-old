@@ -49,7 +49,8 @@ class NewsController extends Controller
             $filename = uniqid() . '.' . $file->getClientOriginalExtension();
             $path = $file->storeAs('news/temp', $filename, 'public');
 
-            return response()->json(['url' => asset('storage/' . $path)]);
+            // Return relative path instead of full URL
+            return response()->json(['url' => '/storage/' . $path]);
         }
 
         return response()->json(['error' => 'No file found'], 400);
@@ -116,7 +117,8 @@ class NewsController extends Controller
 
                 if (Storage::disk('public')->exists($tempPath)) {
                     Storage::disk('public')->move($tempPath, $permanentPath);
-                    $newUrl = asset('storage/news/images/' . $fileName);
+                    // Use relative path instead of full URL
+                    $newUrl = '/storage/' . $permanentPath;
                     $updatedContent = str_replace($url, $newUrl, $updatedContent);
                     $usedFilenames[] = $fileName;
                 }
@@ -169,7 +171,8 @@ class NewsController extends Controller
         $imageUrls = $matches[1] ?? [];
 
         foreach ($imageUrls as $url) {
-            $path = str_replace('/storage/', '', parse_url($url, PHP_URL_PATH));
+            // Remove /storage/ prefix if present
+            $path = ltrim(str_replace('/storage/', '', $url), '/');
             if (Storage::disk('public')->exists($path)) {
                 Storage::disk('public')->delete($path);
             }
@@ -193,7 +196,8 @@ class NewsController extends Controller
         $failed = [];
 
         foreach ($images as $url) {
-            $path = str_replace('/storage/', '', parse_url($url, PHP_URL_PATH));
+            // Remove /storage/ prefix if present
+            $path = ltrim(str_replace('/storage/', '', $url), '/');
             if (Storage::disk('public')->exists($path)) {
                 Storage::disk('public')->delete($path);
             } else {
