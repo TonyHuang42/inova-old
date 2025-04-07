@@ -9,7 +9,7 @@
         }
 
         .card-title {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 600;
             margin: 10px 0 0 10px;
         }
@@ -54,8 +54,8 @@
     <div class="philosophy">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8 mx-auto text-center mb-5">
-                    <p class="mb-0">At INOVA, we believe technology should connect people, not complicate lives. We design accessible devices like Northlight—packed with practical features, stripped of unnecessary frills. From novice phone users to professionals, we build tools that simplify daily life and keep you focused on what truly matters: real human connections.</p>
+                <div class="col-12 col-md-8 mx-auto mb-5">
+                    <p class="mb-0">At INOVA, we believe technology should simplify life—not complicate it. That’s why we build tools that keep you focused on what truly matters: real human connections.</p>
                 </div>
             </div>
             {{-- <a href="/about-us#purpose" class="text-white"> --}}
@@ -87,53 +87,47 @@
 
     <div class="container">
         <div class="section-padding">
-            <div class="row text-center">
-                <div class="col-12 pe-md-5">
-                    <p class="mb-0">Our mission is to make technology a universal bridge—simple, affordable, and designed for human connection. Our vision is to continue creating innovative, accessible technology that enables everyone to seamlessly stay connected.</p>
+            <div class="row">
+                <div class="col-12 col-md-8 mx-auto">
+                    <p>At INova, we believe technology should feel natural—not complicated. That’s why we create smart, reliable phones designed to support your everyday rhythm without the noise. From the first tap, our devices are intuitive, comfortable, and ready to fit seamlessly into your life. No unnecessary features, no steep learning curves—just the essentials done right.</p>
+                    <p class="mb-0">We focus on what truly matters: clarity, simplicity, and connection. Whether you're getting your first phone or looking for a dependable daily driver, INova is built to grow with you. Our mission isn’t to follow trends—it’s to make technology more human, more accessible, and more meaningful for everyone.</p>
                 </div>
             </div>
 
             <div class="row top-padding">
-                <div class="title fw-bold">Lorem ipsum</div>
+                <div class="title fw-bold">Building Bridges, Not Just Devices</div>
                 <div class="col-6 col-lg-3 text-center">
-                    <img src="{{ asset('img/home/talking-client_1098-13119.jpg') }}" alt="" class="img-fluid">
-                    <div class="card-title">Lorem ipsum</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <img src="{{ asset('img/home/talking-client_1098-13119.jpg') }}" alt="" class="rounded-img">
+                    <div class="card-title text-color">Smart & Practical</div>
+                    <p>This phone connects you to what matters most—family, friends, and work. It blends simplicity and smart functionality for a seamless, everyday experience.</p>
                 </div>
 
                 <div class="col-6 col-lg-3 text-center">
-                    <img src="{{ asset('img/home/woman-sitting-sunlight-front-door-using-cellphone-wearing-headphones_23-2148204609.jpg') }}" alt="" class="img-fluid">
-                    <div class="card-title">Lorem ipsum</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <img src="{{ asset('img/home/woman-sitting-sunlight-front-door-using-cellphone-wearing-headphones_23-2148204609.jpg') }}" alt="" class="rounded-img">
+                    <div class="card-title text-color">Built to Grow</div>
+                    <p>Focused on what you need, this phone offers a clean interface and optimized system, making your day easier without unnecessary features or clutter.</p>
                 </div>
 
                 <div class="col-6 col-lg-3 text-center">
-                    <img src="{{ asset('img/home/portrait-happy-businessman-talking-cellphone_23-2147899708.jpg') }}" alt="" class="img-fluid">
-                    <div class="card-title">Lorem ipsum</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <img src="{{ asset('img/home/portrait-happy-businessman-talking-cellphone_23-2147899708.jpg') }}" alt="" class="rounded-img">
+                    <div class="card-title text-color">Work-Ready</div>
+                    <p>Durable and user-friendly, this phone adapts with software updates and expandable options, staying reliable as your needs evolve.</p>
                 </div>
 
                 <div class="col-6 col-lg-3 text-center">
-                    <img src="{{ asset('img/home/medium-shot-old-woman-library_23-2150494666.jpg') }}" alt="" class="img-fluid">
-                    <div class="card-title">Lorem ipsum</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <img src="{{ asset('img/home/medium-shot-old-woman-library_23-2150494666.jpg') }}" alt="" class="rounded-img">
+                    <div class="card-title text-color">Simple & Clear</div>
+                    <p>Designed for productivity, it offers essential tools for communication and scheduling. Easy to navigate and comfortable to hold, it just works—beautifully.</p>
                 </div>
             </div>
 
-            <div class="row top-padding">
-                <div class="col-12 col-md-6">
-                    <div class="title fw-bold">Building Bridges, <br>Not Just Devices</div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <p>At INOVA, every product we create—from the Northlight Smartphone to future innovations—is a bridge. A bridge between generations sharing stories, between small businesses and their customers, and between isolated communities and the wider world. We don’t engineer gadgets; we craft tools that dissolve barriers, simplify connection, and empower people to focus on what truly matters: each other.</p>
-                </div>
-            </div>
+
         </div>
     </div>
 
     <div class="container">
         <div class="section-padding-sm pt-0">
-            <div class="row bottom-padding-sm">
+            {{-- <div class="row bottom-padding-sm">
                 <div class="col-12 col-md-8">
                     <div class="title fw-bold">All in Our Products</div>
                 </div>
@@ -142,121 +136,27 @@
                         Experience it now <i class="fa-solid fa-angle-right"></i>
                     </a>
                 </div>
-            </div>
+            </div> --}}
 
             <a href="/northlight">
                 <img src="{{ asset('img/home/banner_northlight.png') }}" alt="Banner" class="rounded-img">
-
-                {{-- <div class="northlight-banner-container rounded-img">
-                    <img src="{{ asset('img/phone/banner/BG.jpg') }}" alt="banner" class="phone-banner">
-                    <img src="{{ asset('img/phone/banner/phone.png') }}" alt="phone" class="phone-banner-phone">
-                    <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-northlight">
-                    <img src="{{ asset('img/phone/banner/slogan.png') }}" alt="slogan" class="phone-banner-slogan">
-            
-                    <div class="d-none d-xl-flex">
-                        <a class="highlight-wrap" data-target="camera" href="/northlight#engineering-drawing-section">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 42%; left: 19%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="display" href="/northlight#engineering-drawing-section">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 42%; left: 77%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="battery" href="/northlight#engineering-drawing-section">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 64%; left: 15%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="sim-card" href="/northlight#engineering-drawing-section">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 64%; left: 85%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="chip" href="/northlight#engineering-drawing-section">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 86%; left: 20%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="microSD" href="/northlight#engineering-drawing-section">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 86%; left: 82%;">
-                        </a>
-                    </div>
-            
-                    <div class="d-xl-none d-md-flex d-none">
-                        <a class="highlight-wrap" data-target="camera-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 42%; left: 19%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 42%; left: 77%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="battery-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 64%; left: 15%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="sim-card-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 64%; left: 85%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="chip-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 86%; left: 20%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="microSD-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 86%; left: 82%;">
-                        </a>
-                    </div>
-            
-                    <div class="d-md-none">
-                        <a class="highlight-wrap" data-target="camera-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_camera.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 27%; left: 25%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_screen.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 27%; left: 50%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="battery-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_battery.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 27%; left: 75%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="sim-card-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SIMs.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 37%; left: 25%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="chip-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_chip.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 37%; left: 50%;">
-                        </a>
-            
-                        <a class="highlight-wrap" data-target="microSD-mobile" href="/northlight#engineering-drawing-section-mobile">
-                            <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SDCard.png') }}" 
-                            alt="features" class="phone-banner-features" style="top: 37%; left: 75%;">
-                        </a>
-                    </div>
-                </div> --}}
             </a>
 
-
             <div class="row top-padding">
+                <div class="col-12">
+                    <div class="title fw-bold">More Than a Phone</div>
+                </div>
+                <div class="col-12">
+                    <p>At INova, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
+                    <p>We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
+                </div>
+            </div>
+
+            {{-- <div class="row top-padding">
                 <div class="col-12 text-center">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="title fw-bold accessories-title-padding">Accessories</div>
 
@@ -300,7 +200,7 @@
     <script>
         $(document).ready(function() {
             $('.slider').slick({
-                slidesToShow: 4,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 dots: true,
                 arrows: true,

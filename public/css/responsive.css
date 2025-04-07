@@ -81,9 +81,9 @@
         height: 550px;
     } */
 
-    .title {
+    /* .title {
         font-size: 40px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 991px) {
@@ -104,9 +104,9 @@
         right: -280px;
     } */
 
-    .title {
+    /* .title {
         font-size: 45px;
-    }
+    } */
 
     .black-background {
         margin-top: -570px;
@@ -280,9 +280,9 @@
         font-size: 35px;
     }
 
-    .title {
+    /* .title {
         font-size: 40px;
-    }
+    } */
 
     .feature-text {
         font-size: 20px;

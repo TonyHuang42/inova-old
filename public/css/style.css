@@ -10,6 +10,10 @@ body {
     --bs-body-color: black;
 }
 
+.text-color {
+    color: #33488c;
+}
+
 a {
     color: black;
     text-decoration: none !important;
@@ -318,7 +322,7 @@ a {
 }
 
 .title {
-    font-size: 48px;
+    font-size: 32px;
     line-height: 1.2;
 }
 
@@ -396,6 +400,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* disable link to features */
+    pointer-events: none;
 }
 
 .highlight-icon {
