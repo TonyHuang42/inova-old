@@ -2,7 +2,7 @@
     <div class="row section-padding-sm">
         <div class="col-lg-4">
             <div class="text-start">
-                <div class="sub-title text-uppercase">{{ $article->category }}</div>
+                <div class="sub-title">{{ $article->category->name }}</div>
                 <h3 class="mb-3">
                     <a href="{{ route('news.show', $article->slug) }}" class="text-black">{{ $article->title }}</a>
                 </h3>

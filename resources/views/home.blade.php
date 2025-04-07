@@ -45,6 +45,11 @@
 
     <div class="philosophy">
         <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 mx-auto text-center mb-5">
+                    <p class="mb-0">At INOVA, we believe technology should connect people, not complicate lives. We design accessible devices like Northlight—packed with practical features, stripped of unnecessary frills. From novice phone users to professionals, we build tools that simplify daily life and keep you focused on what truly matters: real human connections.</p>
+                </div>
+            </div>
             <a href="/about-us#purpose" class="text-white">
                 <div class="row pb-5 text-center gx-md-5">
                     <div class="col-12 col-md-4">
@@ -241,17 +246,18 @@
                 prevArrow: '<button type="button" class="slick-prev"><img src="{{ asset('img/phone/icons/icons_slider.svg') }}" alt="Previous"></button>',
                 nextArrow: '<button type="button" class="slick-next"><img src="{{ asset('img/phone/icons/icons_slider.svg') }}" alt="Next"></button>',
                 responsive: [{
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2
+                        }
                     }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                }]
+                ]
             });
         });
     </script>

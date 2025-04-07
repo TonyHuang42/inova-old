@@ -19,15 +19,6 @@
     <input type="hidden" name="content" id="content" required>
 </div>
 
-{{-- <div>
-    <label for="category">Category</label>
-    <select name="category" id="category" required>
-        <option value="academic" {{ old('category', $news->category ?? '') == 'academic' ? 'selected' : '' }}>Academic</option>
-        <option value="community" {{ old('category', $news->category ?? '') == 'community' ? 'selected' : '' }}>Community</option>
-        <option value="general" {{ old('category', $news->category ?? '') == 'general' ? 'selected' : '' }}>General</option>
-    </select>
-</div> --}}
-
 <div>
     <label for="category_id">Category</label>
     <select name="category_id" id="category_id" required>

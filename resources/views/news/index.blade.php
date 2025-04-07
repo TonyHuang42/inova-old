@@ -15,9 +15,12 @@
             <div class="col-12">
                 <div class="d-flex gap-4">
                     <a href="javascript:void(0);" class="news-categories active-category" data-category="">ALL NEWS</a>
-                    <a href="javascript:void(0);" class="news-categories" data-category="academic">ACADEMIC</a>
-                    <a href="javascript:void(0);" class="news-categories" data-category="community">COMMUNITY</a>
-                    <a href="javascript:void(0);" class="news-categories" data-category="general">GENERAL</a>
+
+                    @foreach ($categories as $category)
+                        <a href="javascript:void(0);" class="news-categories" data-category="{{ $category->slug }}">
+                            {{ strtoupper($category->name) }}
+                        </a>
+                    @endforeach
                 </div>
             </div>
         </div>

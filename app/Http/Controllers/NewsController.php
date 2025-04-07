@@ -14,20 +14,25 @@ class NewsController extends Controller
     // Display  all published news
     public function index(Request $request)
     {
-        $category = $request->query('category');
+        $categories = Category::all();
+    
+        $categorySlug = $request->query('category');
         $query = News::where('is_published', true)->latest();
-
-        if ($category && in_array($category, ['academic', 'community', 'general'])) {
-            $query->where('category', $category);
+    
+        if ($categorySlug) {
+            $category = Category::where('slug', $categorySlug)->first();
+            if ($category) {
+                $query->where('category_id', $category->id);
+            }
         }
-
+    
         $news = $query->paginate(5);
-
+    
         if ($request->ajax()) {
             return view('news.partials.news-list', compact('news'))->render();
         }
-
-        return view('news.index', compact('news'));
+    
+        return view('news.index', compact('news', 'categories'));
     }
 
     // Show the form for creating a new news article
