@@ -22,6 +22,14 @@
             padding-top: 36px;
         }
 
+        /* .slick-prev {
+            left: -15px;
+        }
+
+        .slick-next {
+            right: -15px;
+        } */
+
         @media (max-width: 767px) {
             .card-title {
                 font-size: 20px;
@@ -50,35 +58,81 @@
                     <p class="mb-0">At INOVA, we believe technology should connect people, not complicate lives. We design accessible devices like Northlight—packed with practical features, stripped of unnecessary frills. From novice phone users to professionals, we build tools that simplify daily life and keep you focused on what truly matters: real human connections.</p>
                 </div>
             </div>
-            <a href="/about-us#purpose" class="text-white">
-                <div class="row pb-5 text-center gx-md-5">
-                    <div class="col-12 col-md-4">
+            {{-- <a href="/about-us#purpose" class="text-white"> --}}
+                <div class="row text-center gx-md-5 bottom-padding">
+                    <div class="col-12 col-lg-4">
                         <img src="{{ asset('img/about/icon_accessible.svg') }}" alt="accessibility" class="values-icon">
                         <div class="about-title pt-2 pb-3">Accessibility</div>
-                        <p>Features and pricing that make sense for everyone.</p>
+                        <p>We ensure technology is accessible to everyone, with inclusive pricing and features designed for all ages, abilities, and budgets—because innovation should never leave people behind.</p>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-lg-4">
                         <img src="{{ asset('img/about/icon_simplicity.svg') }}" alt="simplicity" class="values-icon">
                         <div class="about-title pt-2 pb-3">Simplicity</div>
-                        <p>Designs are straightforward, without<span class="d-xxl-none d-xl-inline d-none"><br></span> complexity.</p>
+                        <p>We design technology that works for you, not against you. Our intuitive interfaces and purposeful features strip away complexity, helping you navigate daily life with ease—no manuals required.</p>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-lg-4">
                         <img src="{{ asset('img/about/icon_community.svg') }}" alt="community" class="values-icon">
                         <div class="about-title pt-2 pb-3">Community</div>
-                        <p>Brings people together with our innovative product.</p>
+                        <p>We’re more than a tech company—we’re community partners. Our designs empower neighborhoods, families, and friends to connect, collaborate, and thrive together.</p>
                     </div>
                 </div>
-            </a>
-            <div class="row bottom-padding">
+            {{-- </a>
+            <div class="row bottom-padding pt-5">
                 <div class="col-12 text-center">
                     <a class="learn-more-button" href="/about-us">Learn More</a>
+                </div>
+            </div> --}}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-padding">
+            <div class="row text-center">
+                <div class="col-12 pe-md-5">
+                    <p class="mb-0">Our mission is to make technology a universal bridge—simple, affordable, and designed for human connection. Our vision is to continue creating innovative, accessible technology that enables everyone to seamlessly stay connected.</p>
+                </div>
+            </div>
+
+            <div class="row top-padding">
+                <div class="title fw-bold">Lorem ipsum</div>
+                <div class="col-6 col-lg-3 text-center">
+                    <img src="{{ asset('img/home/talking-client_1098-13119.jpg') }}" alt="" class="img-fluid">
+                    <div class="card-title">Lorem ipsum</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+
+                <div class="col-6 col-lg-3 text-center">
+                    <img src="{{ asset('img/home/woman-sitting-sunlight-front-door-using-cellphone-wearing-headphones_23-2148204609.jpg') }}" alt="" class="img-fluid">
+                    <div class="card-title">Lorem ipsum</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+
+                <div class="col-6 col-lg-3 text-center">
+                    <img src="{{ asset('img/home/portrait-happy-businessman-talking-cellphone_23-2147899708.jpg') }}" alt="" class="img-fluid">
+                    <div class="card-title">Lorem ipsum</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+
+                <div class="col-6 col-lg-3 text-center">
+                    <img src="{{ asset('img/home/medium-shot-old-woman-library_23-2150494666.jpg') }}" alt="" class="img-fluid">
+                    <div class="card-title">Lorem ipsum</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+            </div>
+
+            <div class="row top-padding">
+                <div class="col-12 col-md-6">
+                    <div class="title fw-bold">Building Bridges, <br>Not Just Devices</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p>At INOVA, every product we create—from the Northlight Smartphone to future innovations—is a bridge. A bridge between generations sharing stories, between small businesses and their customers, and between isolated communities and the wider world. We don’t engineer gadgets; we craft tools that dissolve barriers, simplify connection, and empower people to focus on what truly matters: each other.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="section-padding-sm">
+        <div class="section-padding-sm pt-0">
             <div class="row bottom-padding-sm">
                 <div class="col-12 col-md-8">
                     <div class="title fw-bold">All in Our Products</div>
@@ -197,7 +251,14 @@
                 </div> --}}
             </a>
 
-            <div class="title accessories-title-padding">Accessories</div>
+
+            <div class="row top-padding">
+                <div class="col-12 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            <div class="title fw-bold accessories-title-padding">Accessories</div>
 
             <div class="slider home-slider-padding">
                 <a href="/accessories">

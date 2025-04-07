@@ -58,7 +58,7 @@
     <div class="container desktop-nav d-md-block d-none">
         <nav class="nav">
             <a class="logo-container d-flex align-items-center" href="/">
-                <img src="{{ asset('img/logo/inova_logo_black.svg') }}" alt="logo" class="logo">
+                {{-- <img src="{{ asset('img/logo/inova_logo_black.svg') }}" alt="logo" class="logo"> --}}
                 <img src="{{ asset('img/logo/iNova_workmark.svg') }}" alt="logo" class="inova">
             </a>
 
@@ -76,7 +76,7 @@
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
                 <a class="logo-container" href="/">
-                    <img src="{{ asset('img/logo/inova_logo_black.svg') }}" alt="logo" class="logo">
+                    {{-- <img src="{{ asset('img/logo/inova_logo_black.svg') }}" alt="logo" class="logo"> --}}
                     <img src="{{ asset('img/logo/iNova_workmark.svg') }}" alt="logo" class="inova">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,7 +110,7 @@
 
     <div class="mt-auto" style="background-color: #232323;">
         <div class="container">
-            <nav class="nav" style="height: 80px;">
+            {{-- <nav class="nav" style="height: 80px;">
                 <a class="logo-container" href="/">
                     <img src="{{ asset('img/logo/inova_logo_silver.svg') }}" alt="logo" class="logo">
                 </a>
@@ -121,7 +121,7 @@
                     <a href="/support" class="first-nav underline-link">SUPPORT</a>
                     <a href="/about-us" class="first-nav underline-link">ABOUT</a>
                 </div>
-            </nav>
+            </nav> --}}
             <div class="horizontal-line"></div>
             <div class="copyright">
                 <p class="m-0">Copyright © <strong>INOVA DIGITAL SOLUTIONS INC.</strong> All Rights Reserved</p>
