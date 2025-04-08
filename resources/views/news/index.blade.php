@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@push('styles')
+{{-- @push('styles')
     <style>
         #categoryDropdown {
             width: 202px;
         }
     </style>
-@endpush
+@endpush --}}
 
 @section('content')
     <section class="banner news-banner">
@@ -22,15 +22,16 @@
         <div class="row top-padding pb-3">
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle d-flex justify-content-between align-items-center" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span id="categoryText">ALL NEWS</span>
+                    <span id="categoryText">All News</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                    <li><a class="dropdown-item news-categories" href="javascript:void(0);" data-category="">ALL NEWS</a></li>
-
+                    <li>
+                        <a class="dropdown-item news-categories" href="javascript:void(0);" data-category="">All News</a>
+                    </li>
                     @foreach ($categories as $category)
                         <li>
                             <a class="dropdown-item news-categories" href="javascript:void(0);" data-category="{{ $category->id }}">
-                                {{ strtoupper($category->name) }}
+                                {{ $category->name }}
                             </a>
                         </li>
                     @endforeach
@@ -54,7 +55,7 @@
                 var categoryText = $this.text().trim(); // Get the selected category name
 
                 // Update the button text
-                $('#categoryText').text(categoryText || 'ALL NEWS'); // If no category selected, show 'ALL NEWS'
+                $('#categoryText').text(categoryText || 'All News');
 
                 var url = categoryId ? "{{ route('news.index') }}?category=" + categoryId : "{{ route('news.index') }}";
 

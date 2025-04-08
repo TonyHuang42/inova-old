@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 mx-auto mb-5 text-center">
-                    <p class="mb-0">At INOVA, we believe technology should simplify life—not complicate it. That’s why we build tools that keep you focused on what truly matters: real human connections.</p>
+                    <p class="mb-0">At INOVA, we believe technology should be within reach, simplify life, and remove barriers—these beliefs guide everything we create now and into the future.</p>
                 </div>
             </div>
             {{-- <a href="/about-us#purpose" class="text-white"> --}}
@@ -63,17 +63,17 @@
                     <div class="col-12 col-lg-4">
                         <img src="{{ asset('img/about/icon_accessible.svg') }}" alt="accessibility" class="values-icon">
                         <div class="about-title pt-2 pb-3">Accessibility</div>
-                        <p>We ensure technology is accessible to everyone, with inclusive pricing and features designed for all ages, abilities, and budgets—because innovation should never leave people behind.</p>
+                        <p>We believe everyone deserves access to reliable technology. That’s why our products are built to welcome more people into a world of connection.</p>
                     </div>
                     <div class="col-12 col-lg-4">
                         <img src="{{ asset('img/about/icon_simplicity.svg') }}" alt="simplicity" class="values-icon">
                         <div class="about-title pt-2 pb-3">Simplicity</div>
-                        <p>We design technology that works for you, not against you. Our intuitive interfaces and purposeful features strip away complexity, helping you navigate daily life with ease—no manuals required.</p>
+                        <p>We design technology that works for you, not against you. Our devices are clear, comfortable, and easy to use—built to simplify life, not overwhelm it.</p>
                     </div>
                     <div class="col-12 col-lg-4">
                         <img src="{{ asset('img/about/icon_community.svg') }}" alt="community" class="values-icon">
                         <div class="about-title pt-2 pb-3">Community</div>
-                        <p>We’re more than a tech company—we’re community partners. Our designs empower neighborhoods, families, and friends to connect, collaborate, and thrive together.</p>
+                        <p>INOVA products are designed to support more than individuals— we build tools that help people stay in touch, support each other, and grow together.</p>
                     </div>
                 </div>
             {{-- </a>
@@ -147,7 +147,7 @@
                     <div class="title fw-bold">More Than a Phone</div>
                 </div>
                 <div class="col-12">
-                    <p>At INova, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
+                    <p>At INOVA, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
                     <p>We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
                 </div>
             </div>
