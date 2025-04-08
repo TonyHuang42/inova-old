@@ -19,7 +19,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/logo/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/logo/favicon/favicon-16X16.png') }}">
-    <link rel="manifest" href="{{ asset('img/logo/favicon/site.webmanifest') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('img/logo/favicon/android-chrome-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('img/logo/favicon/android-chrome-512x512.png') }}">
+    {{-- <link rel="manifest" href="{{ asset('img/logo/favicon/site.webmanifest') }}"> --}}
     @stack('styles')
     <style>
         .navbar {
@@ -54,7 +56,7 @@
     </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
     <div class="container desktop-nav d-md-block d-none">
         <nav class="nav">
             <a class="logo-container d-flex align-items-center" href="/">

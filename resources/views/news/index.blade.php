@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@push('styles')
+    <style>
+        #categoryDropdown {
+            width: 202px;
+        }
+    </style>
+@endpush
+
 @section('content')
     <section class="banner news-banner">
         <div class="container position-relative h-100">
@@ -12,16 +20,21 @@
 
     <section class="container">
         <div class="row top-padding pb-3">
-            <div class="col-12">
-                <div class="d-flex gap-4">
-                    <a href="javascript:void(0);" class="news-categories active-category" data-category="">ALL NEWS</a>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle d-flex justify-content-between align-items-center" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span id="categoryText">ALL NEWS</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                    <li><a class="dropdown-item news-categories" href="javascript:void(0);" data-category="">ALL NEWS</a></li>
 
                     @foreach ($categories as $category)
-                        <a href="javascript:void(0);" class="news-categories" data-category="{{ $category->slug }}">
-                            {{ strtoupper($category->name) }}
-                        </a>
+                        <li>
+                            <a class="dropdown-item news-categories" href="javascript:void(0);" data-category="{{ $category->id }}">
+                                {{ strtoupper($category->name) }}
+                            </a>
+                        </li>
                     @endforeach
-                </div>
+                </ul>
             </div>
         </div>
         <hr>
@@ -37,8 +50,13 @@
         $(document).ready(function() {
             $('.news-categories').click(function() {
                 var $this = $(this);
-                var category = $this.data('category');
-                var url = category ? "{{ route('news.index') }}?category=" + category : "{{ route('news.index') }}";
+                var categoryId = $this.data('category');
+                var categoryText = $this.text().trim(); // Get the selected category name
+
+                // Update the button text
+                $('#categoryText').text(categoryText || 'ALL NEWS'); // If no category selected, show 'ALL NEWS'
+
+                var url = categoryId ? "{{ route('news.index') }}?category=" + categoryId : "{{ route('news.index') }}";
 
                 $.ajax({
                     url: url,

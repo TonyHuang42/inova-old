@@ -14,20 +14,22 @@ class NewsController extends Controller
     // Display  all published news
     public function index(Request $request)
     {
-        $categories = Category::all();
+        // Fetch all categories from DB
+        $categories = Category::all(); 
     
-        $categorySlug = $request->query('category');
+        // Get category ID from query string
+        $categoryId = $request->query('category');
         $query = News::where('is_published', true)->latest();
     
-        if ($categorySlug) {
-            $category = Category::where('slug', $categorySlug)->first();
-            if ($category) {
-                $query->where('category_id', $category->id);
-            }
+        // If category ID is provided, filter news by category_id
+        if ($categoryId && Category::find($categoryId)) {
+            $query->where('category_id', $categoryId);
         }
     
+        // Fetch paginated news
         $news = $query->paginate(5);
     
+        // Return the appropriate view
         if ($request->ajax()) {
             return view('news.partials.news-list', compact('news'))->render();
         }

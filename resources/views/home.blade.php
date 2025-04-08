@@ -23,11 +23,11 @@
         }
 
         /* .slick-prev {
-            left: -15px;
+            left: 0;
         }
 
         .slick-next {
-            right: -15px;
+            right: 0;
         } */
 
         @media (max-width: 767px) {
@@ -54,7 +54,7 @@
     <div class="philosophy">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8 mx-auto mb-5">
+                <div class="col-12 col-md-8 mx-auto mb-5 text-center">
                     <p class="mb-0">At INOVA, we believe technology should simplify life—not complicate it. That’s why we build tools that keep you focused on what truly matters: real human connections.</p>
                 </div>
             </div>
@@ -89,8 +89,8 @@
         <div class="section-padding">
             <div class="row">
                 <div class="col-12 col-md-8 mx-auto">
-                    <p>At INova, we believe technology should feel natural—not complicated. That’s why we create smart, reliable phones designed to support your everyday rhythm without the noise. From the first tap, our devices are intuitive, comfortable, and ready to fit seamlessly into your life. No unnecessary features, no steep learning curves—just the essentials done right.</p>
-                    <p class="mb-0">We focus on what truly matters: clarity, simplicity, and connection. Whether you're getting your first phone or looking for a dependable daily driver, INova is built to grow with you. Our mission isn’t to follow trends—it’s to make technology more human, more accessible, and more meaningful for everyone.</p>
+                    <p>We started INOVA with a simple belief: technology should be accessible and bring people closer. Every product we create begins with that in mind. We don’t design to impress—we design to include, support, and connect. Our work is about giving people tools that feel natural and genuinely serve a purpose. Whether it’s a first phone or a daily companion, INOVA devices are made to grow with you—reliable, durable, and always grounded in human connection.</p>
+                    <p class="mb-0">To us, innovation means removing barriers—not adding layers. It means building technology that’s useful, simple, and approachable. It means crafting experiences that feel intuitive from the first tap. INOVA exists to ensure that technology doesn’t stand in the way of life—but moves with it. We believe good tools don’t demand your attention; they simply work, allowing you to stay present, connected, and focused on what really matters.</p>
                 </div>
             </div>
 
@@ -99,25 +99,25 @@
                 <div class="col-6 col-lg-3 text-center">
                     <img src="{{ asset('img/home/talking-client_1098-13119.jpg') }}" alt="" class="rounded-img">
                     <div class="card-title text-color">Smart & Practical</div>
-                    <p>This phone connects you to what matters most—family, friends, and work. It blends simplicity and smart functionality for a seamless, everyday experience.</p>
+                    <p>Honest value and reliable performance without extra cost—everything you need to stay connected with what truly matter, family, friends, and work.</p>
                 </div>
 
                 <div class="col-6 col-lg-3 text-center">
                     <img src="{{ asset('img/home/woman-sitting-sunlight-front-door-using-cellphone-wearing-headphones_23-2148204609.jpg') }}" alt="" class="rounded-img">
                     <div class="card-title text-color">Built to Grow</div>
-                    <p>Focused on what you need, this phone offers a clean interface and optimized system, making your day easier without unnecessary features or clutter.</p>
+                    <p>Durable and user-friendly, INOVA devices are designed with younger users in mind—simple to start with, strong enough to grow with confidence.</p>
                 </div>
 
                 <div class="col-6 col-lg-3 text-center">
                     <img src="{{ asset('img/home/portrait-happy-businessman-talking-cellphone_23-2147899708.jpg') }}" alt="" class="rounded-img">
                     <div class="card-title text-color">Work-Ready</div>
-                    <p>Durable and user-friendly, this phone adapts with software updates and expandable options, staying reliable as your needs evolve.</p>
+                    <p>Built for productivity, our tools support focused work with dependable performance and practical features that help you stay on track.</p>
                 </div>
 
                 <div class="col-6 col-lg-3 text-center">
                     <img src="{{ asset('img/home/medium-shot-old-woman-library_23-2150494666.jpg') }}" alt="" class="rounded-img">
                     <div class="card-title text-color">Simple & Clear</div>
-                    <p>Designed for productivity, it offers essential tools for communication and scheduling. Easy to navigate and comfortable to hold, it just works—beautifully.</p>
+                    <p>Intuitive design without the clutter—INOVA devices are easy to use for everyone, offering the essential features that matter most.</p>
                 </div>
             </div>
 
