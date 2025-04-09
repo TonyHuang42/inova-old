@@ -14,13 +14,18 @@ class NewsController extends Controller
     // Display  all published news
     public function index(Request $request)
     {
-        $categories = Category::all(); 
+        $categories = Category::all();
+        $search = $request->query('search');
     
         $categoryId = $request->query('category');
         $query = News::where('is_published', true)->latest();
     
         if ($categoryId && Category::find($categoryId)) {
             $query->where('category_id', $categoryId);
+        }
+
+        if ($search) {
+            $query->where('title', 'like', '%' . $search . '%');
         }
     
         $news = $query->paginate(5);

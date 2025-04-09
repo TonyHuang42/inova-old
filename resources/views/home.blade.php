@@ -120,8 +120,6 @@
                     <p>Intuitive design without the clutter—INOVA devices are easy to use for everyone, offering the essential features that matter most.</p>
                 </div>
             </div>
-
-
         </div>
     </div>
 
@@ -163,32 +161,32 @@
             <div class="slider home-slider-padding">
                 <a href="/accessories">
                     <img src="{{ asset('img/accessories/battery.jpg') }}" alt="battery" class="rounded-img">
-                    <div class="card-title">Battery</div>
+                    {{-- <div class="card-title">Battery</div> --}}
                 </a>
 
                 <a href="/accessories">
                     <img src="{{ asset('img/accessories/battery_charger.jpg') }}" alt="battery_charger" class="rounded-img">
-                    <div class="card-title">Battery Charger</div>
+                    {{-- <div class="card-title">Battery Charger</div> --}}
                 </a>
 
                 <a href="/accessories">
                     <img src="{{ asset('img/accessories/phone_case.jpg') }}" alt="phone_case" class="rounded-img">
-                    <div class="card-title">Phone Case</div>
+                    {{-- <div class="card-title">Phone Case</div> --}}
                 </a>
 
                 <a href="/accessories">
                     <img src="{{ asset('img/accessories/microSD_card.jpg') }}" alt="microSD_card" class="rounded-img">
-                    <div class="card-title">microSD Card</div>
+                    {{-- <div class="card-title">microSD Card</div> --}}
                 </a>
 
                 <a href="/accessories">
                     <img src="{{ asset('img/accessories/power_adapter.jpg') }}" alt="power_adapter" class="rounded-img">
-                    <div class="card-title">Power Adapter</div>
+                    {{-- <div class="card-title">Power Adapter</div> --}}
                 </a>
 
                 <a href="/accessories">
                     <img src="{{ asset('img/accessories/USB-C_cable.jpg') }}" alt="usb_cable" class="rounded-img">
-                    <div class="card-title">USB-C Cable</div>
+                    {{-- <div class="card-title">USB-C Cable</div> --}}
                 </a>
             </div>
         </div>
@@ -200,7 +198,7 @@
     <script>
         $(document).ready(function() {
             $('.slider').slick({
-                slidesToShow: 5,
+                slidesToShow: 6,
                 slidesToScroll: 1,
                 dots: true,
                 arrows: true,

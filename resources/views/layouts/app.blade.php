@@ -56,7 +56,7 @@
     </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
     <div class="container desktop-nav d-md-block d-none">
         <nav class="nav">
             <a class="logo-container d-flex align-items-center" href="/">
