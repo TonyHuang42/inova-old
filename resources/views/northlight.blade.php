@@ -961,40 +961,40 @@
     </div> --}}
 
     <div class="container">
-        <div class="row">
-            <div class="col-10 mx-auto">
-                <div class="title fw-bold section-padding-sm">Accessories</div>
-                <div class="row bottom-padding gx-5">
-                    <div class="col-4 d-flex justify-content-center">
-                        {{-- <a href="/accessories"> --}}
-                        <div>
-                            <img src="{{ asset('img/accessories/battery.jpg') }}" alt="battery" class="rounded-img">
-                            <div class="card-title">Battery</div>
-                            <p style="margin-left: 10px;">Replaceable battery for uninterrupted power, keeping you connected all day.</p>
-                        </div>
-                        {{-- </a> --}}
-                    </div>
-                    <div class="col-4 d-flex justify-content-center">
-                        {{-- <a href="/accessories"> --}}
-                        <div>
-                            <img src="{{ asset('img/accessories/battery_charger.jpg') }}" alt="battery_charger" class="rounded-img">
-                            <div class="card-title">Battery Charger</div>
-                            <p style="margin-left: 10px;">Compact and efficient charger designed specially for Northlight batteries.</p>
-                        </div>
-                        {{-- </a> --}}
-                    </div>
-                    <div class="col-4 d-flex justify-content-center">
-                        {{-- <a href="/accessories"> --}}
-                        <div>
-                            <img src="{{ asset('img/accessories/microSD_card.jpg') }}" alt="microSD_card" class="rounded-img">
-                            <div class="card-title">microSD Card</div>
-                            <p style="margin-left: 10px;">Upgrade your phone with reliable microSD cards for extra storage.</p>
-                        </div>
-                        {{-- </a> --}}
-                    </div>
+        {{-- <div class="row">
+            <div class="col-10 mx-auto"> --}}
+        <div class="title fw-bold section-padding-sm">Accessories</div>
+        <div class="row bottom-padding gx-5">
+            <div class="col-4 d-flex justify-content-center">
+                {{-- <a href="/accessories"> --}}
+                <div>
+                    <img src="{{ asset('img/accessories/battery.jpg') }}" alt="battery" class="rounded-img">
+                    <div class="card-title">Battery</div>
+                    <p style="margin-left: 10px;">Replaceable battery for uninterrupted power, keeping you connected all day.</p>
                 </div>
+                {{-- </a> --}}
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                {{-- <a href="/accessories"> --}}
+                <div>
+                    <img src="{{ asset('img/accessories/battery_charger.jpg') }}" alt="battery_charger" class="rounded-img">
+                    <div class="card-title">Battery Charger</div>
+                    <p style="margin-left: 10px;">Compact and efficient charger designed specially for Northlight batteries.</p>
+                </div>
+                {{-- </a> --}}
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                {{-- <a href="/accessories"> --}}
+                <div>
+                    <img src="{{ asset('img/accessories/microSD_card.jpg') }}" alt="microSD_card" class="rounded-img">
+                    <div class="card-title">microSD Card</div>
+                    <p style="margin-left: 10px;">Upgrade your phone with reliable microSD cards for extra storage.</p>
+                </div>
+                {{-- </a> --}}
             </div>
         </div>
+        {{-- </div>
+        </div> --}}
     </div>
 @endsection
 

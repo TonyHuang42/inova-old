@@ -97,22 +97,22 @@
 
                 <div class="col-12 col-lg-4">
                     <div class="bg-card-1 text-white text-center d-flex flex-column justify-content-end p-4">
-                        <div class="card-title">Built to Grow</div>
-                        <p>Durable and user-friendly, INOVA devices are designed with younger users in mind—simple to start with, strong enough to grow with confidence.</p>
+                        <div class="card-title">Built to Last for Young Users</div>
+                        <p>Northlight is affordable, easy to handle, and built to last. A replaceable battery and expandable storage mean it won’t be outgrown in a year. It’s a phone that grows with them, not against them.</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="bg-card-2 text-white text-center d-flex flex-column justify-content-end p-4">
-                        <div class="card-title">Built to Grow</div>
-                        <p>Durable and user-friendly, INOVA devices are designed with younger users in mind—simple to start with, strong enough to grow with confidence.</p>
+                        <div class="card-title">Data-Secure for Business</div>
+                        <p>Keep sensitive data close with microSD storage that stays offline and in your control. While Dual SIM helps separate work and personal calls, and the replaceable battery ensures you're never caught off guard.</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
                     <div class="bg-card-3 text-white text-center d-flex flex-column justify-content-end p-4">
-                        <div class="card-title">Built to Grow</div>
-                        <p>Durable and user-friendly, INOVA devices are designed with younger users in mind—simple to start with, strong enough to grow with confidence.</p>
+                        <div class="card-title">Familiar & Easy for Seniors</div>
+                        <p>Northlight brings familiarity back. The replaceable battery and 3.5mm headphone jack feel intuitive and comfortable. Lightweight and easy to hold, with a clear interface—this is tech that supports, not frustrates.</p>
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                 </div>
                 <div class="col-12">
                     <p>At INOVA, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
-                    <p>We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
+                    <p class="mb-0">We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
                 </div>
             </div>
 
@@ -185,6 +185,56 @@
                     <div class="card-title">USB-C Cable</div>
                 </a>
             </div> --}}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bottom-padding-sm">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                        <img src="https://placehold.co/600x400" alt="" class="rounded-img">
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <p class="mb-0">The MediaTek chip powers a responsive, efficient experience—ideal for calls, apps, and messaging—while helping conserve battery throughout the day.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                        <img src="https://placehold.co/600x400" alt="" class="rounded-img">
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <p class="mb-0">Out late or on the move? Just swap in a spare—no outlets, no waiting. Northlight stays powered when you need it most.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bottom-padding-sm">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                        <img src="https://placehold.co/600x400" alt="" class="rounded-img">
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <p class="mb-0">Keep work and personal life organized, or use a travel SIM with ease. Two numbers, one device—managed simply in settings.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                        <img src="https://placehold.co/600x400" alt="" class="rounded-img">
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <p class="mb-0">Need more space? Slide in a microSD card and store your files right on your device—no cloud, no subscriptions, just peace of mind.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
