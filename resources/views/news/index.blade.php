@@ -1,25 +1,21 @@
 @extends('layouts.app')
 
-{{-- @push('styles')
-    <style>
-        #categoryDropdown {
-            width: 202px;
-        }
-    </style>
-@endpush --}}
-
 @section('content')
-    <section class="banner news-banner">
-        <div class="container position-relative h-100">
-            <div class="home-banner-text">
-                <h1 class="banner-text-sm">LATEST NEWS</h1>
-                <div class="banner-text">Stay informed about the<br> latest news at INOVA</div>
+    <section class="container">
+        <div class="section-padding-sm bottom-padding">
+            <div class="row">
+                <div class="col-xl-8 col-lg-10 mx-auto">
+                    <div class="text-center">
+                        <div class="heading pb-4">LATEST NEWS</div>
+                        <p class="mb-0">Stay informed about the latest news at INOVA</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="container">
-        <div class="row top-padding pb-3">
+        <div class="row pb-3">
             <div class="col-4">
                 <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle d-flex justify-content-between align-items-center" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,7 +36,7 @@
                 </div>
             </div>
             <div class="col-4 offset-4">
-                <form action="{{ route('news.index') }}" method="GET" class="d-flex">
+                <form id="searchForm" action="{{ route('news.index') }}" method="GET" class="d-flex">
                     <input type="text" name="search" id="searchInput" class="form-control" placeholder="Search by Title" value="{{ request('search') }}">
                     <button type="submit" class="btn btn-primary ms-2"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <button type="button" id="clearSearch" class="btn btn-secondary ms-2 d-none"><i class="fa-solid fa-xmark"></i></button>

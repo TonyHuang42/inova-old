@@ -15,26 +15,27 @@
         }
 
         .accessories-title-padding {
-            /* padding: 50px 0 14px 0; */
             padding: 50px 0;
         }
 
-        /* .home-slider-padding {
-            padding-top: 36px;
-        } */
+        .bg-card-1,
+        .bg-card-2,
+        .bg-card-3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('img/home/teen.jpg') }}');
+            background-size: cover;
+            background-position: top center;
+            height: 400px;
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+        }
 
-        @media (max-width: 767px) {
-            .card-title {
-                font-size: 20px;
-            }
+        .bg-card-2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('img/home/business.jpg') }}');
+        }
 
-            /* .accessories-title-padding {
-                padding: 50px 0 20px 0;
-            }
-
-            .home-slider-padding {
-                padding-top: 30px;
-            } */
+        .bg-card-3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('img/home/senior.jpg') }}');
         }
     </style>
 @endpush
@@ -48,27 +49,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8 mx-auto mb-5 text-center">
-                    <p class="mb-0">At INOVA, we believe technology should be within reach, simplify life, and remove barriers—these beliefs guide everything we create now and into the future.</p>
+                    <div class="about-title">Building Bridges, Not Just Devices</div>
                 </div>
             </div>
             {{-- <a href="/about-us#purpose" class="text-white"> --}}
-                <div class="row text-center gx-lg-5 bottom-padding">
-                    <div class="col-12 col-lg-4">
-                        <img src="{{ asset('img/home/icon_accessible.svg') }}" alt="accessibility" class="values-icon">
-                        <div class="about-title pt-2 pb-3">Accessibility</div>
-                        <p>We believe everyone deserves access to reliable technology. That’s why our products are built to welcome more people into a world of connection.</p>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <img src="{{ asset('img/home/icon_simplicity.svg') }}" alt="simplicity" class="values-icon">
-                        <div class="about-title pt-2 pb-3">Simplicity</div>
-                        <p>We design technology that works for you, not against you. Our devices are clear, comfortable, and easy to use—built to simplify life, not overwhelm it.</p>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <img src="{{ asset('img/home/icon_community.svg') }}" alt="community" class="values-icon">
-                        <div class="about-title pt-2 pb-3">Community</div>
-                        <p>INOVA products are designed to support more than individuals— we build tools that help people stay in touch, support each other, and grow together.</p>
-                    </div>
+            <div class="row text-center gx-lg-5 bottom-padding">
+                <div class="col-12 col-lg-4">
+                    <img src="{{ asset('img/home/icon_accessible.svg') }}" alt="accessibility" class="values-icon">
+                    <div class="about-title pt-2 pb-3">Accessibility</div>
+                    <p>We believe everyone deserves access to reliable technology. That’s why our products are built to welcome more people into a world of connection.</p>
                 </div>
+                <div class="col-12 col-lg-4">
+                    <img src="{{ asset('img/home/icon_simplicity.svg') }}" alt="simplicity" class="values-icon">
+                    <div class="about-title pt-2 pb-3">Simplicity</div>
+                    <p>We design technology that works for you, not against you. Our devices are clear, comfortable, and easy to use—built to simplify life, not overwhelm it.</p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <img src="{{ asset('img/home/icon_community.svg') }}" alt="community" class="values-icon">
+                    <div class="about-title pt-2 pb-3">Community</div>
+                    <p>INOVA products are designed to support more than individuals— we build tools that help people stay in touch, support each other, and grow together.</p>
+                </div>
+            </div>
             {{-- </a>
             <div class="row bottom-padding pt-5">
                 <div class="col-12 text-center">
@@ -82,8 +83,7 @@
         <div class="section-padding">
             <div class="row">
                 <div class="col-12 col-lg-8 mx-auto">
-                    <p>We started INOVA with a simple belief: technology should be accessible and bring people closer. Every product we create begins with that in mind. We don’t design to impress—we design to include, support, and connect. Our work is about giving people tools that feel natural and genuinely serve a purpose. Whether it’s a first phone or a daily companion, INOVA devices are made to grow with you—reliable, durable, and always grounded in human connection.</p>
-                    <p class="mb-0">To us, innovation means removing barriers—not adding layers. It means building technology that’s useful, simple, and approachable. It means crafting experiences that feel intuitive from the first tap. INOVA exists to ensure that technology doesn’t stand in the way of life—but moves with it. We believe good tools don’t demand your attention; they simply work, allowing you to stay present, connected, and focused on what really matters.</p>
+                    <p class="mb-0">We started INOVA with a simple belief: technology should be accessible and bring people closer. Every product we create begins with that in mind. We don’t design to impress—we design to include, support, and connect. Our work is about giving people tools that feel natural and genuinely serve a purpose. Whether it’s a first phone or a daily companion, INOVA devices are made to grow with you—reliable, durable, and always grounded in human connection.</p>
                 </div>
             </div>
 
@@ -95,22 +95,25 @@
                     <p>Honest value and reliable performance without extra cost—everything you need to stay connected with what truly matter, family, friends, and work.</p>
                 </div> --}}
 
-                <div class="col-12 col-lg-4 text-center">
-                    <img src="{{ asset('img/home/woman-sitting-sunlight-front-door-using-cellphone-wearing-headphones_23-2148204609.jpg') }}" alt="" class="rounded-img">
-                    <div class="card-title theme-color">Built to Grow</div>
-                    <p>Durable and user-friendly, INOVA devices are designed with younger users in mind—simple to start with, strong enough to grow with confidence.</p>
+                <div class="col-12 col-lg-4">
+                    <div class="bg-card-1 text-white text-center d-flex flex-column justify-content-end p-4">
+                        <div class="card-title">Built to Grow</div>
+                        <p>Durable and user-friendly, INOVA devices are designed with younger users in mind—simple to start with, strong enough to grow with confidence.</p>
+                    </div>
                 </div>
 
-                <div class="col-12 col-lg-4 text-center">
-                    <img src="{{ asset('img/home/portrait-happy-businessman-talking-cellphone_23-2147899708.jpg') }}" alt="" class="rounded-img">
-                    <div class="card-title theme-color">Work-Ready</div>
-                    <p>Built for productivity, our tools support focused work with dependable performance and practical features that help you stay on track.</p>
+                <div class="col-12 col-lg-4">
+                    <div class="bg-card-2 text-white text-center d-flex flex-column justify-content-end p-4">
+                        <div class="card-title">Built to Grow</div>
+                        <p>Durable and user-friendly, INOVA devices are designed with younger users in mind—simple to start with, strong enough to grow with confidence.</p>
+                    </div>
                 </div>
 
-                <div class="col-12 col-lg-4 text-center">
-                    <img src="{{ asset('img/home/medium-shot-old-woman-library_23-2150494666.jpg') }}" alt="" class="rounded-img">
-                    <div class="card-title theme-color">Simple & Clear</div>
-                    <p>Intuitive design without the clutter—INOVA devices are easy to use for everyone, offering the essential features that matter most.</p>
+                <div class="col-12 col-lg-4">
+                    <div class="bg-card-3 text-white text-center d-flex flex-column justify-content-end p-4">
+                        <div class="card-title">Built to Grow</div>
+                        <p>Durable and user-friendly, INOVA devices are designed with younger users in mind—simple to start with, strong enough to grow with confidence.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,37 +188,3 @@
         </div>
     </div>
 @endsection
-
-{{-- @push('scripts')
-    <script>
-        $(document).ready(function() {
-            $('.slider').slick({
-                slidesToShow: 6,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: true,
-                prevArrow: '<button type="button" class="slick-prev"><img src="{{ asset('img/phone/icons/icons_slider.svg') }}" alt="Previous"></button>',
-                nextArrow: '<button type="button" class="slick-next"><img src="{{ asset('img/phone/icons/icons_slider.svg') }}" alt="Next"></button>',
-                responsive: [
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 5
-                        }
-                    },{
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    },
-                ]
-            });
-        });
-    </script>
-@endpush --}}

@@ -130,56 +130,69 @@
         </div>
     </div>
 
-    {{-- <div class="bg-color text-white"> --}}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="row section-padding">
-                        <div class="col-12">
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> --}}
-                            <div class="heading text-center theme-color">Performance, Storage, Flexibility, and Power—All in One</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="row section-padding">
+                    <div class="col-12">
+                        {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> --}}
+                        <div class="heading text-center theme-color">Performance, Storage, Flexibility, and Power—All in One</div>
+                    </div>
+                </div>
+                <div class="row bottom-padding-sm">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="{{ asset('img/phone/chip copy.png') }}" alt="chip" class="img-fluid">
+                    </div>
+                    <div class="col-md-7 offset-md-1 d-flex align-items-center">
+                        <div>
+                            <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="" class="support-icon">
+                            <div class="feature-title my-2 theme-color">Reliable Chip</div>
+                            <p class="key-features-description">Northlight runs on the <strong>MediaTek Helio A22</strong>, a <strong>2.0GHz quad-core processor</strong> built on efficient <strong>12nm</strong> architecture for smooth and consistent performance. Whether messaging, streaming, or multitasking, it delivers dependable speed without overheating or battery drain. Manufactured by <strong>TSMC</strong>, the world’s leading chipmaker, it ensures <strong>stability, security</strong>, and everyday <strong>efficiency</strong>.</p>
                         </div>
                     </div>
-                    <div class="row bottom-padding-sm">
-                        <div class="col-md-4 d-flex align-items-center">
-                            <img src="{{ asset('img/phone/chip copy.png') }}" alt="chip" class="img-fluid">
-                        </div>
-                        <div class="col-md-7 offset-md-1 d-flex align-items-center">
-                            <div>
-                                <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="" class="support-icon">
-                                <div class="feature-title my-2">Reliable Chip</div>
-                                <p class="key-features-description">Northlight runs on the <strong>MediaTek Helio A22</strong>, a <strong>2.0GHz quad-core processor</strong> built on efficient <strong>12nm architecture</strong> for <strong>smooth and consistent performance</strong>. Whether messaging, streaming, or multitasking, it delivers dependable speed without overheating or battery drain. Manufactured by <strong>TSMC</strong>, the world’s leading chipmaker, it ensures <strong>stability, security</strong>, and <strong>everyday efficiency</strong>.</p>
-                            </div>
+                </div>
+
+                <div class="row bottom-padding-sm">
+                    <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
+                        <div>
+                            <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="" class="support-icon">
+                            <div class="feature-title my-2 theme-color">Replaceable Battery</div>
+                            <p class="key-features-description">Northlight features a <strong>2500mAh removable battery</strong> with a <strong>tool-free</strong> latch system, allowing fast swaps without a technician. Keep a spare charged and stay powered anytime, and when battery performance declines over time, just <strong>replace the unit</strong>—not the phone. This design supports long-term <strong>durability, reduces waste</strong>, and ensures you're always ready when charging isn’t possible.</p>
                         </div>
                     </div>
-                    <div class="row bottom-padding-sm">
-                        <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
-                            <p>Northlight features a removable 2500mAh battery that can be replaced in seconds thanks to a tool-free latch system. Unlike sealed devices that require professional service or full replacement, Northlight empowers users to extend their phone’s life independently. Whether you’re swapping in a spare for emergencies, replacing a degraded unit after long-term use, or preparing for off-grid travel, the replaceable battery system adds unmatched practicality. It also aligns with INova’s sustainability goals—cutting down on electronic waste and promoting a more repairable, cost-effective future.</p>
-                        </div>
-                        <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
-                            <img src="{{ asset('img/phone/battery copy.png') }}" alt="battery" class="img-fluid">
+                    <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
+                        <img src="{{ asset('img/phone/battery copy.png') }}" alt="battery" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row bottom-padding-sm">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="{{ asset('img/phone/dualSIM_card copy.png') }}" alt="dual SIM cards" class="img-fluid">
+                    </div>
+                    <div class="col-md-7 offset-md-1 d-flex align-items-center">
+                        <div>
+                            <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="" class="support-icon">
+                            <div class="feature-title my-2 theme-color">Dual SIM</div>
+                            <p class="key-features-description">Northlight supports <strong>dual SIM</strong> functionality with dedicated <strong>Micro and Nano SIM slots</strong>, and unlike many alternatives, Northlight allows you to use a <strong>microSD card simultaneously</strong>—no trade-offs between storage and connectivity. Two numbers can stay active at once, with seamless switching in settings. It’s a reliable solution for <strong>managing lines, cutting costs</strong>, and keeping things simple.</p>
                         </div>
                     </div>
-                    <div class="row bottom-padding-sm">
-                        <div class="col-md-4 d-flex align-items-center">
-                            <img src="{{ asset('img/phone/dualSIM_card copy.png') }}" alt="dual SIM cards" class="img-fluid">
-                        </div>
-                        <div class="col-md-7 offset-md-1 d-flex align-items-center">
-                            <p>Northlight supports both Micro and Nano SIM cards, offering true dual SIM functionality with software-based switching. This enables two active numbers on the same device—ideal for balancing work and personal communication, or using a local SIM when traveling internationally without losing access to your primary number. Switching between SIMs is seamless and handled via the phone’s settings, with no need to physically remove cards. It’s a flexible and cost-efficient feature built for real-world users like remote workers, small business owners, students abroad, or frequent travelers.</p>
+                </div>
+
+                <div class="row bottom-padding">
+                    <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
+                        <div>
+                            <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="" class="support-icon">
+                            <div class="feature-title my-2 theme-color">microSD Card</div>
+                            <p class="key-features-description">With support for <strong>microSD cards up to 512GB</strong>, Northlight allows easy, cost-effective storage expansion. Keep photos, apps, and files <strong>securely stored</strong> on your device, with no need for cloud logins or subscriptions. Your data stays <strong>physically</strong> with you, offering greater <strong>privacy, control, and offline access</strong>—all through a simple plug-and-play setup that requires no configuration.</p>
                         </div>
                     </div>
-                    <div class="row bottom-padding">
-                        <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
-                            <p>Northlight includes a dedicated microSD slot supporting cards up to 512GB, giving users massive storage flexibility at a minimal cost. Unlike cloud storage, microSD keeps data local, secure, and always accessible—no internet required. It’s perfect for storing offline media, backing up personal files, or keeping work documents on hand. Whether you’re a student with class projects or a traveler saving photos, the expandable memory means you don’t need to pay more for a higher-storage model. Plus, it’s plug-and-play—no setup or formatting needed.</p>
-                        </div>
-                        <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
-                            <img src="{{ asset('img/phone/microSD_card copy.png') }}" alt="microSD" class="img-fluid">
-                        </div>
+                    <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
+                        <img src="{{ asset('img/phone/microSD_card copy.png') }}" alt="microSD" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
-    {{-- </div> --}}
+    </div>
 
     {{-- <div class="container">
         <div class="heading text-center top-padding">Innovation that Brings People Together</div>
@@ -209,7 +222,7 @@
     <!-- Desktop Engineering Drawing -->
     <div class="bg-color overflow-hidden">
         <div class="custom-container">
-            <div class="heading text-white" style="padding-top: 50px;">Let's Break it Down.</div>
+            <div class="heading text-white" style="padding-top: 50px;">(Other Features)</div>
             <div class="features-container-desktop" id="engineering-drawing-section">
                 <div class="image-wrapper engineering-drawing-position engineering-drawing-lg">
                     <img src="{{ asset('img/phone/Northlight-explosive-sketch.png') }}" alt="engineering drawing" class="engineering-drawing">
@@ -948,30 +961,38 @@
     </div> --}}
 
     <div class="container">
-        <div class="title fw-bold section-padding-sm">Accessories</div>
-        <div class="row bottom-padding gx-5">
-            <div class="col-4 d-flex justify-content-center">
-                <a href="/accessories">
-                    <img src="{{ asset('img/accessories/battery.jpg') }}" alt="battery" class="rounded-img">
-                    <div class="card-title">Battery</div>
-                    <p style="margin-left: 10px;">Replaceable battery for uninterrupted power, keeping you connected all day.</p>
-                </a>
-            </div>
-
-            <div class="col-4 d-flex justify-content-center">
-                <a href="/accessories">
-                    <img src="{{ asset('img/accessories/battery_charger.jpg') }}" alt="battery_charger" class="rounded-img">
-                    <div class="card-title">Battery Charger</div>
-                    <p style="margin-left: 10px;">Compact and efficient charger designed specially for Northlight batteries.</p>
-                </a>
-            </div>
-
-            <div class="col-4 d-flex justify-content-center">
-                <a href="/accessories">
-                    <img src="{{ asset('img/accessories/microSD_card.jpg') }}" alt="microSD_card" class="rounded-img">
-                    <div class="card-title">microSD Card</div>
-                    <p style="margin-left: 10px;">Upgrade your phone with reliable microSD cards for extra storage.</p>
-                </a>
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <div class="title fw-bold section-padding-sm">Accessories</div>
+                <div class="row bottom-padding gx-5">
+                    <div class="col-4 d-flex justify-content-center">
+                        {{-- <a href="/accessories"> --}}
+                        <div>
+                            <img src="{{ asset('img/accessories/battery.jpg') }}" alt="battery" class="rounded-img">
+                            <div class="card-title">Battery</div>
+                            <p style="margin-left: 10px;">Replaceable battery for uninterrupted power, keeping you connected all day.</p>
+                        </div>
+                        {{-- </a> --}}
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        {{-- <a href="/accessories"> --}}
+                        <div>
+                            <img src="{{ asset('img/accessories/battery_charger.jpg') }}" alt="battery_charger" class="rounded-img">
+                            <div class="card-title">Battery Charger</div>
+                            <p style="margin-left: 10px;">Compact and efficient charger designed specially for Northlight batteries.</p>
+                        </div>
+                        {{-- </a> --}}
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        {{-- <a href="/accessories"> --}}
+                        <div>
+                            <img src="{{ asset('img/accessories/microSD_card.jpg') }}" alt="microSD_card" class="rounded-img">
+                            <div class="card-title">microSD Card</div>
+                            <p style="margin-left: 10px;">Upgrade your phone with reliable microSD cards for extra storage.</p>
+                        </div>
+                        {{-- </a> --}}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
