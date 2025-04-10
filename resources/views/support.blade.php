@@ -16,14 +16,6 @@
             padding: 30px;
         }
 
-        .support-icon {
-            width: 70px;
-        }
-
-        .card-title {
-            padding: 15px 0 0 0;
-        }
-
         @media only screen and (max-width: 991px) {
             .row {
                 --bs-gutter-y: 24px;

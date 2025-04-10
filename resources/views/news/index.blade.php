@@ -41,8 +41,9 @@
             </div>
             <div class="col-4 offset-4">
                 <form action="{{ route('news.index') }}" method="GET" class="d-flex">
-                    <input type="text" name="search" class="form-control" placeholder="Search by Title" value="{{ request('search') }}">
+                    <input type="text" name="search" id="searchInput" class="form-control" placeholder="Search by Title" value="{{ request('search') }}">
                     <button type="submit" class="btn btn-primary ms-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="button" id="clearSearch" class="btn btn-secondary ms-2 d-none"><i class="fa-solid fa-xmark"></i></button>
                 </form>
             </div>
         </div>
@@ -57,14 +58,60 @@
 @push('scripts')
     <script>
         $(document).ready(function() {
-            function fetchNews(categoryId = '', search = '') {
+            const $searchInput = $('#searchInput');
+            const $clearBtn = $('#clearSearch');
+
+            // Show/hide clear button on load
+            toggleClearButton();
+
+            // Show/hide on input
+            $searchInput.on('input', toggleClearButton);
+
+            function toggleClearButton() {
+                if ($searchInput.val().trim() !== '') {
+                    $clearBtn.removeClass('d-none');
+                } else {
+                    $clearBtn.addClass('d-none');
+                }
+            }
+
+            // Clear button functionality
+            $clearBtn.on('click', function() {
+                $searchInput.val('');
+                toggleClearButton();
+
+                const categoryId = $('.news-categories.active-category').data('category') || '';
+                fetchNews(categoryId, '');
+            });
+
+            // Submit search form
+            $('#searchForm').on('submit', function(e) {
+                e.preventDefault();
+                const keyword = $searchInput.val();
+                const categoryId = $('.news-categories.active-category').data('category') || '';
+                fetchNews(categoryId, keyword);
+            });
+
+            // Category filter
+            $('.news-categories').click(function() {
+                const $this = $(this);
+                const categoryId = $this.data('category');
+                const categoryText = $this.text().trim();
+
+                $('#categoryText').text(categoryText || 'All News');
+                $('.news-categories').removeClass('active-category');
+                $this.addClass('active-category');
+
+                fetchNews(categoryId, $searchInput.val());
+            });
+
+            function fetchNews(categoryId, searchKeyword) {
                 let url = "{{ route('news.index') }}";
                 let params = [];
 
-                if (categoryId) params.push('category=' + categoryId);
-                if (search) params.push('search=' + encodeURIComponent(search));
-
-                if (params.length > 0) url += '?' + params.join('&');
+                if (categoryId) params.push("category=" + categoryId);
+                if (searchKeyword) params.push("search=" + encodeURIComponent(searchKeyword));
+                if (params.length) url += "?" + params.join("&");
 
                 $.ajax({
                     url: url,
@@ -74,28 +121,6 @@
                     }
                 });
             }
-
-            // Handle category selection
-            $('.news-categories').click(function() {
-                var $this = $(this);
-                var categoryId = $this.data('category');
-                var categoryText = $this.text().trim();
-                $('#categoryText').text(categoryText || 'All News');
-
-                $('.news-categories').removeClass('active-category');
-                $this.addClass('active-category');
-
-                let search = $('input[name="search"]').val();
-                fetchNews(categoryId, search);
-            });
-
-            // Handle search form submit
-            $('form').on('submit', function(e) {
-                e.preventDefault();
-                let search = $('input[name="search"]').val();
-                let categoryId = $('.news-categories.active-category').data('category') || '';
-                fetchNews(categoryId, search);
-            });
         });
     </script>
 @endpush

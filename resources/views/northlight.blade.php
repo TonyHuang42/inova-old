@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset( 'css/custom-container.css' ) }}">
+    <link rel="stylesheet" href="{{ asset('css/custom-container.css') }}">
     <style>
         #phone-nav-container {
             background-color: #232323;
@@ -21,6 +21,12 @@
         #phone-nav-container.visible {
             transform: translateY(0);
             visibility: visible;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 10px 0 0 10px;
         }
 
         @media only screen and (max-width: 575px) {
@@ -47,102 +53,135 @@
 
         <div class="d-none d-xl-flex">
             <a class="highlight-wrap" data-target="camera" href="/northlight#engineering-drawing-section">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 42%; left: 19%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" alt="features" class="phone-banner-features" style="top: 42%; left: 19%;">
             </a>
 
             <a class="highlight-wrap" data-target="display" href="/northlight#engineering-drawing-section">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 42%; left: 77%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" alt="features" class="phone-banner-features" style="top: 42%; left: 77%;">
             </a>
 
             <a class="highlight-wrap" data-target="battery" href="/northlight#engineering-drawing-section">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 64%; left: 15%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" alt="features" class="phone-banner-features" style="top: 64%; left: 15%;">
             </a>
 
             <a class="highlight-wrap" data-target="sim-card" href="/northlight#engineering-drawing-section">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 64%; left: 85%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" alt="features" class="phone-banner-features" style="top: 64%; left: 85%;">
             </a>
 
             <a class="highlight-wrap" data-target="chip" href="/northlight#engineering-drawing-section">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 86%; left: 20%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" alt="features" class="phone-banner-features" style="top: 86%; left: 20%;">
             </a>
 
             <a class="highlight-wrap" data-target="microSD" href="/northlight#engineering-drawing-section">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 86%; left: 82%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" alt="features" class="phone-banner-features" style="top: 86%; left: 82%;">
             </a>
         </div>
 
         <div class="d-xl-none d-md-flex d-none">
             <a class="highlight-wrap" data-target="camera-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 42%; left: 19%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_camera.png') }}" alt="features" class="phone-banner-features" style="top: 42%; left: 19%;">
             </a>
 
             <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 42%; left: 77%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_screen.png') }}" alt="features" class="phone-banner-features" style="top: 42%; left: 77%;">
             </a>
 
             <a class="highlight-wrap" data-target="battery-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 64%; left: 15%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_battery.png') }}" alt="features" class="phone-banner-features" style="top: 64%; left: 15%;">
             </a>
 
             <a class="highlight-wrap" data-target="sim-card-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 64%; left: 85%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SIMs.png') }}" alt="features" class="phone-banner-features" style="top: 64%; left: 85%;">
             </a>
 
             <a class="highlight-wrap" data-target="chip-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 86%; left: 20%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_chip.png') }}" alt="features" class="phone-banner-features" style="top: 86%; left: 20%;">
             </a>
 
             <a class="highlight-wrap" data-target="microSD-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 86%; left: 82%;">
+                <img src="{{ asset('img/phone/banner/desktop_bubbles/bubble_SDCard.png') }}" alt="features" class="phone-banner-features" style="top: 86%; left: 82%;">
             </a>
         </div>
 
         <div class="d-md-none">
             <a class="highlight-wrap" data-target="camera-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_camera.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 27%; left: 25%;">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_camera.png') }}" alt="features" class="phone-banner-features" style="top: 27%; left: 25%;">
             </a>
 
             <a class="highlight-wrap" data-target="display-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_screen.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 27%; left: 50%;">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_screen.png') }}" alt="features" class="phone-banner-features" style="top: 27%; left: 50%;">
             </a>
 
             <a class="highlight-wrap" data-target="battery-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_battery.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 27%; left: 75%;">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_battery.png') }}" alt="features" class="phone-banner-features" style="top: 27%; left: 75%;">
             </a>
 
             <a class="highlight-wrap" data-target="sim-card-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SIMs.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 37%; left: 25%;">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SIMs.png') }}" alt="features" class="phone-banner-features" style="top: 37%; left: 25%;">
             </a>
 
             <a class="highlight-wrap" data-target="chip-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_chip.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 37%; left: 50%;">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_chip.png') }}" alt="features" class="phone-banner-features" style="top: 37%; left: 50%;">
             </a>
 
             <a class="highlight-wrap" data-target="microSD-mobile" href="/northlight#engineering-drawing-section-mobile">
-                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SDCard.png') }}" 
-                alt="features" class="phone-banner-features" style="top: 37%; left: 75%;">
+                <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SDCard.png') }}" alt="features" class="phone-banner-features" style="top: 37%; left: 75%;">
             </a>
         </div>
     </div>
 
-    <div class="container">
+    {{-- <div class="bg-color text-white"> --}}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row section-padding">
+                        <div class="col-12">
+                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> --}}
+                            <div class="heading text-center theme-color">Performance, Storage, Flexibility, and Power—All in One</div>
+                        </div>
+                    </div>
+                    <div class="row bottom-padding-sm">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <img src="{{ asset('img/phone/chip copy.png') }}" alt="chip" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 offset-md-1 d-flex align-items-center">
+                            <div>
+                                <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="" class="support-icon">
+                                <div class="feature-title my-2">Reliable Chip</div>
+                                <p class="key-features-description">Northlight runs on the <strong>MediaTek Helio A22</strong>, a <strong>2.0GHz quad-core processor</strong> built on efficient <strong>12nm architecture</strong> for <strong>smooth and consistent performance</strong>. Whether messaging, streaming, or multitasking, it delivers dependable speed without overheating or battery drain. Manufactured by <strong>TSMC</strong>, the world’s leading chipmaker, it ensures <strong>stability, security</strong>, and <strong>everyday efficiency</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bottom-padding-sm">
+                        <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
+                            <p>Northlight features a removable 2500mAh battery that can be replaced in seconds thanks to a tool-free latch system. Unlike sealed devices that require professional service or full replacement, Northlight empowers users to extend their phone’s life independently. Whether you’re swapping in a spare for emergencies, replacing a degraded unit after long-term use, or preparing for off-grid travel, the replaceable battery system adds unmatched practicality. It also aligns with INova’s sustainability goals—cutting down on electronic waste and promoting a more repairable, cost-effective future.</p>
+                        </div>
+                        <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
+                            <img src="{{ asset('img/phone/battery copy.png') }}" alt="battery" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row bottom-padding-sm">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <img src="{{ asset('img/phone/dualSIM_card copy.png') }}" alt="dual SIM cards" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 offset-md-1 d-flex align-items-center">
+                            <p>Northlight supports both Micro and Nano SIM cards, offering true dual SIM functionality with software-based switching. This enables two active numbers on the same device—ideal for balancing work and personal communication, or using a local SIM when traveling internationally without losing access to your primary number. Switching between SIMs is seamless and handled via the phone’s settings, with no need to physically remove cards. It’s a flexible and cost-efficient feature built for real-world users like remote workers, small business owners, students abroad, or frequent travelers.</p>
+                        </div>
+                    </div>
+                    <div class="row bottom-padding">
+                        <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
+                            <p>Northlight includes a dedicated microSD slot supporting cards up to 512GB, giving users massive storage flexibility at a minimal cost. Unlike cloud storage, microSD keeps data local, secure, and always accessible—no internet required. It’s perfect for storing offline media, backing up personal files, or keeping work documents on hand. Whether you’re a student with class projects or a traveler saving photos, the expandable memory means you don’t need to pay more for a higher-storage model. Plus, it’s plug-and-play—no setup or formatting needed.</p>
+                        </div>
+                        <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
+                            <img src="{{ asset('img/phone/microSD_card copy.png') }}" alt="microSD" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{-- </div> --}}
+
+    {{-- <div class="container">
         <div class="heading text-center top-padding">Innovation that Brings People Together</div>
         <div class="row top-padding bottom-padding-sm gx-lg-5 gy-lg-0 gy-4">
             <div class="col-lg-6 d-flex align-items-center">
@@ -159,13 +198,13 @@
             <div class="col-lg-6 d-flex flex-column justify-content-center order-1 order-lg-0">
                 <div class="about-title pb-3">Building Bridges, Not Gadgets</div>
                 <p>INOVA’s vision has always been about connection—not just between devices, but between people. Northlight is a tool for the teenager navigating their first phone, the retiree video-calling grandkids, or the entrepreneur juggling work and life. It’s a reminder that innovation isn’t about pixels or megawatts—it’s about dissolving barriers.</p>
-                <p>Because at INOVA, we don’t engineer phones. We craft tools that let you focus on what truly matters: the people on the other side of the screen.</p>
+                <p>Because at INOVA, we don’t engineer phones. We craft tools that let you focus on what truly matters: the people on the other side of the screen.</p>
             </div>
             <div class="col-lg-6 d-flex align-items-center order-0 order-lg-1">
                 <img src="{{ asset('img/phone/phone_photo_2.jpg') }}" alt="" class="rounded-img">
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Desktop Engineering Drawing -->
     <div class="bg-color overflow-hidden">
@@ -175,11 +214,11 @@
                 <div class="image-wrapper engineering-drawing-position engineering-drawing-lg">
                     <img src="{{ asset('img/phone/Northlight-explosive-sketch.png') }}" alt="engineering drawing" class="engineering-drawing">
                     <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                        <circle class="circle" cx="36" cy="38.2">
+                        {{-- <circle class="circle" cx="36" cy="38.2">
                             <animate attributeName="r" from="1" to="2" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="sim-card" cx="36" cy="38.2" r="1" />
+                        <circle class="circle-inner" data-target="sim-card" cx="36" cy="38.2" r="1" /> --}}
 
                         <circle class="circle" cx="27.5" cy="65">
                             <animate attributeName="r" from="1" to="2" dur="2s" repeatCount="indefinite" />
@@ -187,17 +226,17 @@
                         </circle>
                         <circle class="circle-inner" data-target="usb-c" cx="27.5" cy="65" r="1" />
 
-                        <circle class="circle" cx="56" cy="27">
+                        {{-- <circle class="circle" cx="56" cy="27">
                             <animate attributeName="r" from="1" to="2" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="battery" cx="56" cy="27" r="1" />
+                        <circle class="circle-inner" data-target="battery" cx="56" cy="27" r="1" /> --}}
 
-                        <circle class="circle" cx="39.5" cy="34.5">
+                        {{-- <circle class="circle" cx="39.5" cy="34.5">
                             <animate attributeName="r" from="1" to="2" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="microSD" cx="39.5" cy="34.5" r="1" />
+                        <circle class="circle-inner" data-target="microSD" cx="39.5" cy="34.5" r="1" /> --}}
 
                         <circle class="circle" cx="52" cy="13.5">
                             <animate attributeName="r" from="1" to="2" dur="2s" repeatCount="indefinite" />
@@ -217,11 +256,11 @@
                         </circle>
                         <circle class="circle-inner" data-target="3.5mm" cx="29.5" cy="61.5" r="1" />
 
-                        <circle class="circle" cx="37.8" cy="64">
+                        {{-- <circle class="circle" cx="37.8" cy="64">
                             <animate attributeName="r" from="1" to="2" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="chip" cx="37.8" cy="64" r="1" />
+                        <circle class="circle-inner" data-target="chip" cx="37.8" cy="64" r="1" /> --}}
 
                         <circle class="circle" cx="33.3" cy="46.5">
                             <animate attributeName="r" from="1" to="2" dur="2s" repeatCount="indefinite" />
@@ -235,11 +274,11 @@
                 <div class="image-wrapper engineering-drawing-position engineering-drawing-md">
                     <img src="{{ asset('img/phone/Northlight-explosive-sketch-mobile.png') }}" alt="engineering drawing" class="engineering-drawing">
                     <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.64 100">
-                        <circle class="circle" cx="14.2" cy="35.8">
+                        {{-- <circle class="circle" cx="14.2" cy="35.8">
                             <animate attributeName="r" from="1.1" to="2.2" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="sim-card" cx="14.2" cy="35.8" r="1.1" />
+                        <circle class="circle-inner" data-target="sim-card" cx="14.2" cy="35.8" r="1.1" /> --}}
 
                         <circle class="circle" cx="4.5" cy="67">
                             <animate attributeName="r" from="1.1" to="2.2" dur="2s" repeatCount="indefinite" />
@@ -247,17 +286,17 @@
                         </circle>
                         <circle class="circle-inner" data-target="usb-c" cx="4.5" cy="67" r="1.1" />
 
-                        <circle class="circle" cx="36.5" cy="23.5">
+                        {{-- <circle class="circle" cx="36.5" cy="23.5">
                             <animate attributeName="r" from="1.1" to="2.2" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="battery" cx="36.5" cy="23.5" r="1.1" />
+                        <circle class="circle-inner" data-target="battery" cx="36.5" cy="23.5" r="1.1" /> --}}
 
-                        <circle class="circle" cx="18.2" cy="31.5">
+                        {{-- <circle class="circle" cx="18.2" cy="31.5">
                             <animate attributeName="r" from="1.1" to="2.2" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="microSD" cx="18.2" cy="31.5" r="1.1" />
+                        <circle class="circle-inner" data-target="microSD" cx="18.2" cy="31.5" r="1.1" /> --}}
 
                         <circle class="circle" cx="32.5" cy="7.5">
                             <animate attributeName="r" from="1.1" to="2.2" dur="2s" repeatCount="indefinite" />
@@ -277,11 +316,11 @@
                         </circle>
                         <circle class="circle-inner" data-target="3.5mm" cx="7.5" cy="61.5" r="1.1" />
 
-                        <circle class="circle" cx="16" cy="65">
+                        {{-- <circle class="circle" cx="16" cy="65">
                             <animate attributeName="r" from="1.1" to="2.2" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="chip" cx="16" cy="65" r="1.1" />
+                        <circle class="circle-inner" data-target="chip" cx="16" cy="65" r="1.1" /> --}}
 
                         <circle class="circle" cx="11" cy="45">
                             <animate attributeName="r" from="1.1" to="2.2" dur="2s" repeatCount="indefinite" />
@@ -527,11 +566,11 @@
                 <div class="image-wrapper-mobile">
                     <img src="{{ asset('img/phone/Northlight-explosive-sketch-mobile.png') }}" alt="engineering drawing" class="engineering-drawing-mobile">
                     <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.64 100">
-                        <circle class="circle" cx="14.8" cy="34.5">
+                        {{-- <circle class="circle" cx="14.8" cy="34.5">
                             <animate attributeName="r" from="1.5" to="3" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="sim-card-mobile" cx="14.8" cy="34.5" r="1.5" />
+                        <circle class="circle-inner" data-target="sim-card-mobile" cx="14.8" cy="34.5" r="1.5" /> --}}
 
                         <circle class="circle" cx="4.5" cy="63.5">
                             <animate attributeName="r" from="1.5" to="3" dur="2s" repeatCount="indefinite" />
@@ -539,17 +578,17 @@
                         </circle>
                         <circle class="circle-inner" data-target="usb-c-mobile" cx="4.5" cy="63.5" r="1.5" />
 
-                        <circle class="circle" cx="36.5" cy="22.5">
+                        {{-- <circle class="circle" cx="36.5" cy="22.5">
                             <animate attributeName="r" from="1.5" to="3" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="battery-mobile" cx="36.5" cy="22.5" r="1.5" />
+                        <circle class="circle-inner" data-target="battery-mobile" cx="36.5" cy="22.5" r="1.5" /> --}}
 
-                        <circle class="circle" cx="18.7" cy="30.5">
+                        {{-- <circle class="circle" cx="18.7" cy="30.5">
                             <animate attributeName="r" from="1.5" to="3" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="microSD-mobile" cx="18.7" cy="30.5" r="1.5" />
+                        <circle class="circle-inner" data-target="microSD-mobile" cx="18.7" cy="30.5" r="1.5" /> --}}
 
                         <circle class="circle" cx="32.5" cy="7.5">
                             <animate attributeName="r" from="1.5" to="3" dur="2s" repeatCount="indefinite" />
@@ -569,11 +608,11 @@
                         </circle>
                         <circle class="circle-inner" data-target="3.5mm-mobile" cx="8.5" cy="59.5" r="1.5" />
 
-                        <circle class="circle" cx="16.5" cy="62.5">
+                        {{-- <circle class="circle" cx="16.5" cy="62.5">
                             <animate attributeName="r" from="1.5" to="3" dur="2s" repeatCount="indefinite" />
                             <animate attributeName="fill" from="rgba(0, 123, 255, 0.7)" to="rgba(0, 123, 255, 0)" dur="2s" repeatCount="indefinite" />
                         </circle>
-                        <circle class="circle-inner" data-target="chip-mobile" cx="16.5" cy="62.5" r="1.5" />
+                        <circle class="circle-inner" data-target="chip-mobile" cx="16.5" cy="62.5" r="1.5" /> --}}
 
                         <circle class="circle" cx="11.8" cy="43.5">
                             <animate attributeName="r" from="1.5" to="3" dur="2s" repeatCount="indefinite" />
@@ -821,17 +860,13 @@
         </div>
     </div>
 
-    <div class="container">
+    {{-- <div class="container">
         <div class="heading section-padding-sm text-center">Designed for Real Life</div>
         <div class="row bottom-padding-sm gx-lg-5">
-            <div class="col-lg-6">
-                <div class="slider">
-                    <img src="{{ asset('img/phone/phone_photo_3.png') }}" alt="young users" class="rounded-img">
-                    <img src="{{ asset('img/phone/phone_photo_4.jpg') }}" alt="business users" class="rounded-img">
-                    <img src="{{ asset('img/phone/phone_photo_5.png') }}" alt="senior users" class="rounded-img">
-                </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <img src="{{ asset('img/phone/phone_photo_3.png') }}" alt="young users" class="rounded-img">
             </div>
-            <div class="col-lg-6 mt-0 d-flex align-items-start">
+            <div class="col-lg-6 mt-0 d-flex align-items-start order-2 order-lg-1">
                 <div class="senario-wrap">
                     <div class="about-title pb-3">First Phone for Young Users</div>
                     <div class="toggle-container">
@@ -852,7 +887,14 @@
                     </div>
                     <p class="toggle-content text-black">Designed for teens and students, Northlight offers a durable, no-frills experience with no fragile screens or expensive price tags—perfect for calls, social media, and everyday use.</p>
                 </div>
+            </div>
+        </div>
 
+        <div class="row bottom-padding-sm gx-lg-5">
+            <div class="col-lg-6">
+                <img src="{{ asset('img/phone/phone_photo_4.jpg') }}" alt="business users" class="rounded-img">
+            </div>
+            <div class="col-lg-6 mt-0 d-flex align-items-start">
                 <div class="senario-wrap">
                     <div class="about-title pb-3">Reliable Phone for Business</div>
                     <div class="toggle-container">
@@ -873,7 +915,14 @@
                     </div>
                     <p class="toggle-content text-black">Perfect for startups, NGOs, or small businesses, Northlight offers rugged, practical phones that prioritize productivity and easy repairs, keeping bulk purchases cost-effective.</p>
                 </div>
+            </div>
+        </div>
 
+        <div class="row bottom-padding-sm gx-lg-5">
+            <div class="col-lg-6 order-1 order-lg-2">
+                <img src="{{ asset('img/phone/phone_photo_5.png') }}" alt="senior users" class="rounded-img">
+            </div>
+            <div class="col-lg-6 mt-0 d-flex align-items-start order-2 order-lg-1">
                 <div class="senario-wrap">
                     <div class="about-title pb-3">Simplified Phone for Seniors</div>
                     <div class="toggle-container">
@@ -894,6 +943,35 @@
                     </div>
                     <p class="toggle-content text-black">Ideal for grandparents reconnecting with family or retirees managing daily tasks, Northlight is designed for users who want tech that respects their pace.</p>
                 </div>
+            </div>
+        </div>
+    </div> --}}
+
+    <div class="container">
+        <div class="title fw-bold section-padding-sm">Accessories</div>
+        <div class="row bottom-padding gx-5">
+            <div class="col-4 d-flex justify-content-center">
+                <a href="/accessories">
+                    <img src="{{ asset('img/accessories/battery.jpg') }}" alt="battery" class="rounded-img">
+                    <div class="card-title">Battery</div>
+                    <p style="margin-left: 10px;">Replaceable battery for uninterrupted power, keeping you connected all day.</p>
+                </a>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+                <a href="/accessories">
+                    <img src="{{ asset('img/accessories/battery_charger.jpg') }}" alt="battery_charger" class="rounded-img">
+                    <div class="card-title">Battery Charger</div>
+                    <p style="margin-left: 10px;">Compact and efficient charger designed specially for Northlight batteries.</p>
+                </a>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+                <a href="/accessories">
+                    <img src="{{ asset('img/accessories/microSD_card.jpg') }}" alt="microSD_card" class="rounded-img">
+                    <div class="card-title">microSD Card</div>
+                    <p style="margin-left: 10px;">Upgrade your phone with reliable microSD cards for extra storage.</p>
+                </a>
             </div>
         </div>
     </div>

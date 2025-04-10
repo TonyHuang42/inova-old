@@ -10,7 +10,7 @@ body {
     --bs-body-color: black;
 }
 
-.text-color {
+.theme-color {
     color: #33488c;
 }
 
@@ -606,7 +606,7 @@ a {
 
 .about-title {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .mission-vision {
@@ -992,4 +992,16 @@ a {
 .senario-wrap {
     max-height: 283px;
     overflow: hidden;
+}
+
+.support-icon {
+    width: 70px;
+}
+
+.key-features-description {
+    color: #555;
+}
+
+.key-features-description strong {
+    color: #000;
 }
