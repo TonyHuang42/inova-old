@@ -135,8 +135,7 @@
             <div class="col-lg-10 mx-auto">
                 <div class="row section-padding">
                     <div class="col-12">
-                        {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> --}}
-                        <div class="heading text-center theme-color">Performance, Storage, Flexibility, and Power—All in One</div>
+                        <h2 class="text-center theme-color">Performance, Storage, Flexibility, and Power—All in One</h2>
                     </div>
                 </div>
                 <div class="row bottom-padding-sm">
@@ -195,7 +194,7 @@
     </div>
 
     {{-- <div class="container">
-        <div class="heading text-center top-padding">Innovation that Brings People Together</div>
+        <h2 class="text-center top-padding">Innovation that Brings People Together</h2>
         <div class="row top-padding bottom-padding-sm gx-lg-5 gy-lg-0 gy-4">
             <div class="col-lg-6 d-flex align-items-center">
                 <img src="{{ asset('img/phone/phone_photo_1.jpg') }}" alt="" class="rounded-img">
@@ -222,7 +221,7 @@
     <!-- Desktop Engineering Drawing -->
     <div class="bg-color overflow-hidden">
         <div class="custom-container">
-            <div class="heading text-white" style="padding-top: 50px;">Beyond the Essentials</div>
+            <h2 class="text-white" style="padding-top: 50px;">Beyond the Essentials</h2>
             <div class="features-container-desktop" id="engineering-drawing-section">
                 <div class="image-wrapper engineering-drawing-position engineering-drawing-lg">
                     <img src="{{ asset('img/phone/Northlight-explosive-sketch.png') }}" alt="engineering drawing" class="engineering-drawing">
@@ -874,7 +873,7 @@
     </div>
 
     {{-- <div class="container">
-        <div class="heading section-padding-sm text-center">Designed for Real Life</div>
+        <h2 class="section-padding-sm text-center">Designed for Real Life</h2>
         <div class="row bottom-padding-sm gx-lg-5">
             <div class="col-lg-6 order-1 order-lg-2">
                 <img src="{{ asset('img/phone/phone_photo_3.png') }}" alt="young users" class="rounded-img">

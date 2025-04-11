@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-10 col-xl-8 mx-auto">
-                <div class="heading py-5">Privacy Policy</div>
+                <h2 class="py-5">Privacy Policy</h2>
                 <p><strong>Effective Date:</strong> 2025 Feb 5</p>
                 <div class="section">
                     <h2>Information We Collect</h2>

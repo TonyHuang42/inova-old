@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-10 mx-auto">
                     <div class="text-center">
-                        <div class="heading pb-4">How Can We Help You?</div>
+                        <h2 class="pb-4">How Can We Help You?</h2>
                         <p class="mb-0">At INOVA, your satisfaction is our priority. Whether you need technical assistance, warranty details, or personalized support, we’re here to ensure you stay connected effortlessly.</p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
             <div class="row">
                 <div class="col-sm-10 mx-auto">
                     <div class="text-center">
-                        <div class="heading pb-4">Frequently Asked Questions</div>
+                        <h2 class="pb-4">Frequently Asked Questions</h2>
                         <p class="mb-0">Find quick answers to common questions about our products and services. We're committed to providing clear, helpful information to make your experience with INOVA seamless and enjoyable.</p>
                     </div>
                 </div>
