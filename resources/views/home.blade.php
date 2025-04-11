@@ -2,37 +2,6 @@
 
 @section('title', 'INOVA')
 @section('meta_description', 'INOVA')
-@push('styles')
-    <style>
-        .row {
-            --bs-gutter-y: 1.5rem;
-        }
-
-        .accessories-title-padding {
-            padding: 50px 0;
-        }
-
-        /* .bg-card-1,
-        .bg-card-2,
-        .bg-card-3 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('img/home/teen.jpg') }}');
-            background-size: cover;
-            background-position: top center;
-            height: 400px;
-            border-radius: 25px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .bg-card-2 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('img/home/business.jpg') }}');
-        }
-
-        .bg-card-3 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('img/home/senior.jpg') }}');
-        } */
-    </style>
-@endpush
 
 @section('content')
     <div class="home-banner-container">
@@ -85,19 +54,19 @@
                 <h3 class="fw-bold">Designed for Real Life</h3>
                 <div class="col-12 col-lg-4 text-center">
                     <img src="{{ asset('img/home/teen.jpg') }}" alt="" class="rounded-img home-user-img">
-                    <h4 class="fw-bold theme-color">Built to Last for Young Users</h4>
+                    <h4 class="fw-bold theme-color mt-2">Built to Last for Young Users</h4>
                     <p>Northlight is affordable, easy to handle, and built to last. A replaceable battery and expandable storage mean it won’t be outgrown in a year. It’s a phone that grows with them, not against them.</p>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center">
                     <img src="{{ asset('img/home/business.jpg') }}" alt="" class="rounded-img home-user-img">
-                    <h4 class="fw-bold theme-color">Data-Secure for Business</h4>
+                    <h4 class="fw-bold theme-color mt-2">Data-Secure for Business</h4>
                     <p>Keep sensitive data close with microSD storage that stays offline and in your control. While Dual SIM helps separate work and personal calls, and the replaceable battery ensures you're never caught off guard.</p>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center">
                     <img src="{{ asset('img/home/senior.jpg') }}" alt="" class="rounded-img home-user-img">
-                    <h4 class="fw-bold theme-color">Familiar & Easy for Seniors</h4>
+                    <h4 class="fw-bold theme-color mt-2">Familiar & Easy for Seniors</h4>
                     <p>Northlight brings familiarity back. The replaceable battery and 3.5mm headphone jack feel intuitive and comfortable. Lightweight and easy to hold, with a clear interface—this is tech that supports, not frustrates.</p>
                 </div>
             </div>
@@ -127,7 +96,7 @@
                 </div>
             </div> --}}
 
-            {{-- <h3 class="fw-bold accessories-title-padding">Accessories</h3>
+            {{-- <h3 class="fw-bold">Accessories</h3>
 
             <div class="slider home-slider-padding">
                 <a href="/accessories">
@@ -164,14 +133,14 @@
     </div>
 
     <div class="container">
-        <div class="row bottom-padding-sm">
+        <div class="row bottom-padding-sm gx-lg-5">
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="col-3 d-flex align-items-center justify-content-center">
                         <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="Chip" class="support-icon">
-                        <h4 class="my-2 theme-color text-center">Reliable Chip</h4>
                     </div>
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-9 d-flex flex-column justify-content-center">
+                        <h4 class="my-2 theme-color">Reliable Chip</h4>
                         <p class="mb-0">The MediaTek chip powers a responsive, efficient experience—ideal for calls, apps, and messaging—while helping conserve battery throughout the day.</p>
                     </div>
                 </div>
@@ -179,25 +148,25 @@
 
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="col-3 d-flex align-items-center justify-content-center">
                         <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="Battery" class="support-icon">
-                        <h4 class="my-2 theme-color text-center">Replaceable Battery</h4>
                     </div>
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-9 d-flex flex-column justify-content-center">
+                        <h4 class="my-2 theme-color">Replaceable Battery</h4>
                         <p class="mb-0">Out late or on the move? Just swap in a spare—no outlets, no waiting. Northlight stays powered when you need it most.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row gx-lg-5">
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="col-3 d-flex align-items-center justify-content-center">
                         <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="Dual SIM" class="support-icon">
-                        <h4 class="my-2 theme-color text-center">Dual SIM</h4>
                     </div>
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-9 d-flex flex-column justify-content-center">
+                        <h4 class="my-2 theme-color">Dual SIM</h4>
                         <p class="mb-0">Keep work and personal life organized, or use a travel SIM with ease. Two numbers, one device—managed simply in settings.</p>
                     </div>
                 </div>
@@ -205,11 +174,11 @@
 
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="col-3 d-flex align-items-center justify-content-center">
                         <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="microSD" class="support-icon">
-                        <h4 class="my-2 theme-color text-center">microSD Card</h4>
                     </div>
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-9 d-flex flex-column justify-content-center">
+                        <h4 class="my-2 theme-color">microSD Card</h4>
                         <p class="mb-0">Need more space? Slide in a microSD card and store your files right on your device—no cloud, no subscriptions, just peace of mind.</p>
                     </div>
                 </div>
