@@ -84,9 +84,19 @@
     /* .title {
         font-size: 40px;
     } */
+
+    .northlight-accessory-img {
+        height: 100%;
+        max-height: 160px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
+    .northlight-accessory-img {
+        height: auto;
+        max-height: 230px;
+    }
+
     /* .phone-banner-text {
         height: 650px;
     } */
