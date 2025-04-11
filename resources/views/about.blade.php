@@ -24,12 +24,12 @@
 
     <div class="row text-center top-margin">
         <div class="col-12 col-md-6 pe-md-5">
-            <div class="about-title mission-vision"><span class="fw-normal">OUR</span> MISSION</div>
+            <h3 class="mission-vision"><span class="fw-normal">OUR</span> MISSION</h3>
             <p>Our mission is to make technology a universal bridge—simple, affordable, and designed for human connection.</p>
         </div>
 
         <div class="col-12 col-md-6 ps-md-5">
-            <div class="about-title mission-vision"><span class="fw-normal">OUR</span> VISION</div>
+            <h3 class="mission-vision"><span class="fw-normal">OUR</span> VISION</h3>
             <p>Our vision is to continue creating innovative, accessible technology that enables everyone to seamlessly stay connected.</p>
         </div>
     </div>
@@ -39,7 +39,7 @@
     <div class="container">
         <div class="row section-padding">
             <div class="col-12 col-md-8">
-                <div class="title fw-bold">Designed with A Purpose</div>
+                <h3 class="fw-bold">Designed with A Purpose</h3>
             </div>
             <div class="col-12 col-md-4 d-flex align-items-end justify-content-end">
                 <a href="/northlight" class="underline-link underline-link-white" style="color: white !important;">
@@ -51,17 +51,17 @@
         <div class="row text-center bottom-padding gx-md-5">
             <div class="col-12 col-md-4">
                 <img src="{{ asset('img/about/icon_accessible.svg') }}" alt="accessibility" class="values-icon">
-                <div class="about-title pt-2 pb-3">Accessibility</div>
+                <h3 class="pt-2 pb-3">Accessibility</h3>
                 <p>We ensure technology is accessible to everyone, with inclusive pricing and features designed for all ages, abilities, and budgets—because innovation should never leave people behind.</p>
             </div>
             <div class="col-12 col-md-4">
                 <img src="{{ asset('img/about/icon_simplicity.svg') }}" alt="simplicity" class="values-icon">
-                <div class="about-title pt-2 pb-3">Simplicity</div>
+                <h3 class="pt-2 pb-3">Simplicity</h3>
                 <p>We design technology that works for you, not against you. Our intuitive interfaces and purposeful features strip away complexity, helping you navigate daily life with ease—no manuals required.</p>
             </div>
             <div class="col-12 col-md-4">
                 <img src="{{ asset('img/about/icon_community.svg') }}" alt="community" class="values-icon">
-                <div class="about-title pt-2 pb-3">Community</div>
+                <h3 class="pt-2 pb-3">Community</h3>
                 <p>We’re more than a tech company—we’re community partners. Our designs empower neighborhoods, families, and friends to connect, collaborate, and thrive together.</p>
             </div>
         </div>
@@ -71,7 +71,7 @@
 <div class="container">
     <div class="row section-padding">
         <div class="col-12 col-md-6">
-            <div class="title fw-bold">Building Bridges, <br>Not Just Devices</div>
+            <h3 class="fw-bold">Building Bridges, <br>Not Just Devices</h3>
         </div>
         <div class="col-12 col-md-6">
             <p>At INOVA, every product we create—from the Northlight Smartphone to future innovations—is a bridge. A bridge between generations sharing stories, between small businesses and their customers, and between isolated communities and the wider world. We don’t engineer gadgets; we craft tools that dissolve barriers, simplify connection, and empower people to focus on what truly matters: each other.</p>

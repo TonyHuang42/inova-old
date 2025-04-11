@@ -127,9 +127,9 @@
         padding-top: 570px;
     }
 
-    h3 {
-        font-size: 23px;
-    }
+    /* h3 {
+        font-size: 24px;
+    } */
 
     .lg-center {
         display: flex;
@@ -218,9 +218,9 @@
         font-size: 45px;
     }
 
-    .about-title {
+    /* .about-title {
         font-size: 28px;
-    }
+    } */
 
     .copyright {
         flex-direction: column;
@@ -271,7 +271,7 @@
         margin-right: 10px;
     }
 
-    .phone-nav-heading {
+    h4 {
         font-size: 20px;
         font-weight: bold;
     }
@@ -288,13 +288,13 @@
         font-size: 36px;
     }
 
-    .about-title {
+    /* .about-title {
         font-size: 24px;
-    }
+    } */
 
-    .home-banner-title {
+    /* .home-banner-title {
         font-size: 35px;
-    }
+    } */
 
     /* .title {
         font-size: 40px;
@@ -305,7 +305,7 @@
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .learn-more-button {

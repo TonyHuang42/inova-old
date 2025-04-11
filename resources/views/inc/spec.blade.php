@@ -50,7 +50,7 @@
             <div class="section-padding-sm">
                 <div class="row">
                     <div class="col-6 col-md-4">
-                        <div class="title">Specifications</div>
+                        <h3>Specifications</h3>
                     </div>
                 </div>
 

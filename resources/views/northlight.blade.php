@@ -145,7 +145,7 @@
                     <div class="col-md-7 offset-md-1 d-flex align-items-center">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="Chip" class="support-icon">
-                            <div class="feature-title my-2 theme-color">Reliable Chip</div>
+                            <h3 class="my-2 theme-color">Reliable Chip</h3>
                             <p class="key-features-description">Northlight runs on the <strong>MediaTek Helio A22</strong>, a <strong>2.0GHz quad-core processor</strong> built on efficient <strong>12nm</strong> architecture for smooth and consistent performance. Whether messaging, streaming, or multitasking, it delivers dependable speed without overheating or battery drain. Manufactured by <strong>TSMC</strong>, the world’s leading chipmaker, it ensures <strong>stability, security</strong>, and everyday <strong>efficiency</strong>.</p>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                     <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="Battery" class="support-icon">
-                            <div class="feature-title my-2 theme-color">Replaceable Battery</div>
+                            <h3 class="my-2 theme-color">Replaceable Battery</h3>
                             <p class="key-features-description">Northlight features a <strong>2500mAh removable battery</strong> with a <strong>tool-free</strong> latch system, allowing fast swaps without a technician. Keep a spare charged and stay powered anytime, and when battery performance declines over time, just <strong>replace the unit</strong>—not the phone. This design supports long-term <strong>durability, reduces waste</strong>, and ensures you're always ready when charging isn’t possible.</p>
                         </div>
                     </div>
@@ -171,7 +171,7 @@
                     <div class="col-md-7 offset-md-1 d-flex align-items-center">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="Dual SIM" class="support-icon">
-                            <div class="feature-title my-2 theme-color">Dual SIM</div>
+                            <h3 class="my-2 theme-color">Dual SIM</h3>
                             <p class="key-features-description">Northlight supports <strong>dual SIM</strong> functionality with dedicated <strong>Micro and Nano SIM slots</strong>, and unlike many alternatives, Northlight allows you to use a <strong>microSD card simultaneously</strong>—no trade-offs between storage and connectivity. Two numbers can stay active at once, with seamless switching in settings. It’s a reliable solution for <strong>managing lines, cutting costs</strong>, and keeping things simple.</p>
                         </div>
                     </div>
@@ -181,7 +181,7 @@
                     <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="microSD" class="support-icon">
-                            <div class="feature-title my-2 theme-color">microSD Card</div>
+                            <h3 class="my-2 theme-color">microSD Card</h3>
                             <p class="key-features-description">With support for <strong>microSD cards up to 512GB</strong>, Northlight allows easy, cost-effective storage expansion. Keep photos, apps, and files <strong>securely stored</strong> on your device, with no need for cloud logins or subscriptions. Your data stays <strong>physically</strong> with you, offering greater <strong>privacy, control, and offline access</strong>—all through a simple plug-and-play setup that requires no configuration.</p>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                 <img src="{{ asset('img/phone/phone_photo_1.jpg') }}" alt="" class="rounded-img">
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center">
-                <div class="about-title pb-3">Designed to Connect, Not Compete</div>
+                <h3 class="pb-3">Designed to Connect, Not Compete</h3>
                 <p>Northlight isn’t just a smartphone—it’s INOVA’s commitment to accessibility, simplicity, and community in action. Designed to dissolve barriers between people and technology, it strips away complexity, cost, and excess. Every feature serves a purpose: connecting you to what matters, not chasing specs you’ll never use.</p>
                 <p>Behind every detail lies a choice: prioritize people over pixels, purpose over prestige.</p>
             </div>
@@ -208,7 +208,7 @@
 
         <div class="row bottom-padding gx-lg-5 gy-lg-0 gy-4">
             <div class="col-lg-6 d-flex flex-column justify-content-center order-1 order-lg-0">
-                <div class="about-title pb-3">Building Bridges, Not Gadgets</div>
+                <h3 class="pb-3">Building Bridges, Not Gadgets</h3>
                 <p>INOVA’s vision has always been about connection—not just between devices, but between people. Northlight is a tool for the teenager navigating their first phone, the retiree video-calling grandkids, or the entrepreneur juggling work and life. It’s a reminder that innovation isn’t about pixels or megawatts—it’s about dissolving barriers.</p>
                 <p>Because at INOVA, we don’t engineer phones. We craft tools that let you focus on what truly matters: the people on the other side of the screen.</p>
             </div>
@@ -346,7 +346,7 @@
                 <div class="image-wrapper content" id="case">
                     <img src="{{ asset('img/phone/phone_case.png') }}" alt="case" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">Phone Case</div>
+                        <h3>Phone Case</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Durable & Lightweight Design</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -371,7 +371,7 @@
                 <div class="image-wrapper content" id="battery">
                     <img src="{{ asset('img/phone/battery.png') }}" alt="Detachable Battery" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">Detachable Battery</div>
+                        <h3>Detachable Battery</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Easily Replaceable</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -396,7 +396,7 @@
                 <div class="image-wrapper content" id="microSD">
                     <img src="{{ asset('img/phone/microSD_card.png') }}" alt="microSD Card" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">microSD Card</div>
+                        <h3>microSD Card</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Affordable Expansion</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -421,7 +421,7 @@
                 <div class="image-wrapper content" id="sim-card">
                     <img src="{{ asset('img/phone/dualSIM_card.png') }}" alt="Dual SIM card" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">Dual Sim Card</div>
+                        <h3>Dual Sim Card</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Simplified Travel</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -446,7 +446,7 @@
                 <div class="image-wrapper content" id="camera">
                     <img src="{{ asset('img/phone/camera.png') }}" alt="camera" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">Camera</div>
+                        <h3>Camera</h3>
                         <div class="toggle-container">
                             <div class="feature-description">5MP Rear Camera & 2MP Front Camera</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -471,7 +471,7 @@
                 <div class="image-wrapper content" id="chip">
                     <img src="{{ asset('img/phone/chip.png') }}" alt="Chip" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">Chip</div>
+                        <h3>Chip</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Mediatek Helio A22 MT6761</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -496,7 +496,7 @@
                 <div class="image-wrapper content" id="3.5mm">
                     <img src="{{ asset('img/phone/headphone_jack.png') }}" alt="3.5mm Headphone Jack" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">3.5mm Headphone Jack</div>
+                        <h3>3.5mm Headphone Jack</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Universal Compatibility</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -521,7 +521,7 @@
                 <div class="image-wrapper content" id="usb-c">
                     <img src="{{ asset('img/phone/usb_c.png') }}" alt="USB-C" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">USB-C</div>
+                        <h3>USB-C</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Universal Simplicity</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -546,7 +546,7 @@
                 <div class="image-wrapper content" id="display">
                     <img src="{{ asset('img/phone/display.png') }}" alt="display" class="engineering-drawing">
                     <div class="text-overlay">
-                        <div class="feature-title">Display</div>
+                        <h3>Display</h3>
                         <div class="toggle-container">
                             <div class="feature-description">TFT LCD</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -639,7 +639,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/phone_case.png') }}" alt="Case" class="feature-background-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">Phone Case</div>
+                        <h3>Phone Case</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Durable & Lightweight Design</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -665,7 +665,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/battery.png') }}" alt="Detachable Battery" class="feature-background-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">Detachable Battery</div>
+                        <h3>Detachable Battery</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Easily Replaceable</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -691,7 +691,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/microSD_card.png') }}" alt="microSD Card" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">microSD Card</div>
+                        <h3>microSD Card</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Affordable Expansion</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -717,7 +717,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/dualSIM_card.png') }}" alt="SIM card" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">Dual Sim Card</div>
+                        <h3>Dual Sim Card</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Simplified Travel</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -743,7 +743,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/camera.png') }}" alt="Camera" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">Camera</div>
+                        <h3>Camera</h3>
                         <div class="toggle-container">
                             <div class="feature-description">5MP Rear Camera & 2MP Front Camera</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -769,7 +769,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/chip.png') }}" alt="Chip" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">Chip</div>
+                        <h3>Chip</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Mediatek Helio A22 MT6761</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -795,7 +795,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/headphone_jack.png') }}" alt="3.5mm Headphone Jack" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">3.5mm Headphone Jack</div>
+                        <h3>3.5mm Headphone Jack</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Universal Compatibility</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -821,7 +821,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/usb_c.png') }}" alt="USB-C" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">USB-C</div>
+                        <h3>USB-C</h3>
                         <div class="toggle-container">
                             <div class="feature-description">Universal Simplicity</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -847,7 +847,7 @@
                     <i class="fa-solid fa-xmark xmark"></i>
                     <img src="{{ asset('img/phone/display.png') }}" alt="display" class="engineering-drawing-mobile">
                     <div class="text-overlay-mobile">
-                        <div class="feature-title">Display</div>
+                        <h3>Display</h3>
                         <div class="toggle-container">
                             <div class="feature-description">TFT LCD</div>
                             <i class="fa-solid fa-angle-right arrow"></i>
@@ -880,7 +880,7 @@
             </div>
             <div class="col-lg-6 mt-0 d-flex align-items-start order-2 order-lg-1">
                 <div class="senario-wrap">
-                    <div class="about-title pb-3">First Phone for Young Users</div>
+                    <h3 class="pb-3">First Phone for Young Users</h3>
                     <div class="toggle-container">
                         <div class="feature-description">Ideal for Young Users</div>
                         <i class="fa-solid fa-angle-right arrow"></i>
@@ -908,7 +908,7 @@
             </div>
             <div class="col-lg-6 mt-0 d-flex align-items-start">
                 <div class="senario-wrap">
-                    <div class="about-title pb-3">Reliable Phone for Business</div>
+                    <h3 class="pb-3">Reliable Phone for Business</h3>
                     <div class="toggle-container">
                         <div class="feature-description">Cost-Effective Efficiency</div>
                         <i class="fa-solid fa-angle-right arrow"></i>
@@ -936,7 +936,7 @@
             </div>
             <div class="col-lg-6 mt-0 d-flex align-items-start order-2 order-lg-1">
                 <div class="senario-wrap">
-                    <div class="about-title pb-3">Simplified Phone for Seniors</div>
+                    <h3 class="pb-3">Simplified Phone for Seniors</h3>
                     <div class="toggle-container">
                         <div class="feature-description">Classic Simplicity Meets Modern Tech</div>
                         <i class="fa-solid fa-angle-right arrow"></i>
@@ -960,7 +960,7 @@
     </div> --}}
 
     <div class="container">
-        <div class="title fw-bold section-padding-sm">Accessories</div>
+        <h3 class="fw-bold section-padding-sm">Accessories</h3>
         <div class="row bottom-padding">
             <div class="col-lg-4">
                 <div class="card">
