@@ -8,20 +8,14 @@
             --bs-gutter-y: 1.5rem;
         }
 
-        .card-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin: 10px 0 0 10px;
-        }
-
         .accessories-title-padding {
             padding: 50px 0;
         }
 
-        .bg-card-1,
+        /* .bg-card-1,
         .bg-card-2,
         .bg-card-3 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('img/home/teen.jpg') }}');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('img/home/teen.jpg') }}');
             background-size: cover;
             background-position: top center;
             height: 400px;
@@ -31,12 +25,12 @@
         }
 
         .bg-card-2 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('img/home/business.jpg') }}');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('img/home/business.jpg') }}');
         }
 
         .bg-card-3 {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ asset('img/home/senior.jpg') }}');
-        }
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('img/home/senior.jpg') }}');
+        } */
     </style>
 @endpush
 
@@ -88,32 +82,23 @@
             </div>
 
             <div class="row top-padding">
-                <div class="title fw-bold">Building Bridges, Not Just Devices</div>
-                {{-- <div class="col-6 col-lg-3 text-center">
-                    <img src="{{ asset('img/home/talking-client_1098-13119.jpg') }}" alt="" class="rounded-img">
-                    <div class="card-title theme-color">Smart & Practical</div>
-                    <p>Honest value and reliable performance without extra cost—everything you need to stay connected with what truly matter, family, friends, and work.</p>
-                </div> --}}
-
-                <div class="col-12 col-lg-4">
-                    <div class="bg-card-1 text-white text-center d-flex flex-column justify-content-end p-4">
-                        <div class="card-title">Built to Last for Young Users</div>
-                        <p>Northlight is affordable, easy to handle, and built to last. A replaceable battery and expandable storage mean it won’t be outgrown in a year. It’s a phone that grows with them, not against them.</p>
-                    </div>
+                <div class="title fw-bold">Designed for Real Life</div>
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="{{ asset('img/home/teen.jpg') }}" alt="" class="rounded-img home-user-img">
+                    <div class="fw-bold theme-color phone-nav-heading">Built to Last for Young Users</div>
+                    <p>Northlight is affordable, easy to handle, and built to last. A replaceable battery and expandable storage mean it won’t be outgrown in a year. It’s a phone that grows with them, not against them.</p>
                 </div>
 
-                <div class="col-12 col-lg-4">
-                    <div class="bg-card-2 text-white text-center d-flex flex-column justify-content-end p-4">
-                        <div class="card-title">Data-Secure for Business</div>
-                        <p>Keep sensitive data close with microSD storage that stays offline and in your control. While Dual SIM helps separate work and personal calls, and the replaceable battery ensures you're never caught off guard.</p>
-                    </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="{{ asset('img/home/business.jpg') }}" alt="" class="rounded-img home-user-img">
+                    <div class="fw-bold theme-color phone-nav-heading">Data-Secure for Business</div>
+                    <p>Keep sensitive data close with microSD storage that stays offline and in your control. While Dual SIM helps separate work and personal calls, and the replaceable battery ensures you're never caught off guard.</p>
                 </div>
 
-                <div class="col-12 col-lg-4">
-                    <div class="bg-card-3 text-white text-center d-flex flex-column justify-content-end p-4">
-                        <div class="card-title">Familiar & Easy for Seniors</div>
-                        <p>Northlight brings familiarity back. The replaceable battery and 3.5mm headphone jack feel intuitive and comfortable. Lightweight and easy to hold, with a clear interface—this is tech that supports, not frustrates.</p>
-                    </div>
+                <div class="col-12 col-lg-4 text-center">
+                    <img src="{{ asset('img/home/senior.jpg') }}" alt="" class="rounded-img home-user-img">
+                    <div class="fw-bold theme-color phone-nav-heading">Familiar & Easy for Seniors</div>
+                    <p>Northlight brings familiarity back. The replaceable battery and 3.5mm headphone jack feel intuitive and comfortable. Lightweight and easy to hold, with a clear interface—this is tech that supports, not frustrates.</p>
                 </div>
             </div>
         </div>
@@ -135,16 +120,6 @@
             <a href="/northlight">
                 <img src="{{ asset('img/home/banner_northlight.png') }}" alt="Banner" class="rounded-img">
             </a>
-
-            <div class="row top-padding">
-                <div class="col-12">
-                    <div class="title fw-bold">More Than a Phone</div>
-                </div>
-                <div class="col-12">
-                    <p>At INOVA, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
-                    <p class="mb-0">We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
-                </div>
-            </div>
 
             {{-- <div class="row top-padding">
                 <div class="col-12 text-center">
@@ -192,8 +167,9 @@
         <div class="row bottom-padding-sm">
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="https://placehold.co/600x400" alt="" class="rounded-img">
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                        <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="Chip" class="support-icon">
+                        <div class="phone-nav-heading my-2 theme-color text-center">Reliable Chip</div>
                     </div>
                     <div class="col-6 d-flex align-items-center">
                         <p class="mb-0">The MediaTek chip powers a responsive, efficient experience—ideal for calls, apps, and messaging—while helping conserve battery throughout the day.</p>
@@ -203,8 +179,9 @@
 
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="https://placehold.co/600x400" alt="" class="rounded-img">
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                        <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="Battery" class="support-icon">
+                        <div class="phone-nav-heading my-2 theme-color text-center">Replaceable Battery</div>
                     </div>
                     <div class="col-6 d-flex align-items-center">
                         <p class="mb-0">Out late or on the move? Just swap in a spare—no outlets, no waiting. Northlight stays powered when you need it most.</p>
@@ -213,27 +190,39 @@
             </div>
         </div>
 
-        <div class="row bottom-padding-sm">
+        <div class="row">
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="https://placehold.co/600x400" alt="" class="rounded-img">
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                        <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="Dual SIM" class="support-icon">
+                        <div class="phone-nav-heading my-2 theme-color text-center">Dual SIM</div>
                     </div>
                     <div class="col-6 d-flex align-items-center">
                         <p class="mb-0">Keep work and personal life organized, or use a travel SIM with ease. Two numbers, one device—managed simply in settings.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="https://placehold.co/600x400" alt="" class="rounded-img">
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                        <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="microSD" class="support-icon">
+                        <div class="phone-nav-heading my-2 theme-color text-center">microSD Card</div>
                     </div>
                     <div class="col-6 d-flex align-items-center">
                         <p class="mb-0">Need more space? Slide in a microSD card and store your files right on your device—no cloud, no subscriptions, just peace of mind.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="row section-padding">
+            <div class="col-12">
+                <div class="title fw-bold">More Than a Phone</div>
+            </div>
+            <div class="col-12">
+                <p>At INOVA, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
+                <p class="mb-0">We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
             </div>
         </div>
     </div>

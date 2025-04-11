@@ -6,7 +6,7 @@ body {
 }
 
 :root {
-    --bs-border-radius: 20px;
+    --bs-border-radius: 25px;
     --bs-body-color: black;
 }
 
@@ -1003,5 +1003,19 @@ a {
 }
 
 .key-features-description strong {
-    color: #000;
+    color: #33488c;
+}
+
+.northlight-accessory-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: auto;
+    display: block;
+}
+
+.home-user-img {
+    max-height: 416px;
+    object-fit: cover;
+    object-position: top center;
 }
