@@ -23,22 +23,10 @@
             visibility: visible;
         }
 
-        /* .card-title {
-                font-size: 24px;
-                font-weight: 600;
-                margin: 10px 0 0 10px;
-            } */
-
-        @media only screen and (max-width: 575px) {
-            .video-container {
-                display: none;
-            }
-        }
-
-        @media only screen and (min-width: 576px) {
-            .mobile-banner-container {
-                display: none;
-            }
+        .card {
+            --bs-card-border-width: 0;
+            --bs-card-border-color: none;
+            --bs-body-bg: #eee;
         }
     </style>
 @endpush
@@ -46,6 +34,9 @@
 @section('content')
     @include('inc.phone-nav')
     <div class="northlight-banner-container">
+        <img src="{{ asset('img/phone/banner_northlight.jpg') }}" alt="banner" class="phone-banner">
+    </div>
+    {{-- <div class="northlight-banner-container">
         <img src="{{ asset('img/phone/banner/BG.jpg') }}" alt="banner" class="phone-banner">
         <img src="{{ asset('img/phone/banner/phone.png') }}" alt="phone" class="phone-banner-phone">
         <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-northlight">
@@ -128,7 +119,7 @@
                 <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SDCard.png') }}" alt="features" class="phone-banner-features" style="top: 37%; left: 75%;">
             </a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="container">
         <div class="row">
@@ -140,7 +131,7 @@
                 </div>
                 <div class="row bottom-padding-sm">
                     <div class="col-md-4 d-flex align-items-center">
-                        <img src="{{ asset('img/phone/chip copy.png') }}" alt="chip" class="img-fluid">
+                        <img src="{{ asset('img/phone/Inova_spec_parts_chip.png') }}" alt="chip" class="img-fluid">
                     </div>
                     <div class="col-md-7 offset-md-1 d-flex align-items-center">
                         <div>
@@ -979,7 +970,7 @@
             </div>
 
             <div class="col-lg-4">
-                <div class="card">
+                <div class="card" style="--bs-body-bg: #f6f6f6;">
                     <div class="row g-0">
                         <div class="col-4">
                             <img src="{{ asset('img/accessories/battery_charger.jpg') }}" class="northlight-accessory-img rounded-start" alt="...">

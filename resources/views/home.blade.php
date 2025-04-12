@@ -53,19 +53,19 @@
             <div class="row top-padding">
                 <h3 class="fw-bold">Designed for Real Life</h3>
                 <div class="col-12 col-lg-4 text-center">
-                    <img src="{{ asset('img/home/teen.jpg') }}" alt="" class="rounded-img home-user-img">
+                    <img src="{{ asset('img/home/teen.jpg') }}" alt="teen" class="rounded-img home-user-img">
                     <h4 class="fw-bold theme-color mt-2">Built to Last for Young Users</h4>
                     <p>Northlight is affordable, easy to handle, and built to last. A replaceable battery and expandable storage mean it won’t be outgrown in a year. It’s a phone that grows with them, not against them.</p>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center">
-                    <img src="{{ asset('img/home/business.jpg') }}" alt="" class="rounded-img home-user-img">
+                    <img src="{{ asset('img/home/business.jpg') }}" alt="business" class="rounded-img home-user-img">
                     <h4 class="fw-bold theme-color mt-2">Data-Secure for Business</h4>
                     <p>Keep sensitive data close with microSD storage that stays offline and in your control. While Dual SIM helps separate work and personal calls, and the replaceable battery ensures you're never caught off guard.</p>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center">
-                    <img src="{{ asset('img/home/senior.jpg') }}" alt="" class="rounded-img home-user-img">
+                    <img src="{{ asset('img/home/senior.jpg') }}" alt="senior" class="rounded-img home-user-img">
                     <h4 class="fw-bold theme-color mt-2">Familiar & Easy for Seniors</h4>
                     <p>Northlight brings familiarity back. The replaceable battery and 3.5mm headphone jack feel intuitive and comfortable. Lightweight and easy to hold, with a clear interface—this is tech that supports, not frustrates.</p>
                 </div>

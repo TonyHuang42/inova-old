@@ -35,6 +35,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="col-4 offset-4">
                 <form id="searchForm" action="{{ route('news.index') }}" method="GET" class="d-flex">
                     <input type="text" name="search" id="searchInput" class="form-control" placeholder="Search by Title" value="{{ request('search') }}">
