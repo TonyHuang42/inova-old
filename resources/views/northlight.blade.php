@@ -126,7 +126,13 @@
             <div class="col-lg-10 mx-auto">
                 <div class="row section-padding">
                     <div class="col-12">
-                        <h2 class="text-center theme-color">Performance, Storage, Flexibility, and Power—All in One</h2>
+                        <div class="col-12">
+                            <h2 class="fw-bold">More Than a Phone</h2>
+                        </div>
+                        <div class="col-12">
+                            <p>At INOVA, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
+                            <p class="mb-0">We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row bottom-padding-sm">
@@ -151,13 +157,13 @@
                         </div>
                     </div>
                     <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
-                        <img src="{{ asset('img/phone/battery copy.png') }}" alt="battery" class="img-fluid">
+                        <img src="{{ asset('img/phone/Inova_spec_parts_battery.png') }}" alt="battery" class="img-fluid">
                     </div>
                 </div>
 
                 <div class="row bottom-padding-sm">
                     <div class="col-md-4 d-flex align-items-center">
-                        <img src="{{ asset('img/phone/dualSIM_card copy.png') }}" alt="dual SIM cards" class="img-fluid">
+                        <img src="{{ asset('img/phone/Inova_spec_parts_dualSIM.png') }}" alt="dual SIM cards" class="img-fluid">
                     </div>
                     <div class="col-md-7 offset-md-1 d-flex align-items-center">
                         <div>
@@ -177,7 +183,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
-                        <img src="{{ asset('img/phone/microSD_card copy.png') }}" alt="microSD" class="img-fluid">
+                        <img src="{{ asset('img/phone/Inova_spec_parts_microSD.png') }}" alt="microSD" class="img-fluid">
                     </div>
                 </div>
             </div>

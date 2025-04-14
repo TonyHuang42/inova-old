@@ -134,6 +134,10 @@
 
     <div class="container">
         <div class="row bottom-padding-sm gx-lg-5">
+            <div class="col-lg-9 mx-auto">
+                <h2 class="text-center theme-color">Performance, Storage, Flexibility, and Power—All in One</h2>
+            </div>
+
             <div class="col-lg-6">
                 <div class="row">
                     <div class="col-3 d-flex align-items-center justify-content-center">
@@ -159,7 +163,7 @@
             </div>
         </div>
 
-        <div class="row gx-lg-5">
+        <div class="row bottom-padding gx-lg-5">
             <div class="col-lg-6">
                 <div class="row">
                     <div class="col-3 d-flex align-items-center justify-content-center">
@@ -184,14 +188,18 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="row section-padding">
-            <div class="col-12">
-                <h3 class="fw-bold">More Than a Phone</h3>
-            </div>
-            <div class="col-12">
-                <p>At INOVA, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
-                <p class="mb-0">We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
+    <div class="home-footer-bg section-padding">
+        <div class="container">
+            <div class="row gx-lg-5">
+                <div class="col-lg-6">
+                    <h3>We don't engineer gadgets for the sake of features or flashy specs. We design with a purpose.</h3>
+                </div>
+
+                <div class="col-lg-6">
+                    <p>With deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us-whether it's distance, technology access, or complexity-and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their-relationships, their work, and their lives.</p>
+                </div>
             </div>
         </div>
     </div>

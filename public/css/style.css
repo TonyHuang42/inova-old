@@ -1020,3 +1020,10 @@ h3 {
     object-fit: cover;
     object-position: top center;
 }
+
+.home-footer-bg {
+    color: white;
+    background-image: url("../img/home/home_footer_bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
