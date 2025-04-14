@@ -6,7 +6,7 @@ body {
 }
 
 :root {
-    --bs-border-radius: 25px;
+    --bs-border-radius: 15px;
     --bs-body-color: black;
 }
 
@@ -961,7 +961,7 @@ h3 {
 
 .rounded-img {
     width: 100%;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .slick-slide {
@@ -1023,7 +1023,7 @@ h3 {
 
 .home-footer-bg {
     color: white;
-    background-image: url("../img/home/home_footer_bg.jpg");
+    background-image: url("../img/home/home_footer_bg_1.jpg");
     background-size: cover;
     background-position: center;
 }

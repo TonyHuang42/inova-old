@@ -1,7 +1,7 @@
 //Show features on click
 document.addEventListener('DOMContentLoaded', () => {
     const circles = document.querySelectorAll('.circle-inner, .highlight-wrap');
-    const defaultImage = document.getElementById('battery');
+    const defaultImage = document.getElementById('case');
     const hoverContent = document.querySelectorAll('.content');
 
     let currentTarget = null;

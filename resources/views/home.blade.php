@@ -55,7 +55,7 @@
                 <div class="col-12 col-lg-4 text-center">
                     <img src="{{ asset('img/home/teen.jpg') }}" alt="teen" class="rounded-img home-user-img">
                     <h4 class="fw-bold theme-color mt-2">Built to Last for Young Users</h4>
-                    <p>Northlight is affordable, easy to handle, and built to last. A replaceable battery and expandable storage mean it won’t be outgrown in a year. It’s a phone that grows with them, not against them.</p>
+                    <p>Designed for the long run, Northlight is simple to use, affordable to own, and made to grow with young users. With a replaceable battery and expandable storage, it stays reliable over time—without forcing an upgrade.</p>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center">
@@ -145,7 +145,7 @@
                     </div>
                     <div class="col-9 d-flex flex-column justify-content-center">
                         <h4 class="my-2 theme-color">Reliable Chip</h4>
-                        <p class="mb-0">The MediaTek chip powers a responsive, efficient experience—ideal for calls, apps, and messaging—while helping conserve battery throughout the day.</p>
+                        <p class="mb-0">The MediaTek chip powers a responsive, efficient experience—handling daily tasks with ease while conserving battery.</p>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@
                     </div>
                     <div class="col-9 d-flex flex-column justify-content-center">
                         <h4 class="my-2 theme-color">microSD Card</h4>
-                        <p class="mb-0">Need more space? Slide in a microSD card and store your files right on your device—no cloud, no subscriptions, just peace of mind.</p>
+                        <p class="mb-0">Need more space? Slide in a microSD card and store files right on your device—no cloud, no subscriptions, just peace of mind.</p>
                     </div>
                 </div>
             </div>
@@ -194,11 +194,11 @@
         <div class="container">
             <div class="row gx-lg-5">
                 <div class="col-lg-6">
-                    <h3>We don't engineer gadgets for the sake of features or flashy specs. We design with a purpose.</h3>
+                    <h3>Shaped by Values, Made for Life</h3>
                 </div>
 
                 <div class="col-lg-6">
-                    <p>With deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us-whether it's distance, technology access, or complexity-and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their-relationships, their work, and their lives.</p>
+                    <p>Everything we build at INOVA comes back to one goal: making technology feel easier, more human, and more accessible. As we look ahead, we remain committed to removing barriers and creating thoughtful tools that support how people live, work, and stay connected—every single day.</p>
                 </div>
             </div>
         </div>

@@ -123,23 +123,22 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-9 mx-auto">
                 <div class="row section-padding">
                     <div class="col-12">
                         <div class="col-12">
                             <h2 class="fw-bold">More Than a Phone</h2>
                         </div>
                         <div class="col-12">
-                            <p>At INOVA, every product we create—from the Northlight smartphone to future innovations—is more than just a device; it’s a bridge. A bridge between generations who share stories, ideas, and memories, making the world a little smaller and more connected. It’s a bridge between small businesses and their customers, empowering entrepreneurs with affordable, reliable technology that helps them grow. It’s a bridge between isolated communities and the wider world, breaking down the barriers of geography and circumstance with seamless communication.</p>
-                            <p class="mb-0">We don’t engineer gadgets for the sake of features or flashy specs. We design with purpose, with deep consideration for the needs of real people in the real world. Our tools are crafted to dissolve the barriers that separate us—whether it’s distance, technology access, or complexity—and simplify the way we connect with each other. At INova, the goal is simple: to empower people to focus on what truly matters: their relationships, their work, and their lives.</p>
+                            <p class="mb-0">Northlight is more than just a collection of specs—it’s a tool designed with real life in mind. Every feature is chosen for a reason: to keep you connected, productive and in control. From the chip to the battery, it’s not about chasing trends—it’s about delivering what actually matters, stable performance, flexible storage, reliable power, and easy everyday use.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row bottom-padding-sm">
-                    <div class="col-md-4 d-flex align-items-center">
+                    <div class="col-xl-5 col-md-6 d-flex align-items-center">
                         <img src="{{ asset('img/phone/Inova_spec_parts_chip.png') }}" alt="chip" class="img-fluid">
                     </div>
-                    <div class="col-md-7 offset-md-1 d-flex align-items-center">
+                    <div class="col-xl-5 offset-xl-2 col-md-6 d-flex align-items-center">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="Chip" class="support-icon">
                             <h3 class="my-2 theme-color">Reliable Chip</h3>
@@ -149,23 +148,23 @@
                 </div>
 
                 <div class="row bottom-padding-sm">
-                    <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
+                    <div class="col-xl-5 col-md-6 d-flex align-items-center order-2 order-md-1">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="Battery" class="support-icon">
                             <h3 class="my-2 theme-color">Replaceable Battery</h3>
                             <p class="key-features-description">Northlight features a <strong>2500mAh removable battery</strong> with a <strong>tool-free</strong> latch system, allowing fast swaps without a technician. Keep a spare charged and stay powered anytime, and when battery performance declines over time, just <strong>replace the unit</strong>—not the phone. This design supports long-term <strong>durability, reduces waste</strong>, and ensures you're always ready when charging isn’t possible.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
+                    <div class="col-xl-5 offset-xl-2 col-md-6 d-flex align-items-center order-1 order-md-2">
                         <img src="{{ asset('img/phone/Inova_spec_parts_battery.png') }}" alt="battery" class="img-fluid">
                     </div>
                 </div>
 
                 <div class="row bottom-padding-sm">
-                    <div class="col-md-4 d-flex align-items-center">
+                    <div class="col-xl-5 col-md-6 d-flex align-items-center">
                         <img src="{{ asset('img/phone/Inova_spec_parts_dualSIM.png') }}" alt="dual SIM cards" class="img-fluid">
                     </div>
-                    <div class="col-md-7 offset-md-1 d-flex align-items-center">
+                    <div class="col-xl-5 offset-xl-2 col-md-6 d-flex align-items-center">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_dualsim.svg') }}" alt="Dual SIM" class="support-icon">
                             <h3 class="my-2 theme-color">Dual SIM</h3>
@@ -175,14 +174,14 @@
                 </div>
 
                 <div class="row bottom-padding">
-                    <div class="col-md-7 d-flex align-items-center order-2 order-md-1">
+                    <div class="col-xl-5 col-md-6 d-flex align-items-center order-2 order-md-1">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_sd_card.svg') }}" alt="microSD" class="support-icon">
                             <h3 class="my-2 theme-color">microSD Card</h3>
                             <p class="key-features-description">With support for <strong>microSD cards up to 512GB</strong>, Northlight allows easy, cost-effective storage expansion. Keep photos, apps, and files <strong>securely stored</strong> on your device, with no need for cloud logins or subscriptions. Your data stays <strong>physically</strong> with you, offering greater <strong>privacy, control, and offline access</strong>—all through a simple plug-and-play setup that requires no configuration.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 offset-md-1 d-flex align-items-center order-1 order-md-2">
+                    <div class="col-xl-5 offset-xl-2 col-md-6 d-flex align-items-center order-1 order-md-2">
                         <img src="{{ asset('img/phone/Inova_spec_parts_microSD.png') }}" alt="microSD" class="img-fluid">
                     </div>
                 </div>

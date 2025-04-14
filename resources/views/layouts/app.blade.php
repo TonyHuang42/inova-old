@@ -127,8 +127,8 @@
                     <a href="/support" class="first-nav underline-link">SUPPORT</a>
                     <a href="/about-us" class="first-nav underline-link">ABOUT</a>
                 </div>
-            </nav> --}}
-            <div class="horizontal-line"></div>
+            </nav>
+            <div class="horizontal-line"></div> --}}
             <div class="copyright">
                 <p class="m-0">Copyright © <strong>INOVA DIGITAL SOLUTIONS INC.</strong> All Rights Reserved</p>
                 <div class="terms">
