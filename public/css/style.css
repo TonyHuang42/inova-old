@@ -1048,3 +1048,10 @@ h3 {
 .card-title {
     font-weight: 700;
 }
+
+.highlight-features-img-wrap {
+    background-color: #0b212c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
