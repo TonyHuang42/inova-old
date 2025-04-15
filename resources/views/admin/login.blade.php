@@ -3,7 +3,7 @@
 @section('content')
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
-            <h2 class="text-center mb-4">Admin Login</h2>
+            <h1 class="text-center mb-4">Admin Login</h1>
 
             @if ($errors->any())
                 <div class="alert alert-danger text-center">

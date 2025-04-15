@@ -30,33 +30,33 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-10 mx-auto">
                     <div class="text-center">
-                        <h2 class="pb-4">How Can We Help You?</h2>
-                        <p class="mb-0">At INOVA, your satisfaction is our priority. Whether you need technical assistance, warranty details, or personalized support, we’re here to ensure you stay connected effortlessly.</p>
+                        <h1 class="pb-4">How Can We Help You?</h1>
+                        <p class="mb-0">At INOVA, we’re here to ensure your experience is smooth, simple, and supported. Whether you’re curious about our features, need help getting started, or have questions about where to find our products—this page has the answers.</p>
                     </div>
                 </div>
             </div>
             <div class="row pt-5">
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-5">
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column">
                             <img src="{{ asset('img/support/icons/icons_sales.svg') }}" alt="sales" class="support-icon">
                             <h3 class="card-title">Sales & Enquiries</h3>
-                            <p class="card-text">Have questions about our products or services? Our team is ready to assist you with information, pricing, and availability to help you make the right choice.</p>
+                            <p class="card-text">Have questions about our products, availability, or partnership opportunities? We’re happy to help.</p>
                             <div class="mt-auto"><a href="mailto: sales@i-nova.com">sales@i-nova.ca <i class="fa-solid fa-angle-right"></i></a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-5 offset-lg-1">
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column">
                             <img src="{{ asset('img/support/icons/icons_support.svg') }}" alt="support" class="support-icon">
-                            <h3 class="card-title">Help & Support</h3>
-                            <p class="card-text">Need assistance with your INOVA device? From troubleshooting to user guides, we’re here to keep your experience smooth and hassle-free.</p>
+                            <h3 class="card-title">General Contact</h3>
+                            <p class="card-text">For any general questions, feedback, ideas, or other support-related matters, we’d love to hear from you.</p>
                             <div class="mt-auto"><a href="mailto: support@i-nova.com">support@i-nova.ca <i class="fa-solid fa-angle-right"></i></a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                {{-- <div class="col-12 col-lg-4">
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column">
                             <img src="{{ asset('img/support/icons/icons_warranty.svg') }}" alt="warranty" class="support-icon">
@@ -66,7 +66,7 @@
                             <div class="mt-auto"><a href="mailto: warranty@i-nova.com">warranty@i-nova.ca <i class="fa-solid fa-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
@@ -76,7 +76,7 @@
             <div class="row">
                 <div class="col-sm-10 mx-auto">
                     <div class="text-center">
-                        <h2 class="pb-4">Frequently Asked Questions</h2>
+                        <h1 class="pb-4">Frequently Asked Questions</h1>
                         <p class="mb-0">Find quick answers to common questions about our products and services. We're committed to providing clear, helpful information to make your experience with INOVA seamless and enjoyable.</p>
                     </div>
                 </div>
@@ -97,37 +97,81 @@
                             <div class="faq-item" data-category="products">
                                 <div class="question-wrap">
                                     <span class="fa-solid fa-angle-right faq-icon"></span>
-                                    <div class="question">What is the warranty for the products?</div>
+                                    <div class="question"> Can I use two SIM cards and a microSD card at the same time?</div>
                                 </div>
-                                <p class="answer">The warranty lasts for 1 year.</p>
+                                <p class="answer">Yes, Northlight supports dual SIM and a microSD card simultaneously. You don’t have to
+                                    sacrifice one for the other.</p>
                             </div>
+
                             <div class="faq-item" data-category="products">
                                 <div class="question-wrap">
                                     <span class="fa-solid fa-angle-right faq-icon"></span>
-                                    <div class="question">How do I return a product?</div>
+                                    <div class="question">How do I replace my battery?</div>
                                 </div>
-                                <p class="answer">Visit our returns page to start a return request.</p>
+                                <p class="answer">Simply remove your phone case and you will see the battery with a slot at the bottom. Lift the
+                                    bottom of the battery up and replace it with a new one.</p>
                             </div>
-                            <div class="faq-item" data-category="order">
+
+                            <div class="faq-item" data-category="products">
                                 <div class="question-wrap">
                                     <span class="fa-solid fa-angle-right faq-icon"></span>
-                                    <div class="question">How do I track my shipment?</div>
+                                    <div class="question">How do I know which SIM card I'm using?</div>
                                 </div>
-                                <p class="answer">You can track your shipment using the tracking number provided in the confirmation email.</p>
+                                <p class="answer">You can check and switch your active SIM through your phone’s SIM settings. Go to Settings
+                                    > Network & Internet > SIMs to manage preferences for calls, texts, and data.</p>
                             </div>
-                            <div class="faq-item" data-category="order">
+
+                            <div class="faq-item" data-category="products">
                                 <div class="question-wrap">
                                     <span class="fa-solid fa-angle-right faq-icon"></span>
-                                    <div class="question">What are the shipping costs?</div>
+                                    <div class="question">How do I manage storage with a microSD card?</div>
                                 </div>
-                                <p class="answer">Shipping costs depend on your location and the size of the order.</p>
+                                <p class="answer">Once inserted, your microSD card will appear in your device storage settings. In
+                                    the Files app, you can move images, downloads, documents, videos, and audio between internal
+                                    and external storage. Note that apps cannot be moved to external storage.</p>
                             </div>
-                            <div class="faq-item" data-category="support">
+
+                            <div class="faq-item" data-category="products">
                                 <div class="question-wrap">
                                     <span class="fa-solid fa-angle-right faq-icon"></span>
-                                    <div class="question">How do I contact customer support?</div>
+                                    <div class="question">How do I access files saved on my microSD card?</div>
                                 </div>
-                                <p class="answer">You can reach customer support via email or phone.</p>
+                                <p class="answer">You can access those files by inserting the microSD card back into your phone, or by using a
+                                    microSD card reader connected to a laptop, PC, or other devices.</p>
+                            </div>
+
+                            <div class="faq-item" data-category="products">
+                                <div class="question-wrap">
+                                    <span class="fa-solid fa-angle-right faq-icon"></span>
+                                    <div class="question">What is the storage capacity?</div>
+                                </div>
+                                <p class="answer">Northlight comes with 32GB of built-in storage and supports microSD cards up to 512GB for
+                                    additional space.</p>
+                            </div>
+
+                            <div class="faq-item" data-category="products">
+                                <div class="question-wrap">
+                                    <span class="fa-solid fa-angle-right faq-icon"></span>
+                                    <div class="question">How do I remove or insert my SIM or microSD card?</div>
+                                </div>
+                                <div class="answer">
+                                    <p>Remove the phone case to access the slots at the top-right corner. There are three slots:</p>
+                                    <ul>
+                                        <li>Nano-SIM (top slot)</li>
+                                        <li>Micro-SIM (bottom slot)</li>
+                                        <li>MicroSD card (directly above the micro-SIM, stacked vertically)</li>
+                                    </ul>
+                                    <p>Make sure each card goes in current orientation. </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item" data-category="products">
+                                <div class="question-wrap">
+                                    <span class="fa-solid fa-angle-right faq-icon"></span>
+                                    <div class="question">Where can I buy INOVA products?</div>
+                                </div>
+                                <p class="answer">We’re currently available on the Best Buy Marketplace. You can find us on the Best Buy
+                                    website or contact us directly at sales@i-nova.ca for more details. </p>
                             </div>
                         </div>
                     </div>

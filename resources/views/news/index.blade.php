@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-10 mx-auto">
                     <div class="text-center">
-                        <h2 class="pb-4">LATEST NEWS</h2>
+                        <h1 class="pb-4">LATEST NEWS</h1>
                         <p class="mb-0">Stay informed about the latest news at INOVA</p>
                     </div>
                 </div>

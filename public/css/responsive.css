@@ -214,8 +214,12 @@
         bottom: 30px;
     }
 
-    h2 {
+    h1 {
         font-size: 45px;
+    }
+
+    h2 {
+        font-size: 40px;
     }
 
     /* .about-title {
@@ -284,8 +288,12 @@
         gap: 15px;
     }
 
-    h2 {
+    h1 {
         font-size: 36px;
+    }
+
+    h2 {
+        font-size: 32px;
     }
 
     /* .about-title {

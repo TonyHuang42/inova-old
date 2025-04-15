@@ -7,7 +7,7 @@
 <div class="about-banner-container">
     <div class="container">
         <p>About Us</p>
-        <h2>Technology for All, Connect Communities</h2>
+        <h1>Technology for All, Connect Communities</h1>
     </div>
 </div>
 

@@ -33,10 +33,10 @@
 
 @section('content')
     @include('inc.phone-nav')
-    <div class="northlight-banner-container">
-        <img src="{{ asset('img/phone/banner_northlight.jpg') }}" alt="banner" class="phone-banner">
-    </div>
     {{-- <div class="northlight-banner-container">
+        <img src="{{ asset('img/phone/banner_northlight.jpg') }}" alt="banner" class="phone-banner">
+    </div> --}}
+    <div class="northlight-banner-container">
         <img src="{{ asset('img/phone/banner/BG.jpg') }}" alt="banner" class="phone-banner">
         <img src="{{ asset('img/phone/banner/phone.png') }}" alt="phone" class="phone-banner-phone">
         <img src="{{ asset('img/phone/banner/northlight.png') }}" alt="northlight" class="phone-banner-northlight">
@@ -119,7 +119,7 @@
                 <img src="{{ asset('img/phone/banner/mobile_bubbles/bubble_SDCard.png') }}" alt="features" class="phone-banner-features" style="top: 37%; left: 75%;">
             </a>
         </div>
-    </div> --}}
+    </div>
 
     <div class="container">
         <div class="row">
@@ -127,18 +127,18 @@
                 <div class="row section-padding">
                     <div class="col-12">
                         <div class="col-12">
-                            <h2 class="fw-bold">More Than a Phone</h2>
+                            <h1 class="fw-bold text-center">More Than a Phone</h1>
                         </div>
                         <div class="col-12">
-                            <p class="mb-0">Northlight is more than just a collection of specs—it’s a tool designed with real life in mind. Every feature is chosen for a reason: to keep you connected, productive and in control. From the chip to the battery, it’s not about chasing trends—it’s about delivering what actually matters, stable performance, flexible storage, reliable power, and easy everyday use.</p>
+                            <p class="mb-0">Northlight is designed to be practical, dependable, and easy to live with. It brings together the essentials—performance, storage, flexibility, and power—in a way that makes sense for everyday use. From the processor to the battery, every part is thoughtfully chosen to help you stay connected, productive, and in control—whether at home, at work, or on the move. Built for simplicity, shaped by purpose, and ready to meet the demands of real life. No clutter, no distractions—just the features you need, when you need them.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row bottom-padding-sm">
-                    <div class="col-xl-5 col-md-6 d-flex align-items-center">
-                        <img src="{{ asset('img/phone/Inova_spec_parts_chip.png') }}" alt="chip" class="img-fluid">
+                <div class="row bottom-padding-sm gx-md-5">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #0b212c; border-radius: 15px;">
+                        <img src="{{ asset('img/phone/Inova_spec_parts_chip.png') }}" alt="chip" class="img-fluid" style="max-height: 300px;">
                     </div>
-                    <div class="col-xl-5 offset-xl-2 col-md-6 d-flex align-items-center">
+                    <div class="col-md-6 d-flex align-items-center">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_memory.svg') }}" alt="Chip" class="support-icon">
                             <h3 class="my-2 theme-color">Reliable Chip</h3>
@@ -190,7 +190,7 @@
     </div>
 
     {{-- <div class="container">
-        <h2 class="text-center top-padding">Innovation that Brings People Together</h2>
+        <h1 class="text-center top-padding">Innovation that Brings People Together</h1>
         <div class="row top-padding bottom-padding-sm gx-lg-5 gy-lg-0 gy-4">
             <div class="col-lg-6 d-flex align-items-center">
                 <img src="{{ asset('img/phone/phone_photo_1.jpg') }}" alt="" class="rounded-img">
@@ -217,7 +217,7 @@
     <!-- Desktop Engineering Drawing -->
     <div class="bg-color overflow-hidden">
         <div class="custom-container">
-            <h2 class="text-white" style="padding-top: 50px;">Beyond the Essentials</h2>
+            <h1 class="text-white text-center" style="padding-top: 50px;">Beyond the Essentials</h1>
             <div class="features-container-desktop" id="engineering-drawing-section">
                 <div class="image-wrapper engineering-drawing-position engineering-drawing-lg">
                     <img src="{{ asset('img/phone/Northlight-explosive-sketch.png') }}" alt="engineering drawing" class="engineering-drawing">
@@ -869,7 +869,7 @@
     </div>
 
     {{-- <div class="container">
-        <h2 class="section-padding-sm text-center">Designed for Real Life</h2>
+        <h1 class="section-padding-sm text-center">Designed for Real Life</h1>
         <div class="row bottom-padding-sm gx-lg-5">
             <div class="col-lg-6 order-1 order-lg-2">
                 <img src="{{ asset('img/phone/phone_photo_3.png') }}" alt="young users" class="rounded-img">
@@ -956,12 +956,12 @@
     </div> --}}
 
     <div class="container">
-        <h3 class="fw-bold section-padding-sm">Accessories</h3>
+        <h1 class="fw-bold text-center section-padding-sm">Accessories</h1>
         <div class="row bottom-padding">
             <div class="col-lg-4">
                 <div class="card">
                     <div class="row g-0">
-                        <div class="col-4">
+                        <div class="col-4 p-2">
                             <img src="{{ asset('img/accessories/battery.jpg') }}" class="northlight-accessory-img rounded-start" alt="...">
                         </div>
                         <div class="col-8 d-flex align-items-center">
@@ -977,7 +977,7 @@
             <div class="col-lg-4">
                 <div class="card" style="--bs-body-bg: #f6f6f6;">
                     <div class="row g-0">
-                        <div class="col-4">
+                        <div class="col-4 p-2">
                             <img src="{{ asset('img/accessories/battery_charger.jpg') }}" class="northlight-accessory-img rounded-start" alt="...">
                         </div>
                         <div class="col-8 d-flex align-items-center">
@@ -993,7 +993,7 @@
             <div class="col-lg-4">
                 <div class="card">
                     <div class="row g-0">
-                        <div class="col-4">
+                        <div class="col-4 p-2">
                             <img src="{{ asset('img/accessories/microSD_card.jpg') }}" class="northlight-accessory-img rounded-start" alt="...">
                         </div>
                         <div class="col-8 d-flex align-items-center">

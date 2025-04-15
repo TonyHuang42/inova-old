@@ -222,6 +222,17 @@ h4 {
     height: auto;
 }
 
+.home-banner-container-text {
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 .philosophy {
     background-color: black;
     color: white;
@@ -319,8 +330,14 @@ h4 {
     left: 0;
 }
 
-h2 {
+h1 {
     font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -1026,4 +1043,8 @@ h3 {
     background-image: url("../img/home/home_footer_bg_1.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.card-title {
+    font-weight: 700;
 }

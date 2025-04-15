@@ -54,7 +54,7 @@
 @section('content')
     <div class="container">
         <div class="heading-container">
-            <h2>Accessories</h2>
+            <h1>Accessories</h1>
         </div>
 
         <div class="accessory-nav">

@@ -6,15 +6,13 @@
 @section('content')
     <div class="home-banner-container">
         <img class="home-banner" src="{{ asset('img/home/banner_home.png') }}" alt="Banner">
+        <h2 class="mb-0 home-banner-container-text d-none d-lg-block">Building Bridges, Not Just Devices</h2>
     </div>
 
     <div class="philosophy">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8 mx-auto mb-5 text-center">
-                    <h3 class="mb-0">Building Bridges, Not Just Devices</h3>
-                </div>
-            </div>
+            <h2 class="mb-5 text-center d-block d-lg-none">Building Bridges, Not Just Devices</h2>
+
             {{-- <a href="/about-us#purpose" class="text-white"> --}}
             <div class="row text-center gx-lg-5 bottom-padding">
                 <div class="col-12 col-lg-4">
@@ -51,22 +49,22 @@
             </div>
 
             <div class="row top-padding">
-                <h3 class="fw-bold">Designed for Real Life</h3>
+                <h2 class="fw-bold">Designed for Real Life</h2>
                 <div class="col-12 col-lg-4 text-center">
                     <img src="{{ asset('img/home/teen.jpg') }}" alt="teen" class="rounded-img home-user-img">
-                    <h4 class="fw-bold theme-color mt-2">Built to Last for Young Users</h4>
+                    <h4 class="fw-bold theme-color mt-4">Built to Last for Young Users</h4>
                     <p>Designed for the long run, Northlight is simple to use, affordable to own, and made to grow with young users. With a replaceable battery and expandable storage, it stays reliable over time—without forcing an upgrade.</p>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center">
                     <img src="{{ asset('img/home/business.jpg') }}" alt="business" class="rounded-img home-user-img">
-                    <h4 class="fw-bold theme-color mt-2">Data-Secure for Business</h4>
+                    <h4 class="fw-bold theme-color mt-4">Data-Secure for Business</h4>
                     <p>Keep sensitive data close with microSD storage that stays offline and in your control. While Dual SIM helps separate work and personal calls, and the replaceable battery ensures you're never caught off guard.</p>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center">
                     <img src="{{ asset('img/home/senior.jpg') }}" alt="senior" class="rounded-img home-user-img">
-                    <h4 class="fw-bold theme-color mt-2">Familiar & Easy for Seniors</h4>
+                    <h4 class="fw-bold theme-color mt-4">Familiar & Easy for Seniors</h4>
                     <p>Northlight brings familiarity back. The replaceable battery and 3.5mm headphone jack feel intuitive and comfortable. Lightweight and easy to hold, with a clear interface—this is tech that supports, not frustrates.</p>
                 </div>
             </div>
@@ -87,7 +85,8 @@
             </div> --}}
 
             <a href="/northlight">
-                <img src="{{ asset('img/home/banner_northlight.png') }}" alt="Banner" class="rounded-img">
+                <img src="{{ asset('img/home/banner_northlight.png') }}" alt="Banner" class="rounded-img d-none d-md-block">
+                <img src="{{ asset('img/home/banner_northlight_mobile.png') }}" alt="Banner" class="rounded-img d-md-none d-block">
             </a>
 
             {{-- <div class="row top-padding">
@@ -194,7 +193,7 @@
         <div class="container">
             <div class="row gx-lg-5">
                 <div class="col-lg-6">
-                    <h3>Shaped by Values, Made for Life</h3>
+                    <h2>Shaped by Values,<br>Made for Life</h2>
                 </div>
 
                 <div class="col-lg-6">

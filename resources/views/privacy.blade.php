@@ -7,10 +7,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-10 col-xl-8 mx-auto">
-                <h2 class="py-5">Privacy Policy</h2>
+                <h1 class="py-5">Privacy Policy</h1>
                 <p><strong>Effective Date:</strong> 2025 Feb 5</p>
                 <div class="section">
-                    <h2>Information We Collect</h2>
+                    <h1>Information We Collect</h1>
                     <p>We may collect the following types of information when you visit our Website:</p>
                     <h3>Automatically Collected Information</h3>
                     <p>When you access the Website, we may automatically collect certain information, including:</p>
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="section">
-                    <h2>How We Use Your Information</h2>
+                    <h1>How We Use Your Information</h1>
                     <p>We use the information we collect for the following purposes:</p>
                     <ul>
                         <li>To operate and maintain the Website.</li>
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="section">
-                    <h2>Sharing Your Information</h2>
+                    <h1>Sharing Your Information</h1>
                     <p>We do not sell, trade, or rent your personal information to third parties. However, we may share your information in the following circumstances:</p>
                     <ul>
                         <li>With <strong>service providers</strong> who assist us in operating the Website (e.g., hosting providers, analytics tools). These providers are contractually obligated to protect your information.</li>
@@ -54,12 +54,12 @@
                 </div>
 
                 <div class="section">
-                    <h2>Data Retention</h2>
+                    <h1>Data Retention</h1>
                     <p>We retain your personal information only as long as necessary to fulfill the purposes outlined in this Privacy Policy unless a longer retention period is required by law. Once your data is no longer needed, we take steps to securely delete or anonymize it.</p>
                 </div>
 
                 <div class="section" id="cookie">
-                    <h2>Cookies and Tracking Technologies</h2>
+                    <h1>Cookies and Tracking Technologies</h1>
                     <p>We use cookies and similar technologies to collect information about your use of the Website. Cookies are small text files stored on your device that help us improve your experience.</p>
                     <p>This section explains how we use cookies and similar technologies on our Website.</p>
                     <h3>What Are Cookies?</h3>
@@ -74,17 +74,17 @@
                 </div>
 
                 <div class="section">
-                    <h2>Third-Party Services</h2>
+                    <h1>Third-Party Services</h1>
                     <p>Our Website may use third-party services, such as Google Analytics, that collect, monitor, and analyze data. These services may process your information under their own privacy policies, and data may be transferred outside your jurisdiction.</p>
                 </div>
 
                 <div class="section">
-                    <h2>Data Security</h2>
+                    <h1>Data Security</h1>
                     <p>We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
                 </div>
 
                 <div class="section">
-                    <h2>Your Rights</h2>
+                    <h1>Your Rights</h1>
                     <p>Depending on your location, you may have the following rights regarding your personal information:</p>
                     <ul>
                         <li><strong>Access</strong>: Request a copy of the information we hold about you.</li>
@@ -96,21 +96,21 @@
                 </div>
 
                 <div class="section">
-                    <h2>Third-Party Links</h2>
+                    <h1>Third-Party Links</h1>
                     <p>Our Website may contain links to third-party websites. We are not responsible for the privacy practices or content of these third-party sites. We encourage you to review their privacy policies before providing any information.</p>
                 </div>
 
                 <div class="section">
-                    <h2>Children’s Privacy</h2>
+                    <h1>Children’s Privacy</h1>
                     <p>Our Website is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will take steps to delete it.</p>
                 </div>
                 <div class="section">
-                    <h2>Changes to This Privacy Policy</h2>
+                    <h1>Changes to This Privacy Policy</h1>
                     <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. Your continued use of the Website after any changes constitutes your acceptance of the revised Privacy Policy.</p>
                 </div>
 
                 <div class="section">
-                    <h2>Contact Us</h2>
+                    <h1>Contact Us</h1>
                     <div class="contact-info">
                         <p>If you have any questions about this Privacy Policy, please contact us at:</p>
                         <p><strong>INOVA DIGITAL SOLUTIONS INC</strong><br>
