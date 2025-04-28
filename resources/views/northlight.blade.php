@@ -134,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row bottom-padding-sm gx-md-5">
+                <div class="row bottom-padding gx-md-5">
                     <div class="col-md-6 d-flex align-items-center">
                         <div class="highlight-features-img-wrap rounded-img">
                             <img src="{{ asset('img/phone/Inova_spec_parts_chip.png') }}" alt="chip" class="img-fluid" style="max-height: 300px;">
@@ -149,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="row bottom-padding-sm gx-md-5">
+                <div class="row bottom-padding gx-md-5">
                     <div class="col-md-6 d-flex align-items-center order-2 order-md-1">
                         <div>
                             <img src="{{ asset('img/phone/icons/icons_battery_swap.svg') }}" alt="Battery" class="support-icon">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="row bottom-padding-sm gx-md-5">
+                <div class="row bottom-padding gx-md-5">
                     <div class="col-md-6 d-flex align-items-center">
                         <div class="highlight-features-img-wrap rounded-img">
                             <img src="{{ asset('img/phone/Inova_spec_parts_dualSIM.png') }}" alt="dual SIM cards" class="img-fluid" style="max-height: 300px;">
@@ -983,7 +983,7 @@
             </div>
 
             <div class="col-lg-4">
-                <div class="card" style="--bs-body-bg: #f6f6f6;">
+                <div class="card">
                     <div class="row g-0">
                         <div class="col-4 p-2">
                             <img src="{{ asset('img/accessories/battery_charger.jpg') }}" class="northlight-accessory-img rounded-start" alt="...">
